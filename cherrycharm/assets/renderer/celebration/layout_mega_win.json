@@ -1,0 +1,273 @@
+{
+  "name":"Mega Win Layout",
+  "params" : {
+    "audio" :"music_mega_win",
+    "rollup_duration" : 8
+  },
+  "components":[
+    {
+      "id":"celebration_holder",
+      "position":{
+        "x":40,
+        "y":15
+      },
+      "visible":true,
+      "scale":{
+        "x":1,
+        "y":1
+      },
+      "pivot":"TOP_LEFT",
+      "components":[
+        {
+          "id": "mega_bg_dimmer",
+          "construct":"DO.Core.Renderer.UI.BackgroundDimmer(0,0.7)",
+          "position":{
+            "x":"50%",
+            "y":"50%"
+          },
+          "pivot":"CENTRE"
+        },
+        {
+          "id": "black-dimmer",
+          "construct":"DO.Core.Renderer.UI.BackgroundDimmer(0,0.3)",
+          "position":{
+            "x":"50%",
+            "y":"50%"
+          },
+          "pivot":"CENTRE"
+        },
+        {
+          "id":"coins_rain",
+          "construct":"DO.Core.Renderer.FX.Particles(assets)",
+          "position":{
+            "x":"50%",
+            "y":"105%"
+          },
+          "visible": true,
+          "params":{
+            "autoStart":true,
+            "movieclips":[
+              "COIN"
+            ],
+            "emitDuration":8000,
+            "emitRate":50,
+            "drag" : 0.0,
+            "lifetime":{
+              "min":8000,
+              "max":8000
+            },
+            "maxParticles":450,
+            "speed":{
+              "min":300.0,
+              "max":500.0
+            },
+            "spin":{
+              "min":-10,
+              "max":10
+            },
+            "scale":{
+              "min":0.25,
+              "max":0.35
+            },
+            "direction":{
+              "min": 280,
+              "max":440
+            },
+            "gravity":{
+              "x":0,
+              "y":10
+            },
+            "shrinkFactor":0,
+            "rotation":{
+              "min":0,
+              "max":360
+            },
+            "turbulence":{
+              "min":50.0,
+              "max":50.0
+            }
+          },
+          "pivot":"CENTER"
+        },
+        {
+          "id":"star_rain",
+          "construct":"DO.Core.Renderer.FX.Particles(assets)",
+          "position":{
+            "x":"50%",
+            "y":"105%"
+          },
+          "visible": true,
+          "params":{
+            "autoStart":true,
+            "movieclips":[
+              "STAR"
+            ],
+            "emitDuration":8000,
+            "emitRate":75,
+            "drag" : 0.0,
+            "lifetime":{
+              "min":8000,
+              "max":8000
+            },
+            "maxParticles":450,
+            "speed":{
+              "min":300.0,
+              "max":500.0
+            },
+            "spin":{
+              "min":-10,
+              "max":10
+            },
+            "scale":{
+              "min":0.50,
+              "max":1
+            },
+            "direction":{
+              "min": 280,
+              "max":440
+            },
+            "gravity":{
+              "x":0,
+              "y":10
+            },
+            "shrinkFactor":0,
+            "rotation":{
+              "min":0,
+              "max":360
+            },
+            "turbulence":{
+              "min":50.0,
+              "max":50.0
+            }
+          },
+          "pivot":"CENTER"
+        },
+        {
+          "id":"win_type_text",
+          "construct":"DO.Core.Renderer.UI.StandardText('@Mega_WIN', {fontFamily : 'celebration-font', fontSize: 100, fontWeight: 900 ,stroke: '#ff383c', strokeThickness: 3 ,align :  'center',fill : [ '#fce11d','#e59206'], fillGradientStops:[ 0.5] })",
+          "position":{
+            "x":"49%",
+            "y":"35%"
+          },
+          "visible": false,
+          "scale":{
+            "x":1,
+            "y":1
+          },
+          "pivot":"CENTER"
+        },
+        {
+          "id":"win_amount_text",
+          "construct":"DO.Core.Renderer.UI.StandardText('@WIN', {fontFamily : 'celebration-font', fontSize: 100, fontWeight: 900 ,stroke: '#ff383c', strokeThickness: 3 ,align :  'center',fill : [ '#fce11d','#e59206'], fillGradientStops:[ 0.5] })",
+          "position":{
+            "x":"49%",
+            "y":"53%"
+          },
+          "visible": false,
+          "scale":{
+            "x":1,
+            "y":1
+          },
+          "pivot":"CENTER"
+        },
+        {
+          "id":"win_type_anim_en",
+          "construct":"DO.Core.Renderer.UI.MovieClipWrapper(assets,'mega_win_anim',true,true)",
+          "position":{
+            "x":"19%",
+            "y":"0%"
+          },
+          "visible": false,
+          "scale":{
+            "x":1,
+            "y":1
+          },
+          "pivot":"CENTER"
+        },
+        {
+          "id":"win_text",
+          "construct":"DO.Core.Renderer.UI.SpriteText(assets, '00')",
+          "visible" : false,
+          "params":{
+            "max_chars":15,
+            "kerning":-30,
+            "fixed_width" : 100,
+            "mappings": {
+              "0": "number_counter:0",
+              "1": "number_counter:1",
+              "2": "number_counter:2",
+              "3": "number_counter:3",
+              "4": "number_counter:4",
+              "5": "number_counter:5",
+              "6": "number_counter:6",
+              "7": "number_counter:7",
+              "8": "number_counter:8",
+              "9": "number_counter:9",
+              ".": "number_counter:dot",
+              ",": "number_counter:comma"
+            }
+          },
+          "position":{
+            "x":"50%",
+            "y":"74%"
+          },
+          "scale":{
+            "x":1,
+            "y":1
+          },
+          "pivot":"CENTRE"
+        }
+      ]
+    }
+  ],
+  "portrait":{
+    "celebration_holder":{
+      "position": {
+        "x": "-17%",
+        "y": "80%"
+      },
+      "visible": true,
+      "scale": {
+        "x": 1.3,
+        "y": 1.3
+      }
+    },
+    "coins_rain":{
+      "position": {
+        "x":"50%",
+        "y":"175%"
+      }
+    },
+    "star_rain":{
+      "position": {
+        "x":"50%",
+        "y":"175%"
+      }
+    }
+  },
+  "landscape":{
+    "celebration_holder":{
+      "position": {
+        "x": "2%",
+        "y": "4%"
+      },
+      "visible": true,
+      "scale": {
+        "x": 1,
+        "y": 1
+      }
+    }
+  },
+  "coins_rain":{
+    "position": {
+      "x":"50%",
+      "y":"105%"
+    }
+  },
+  "star_rain":{
+    "position": {
+      "x":"50%",
+      "y":"105%"
+    }
+  }
+}

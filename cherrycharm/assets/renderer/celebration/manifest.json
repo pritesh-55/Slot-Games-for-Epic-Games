@@ -1,0 +1,127 @@
+{
+  "name": "Celebration manifest",
+  "items": [
+    {
+      "id": "layout_big_win",
+      "type": "json",
+      "path": "./assets/renderer/celebration/layout_big_win.json"
+    },
+    {
+      "id": "layout_mega_win",
+      "type": "json",
+      "path": "./assets/renderer/celebration/layout_mega_win.json"
+    },
+    {
+      "id": "layout_super_win",
+      "type": "json",
+      "path": "./assets/renderer/celebration/layout_super_win.json"
+    },
+
+    {
+      "id":"big_win_anim",
+      "type":"atlas",
+      "path": "../common/assets/animation/big_win.json",
+      "movieclips":{
+        "big_win_anim":{
+          "speed":0.10,
+          "textures":[
+            "big_win"
+          ]
+        }
+      }
+    },
+    {
+      "id":"mega_win_anim",
+      "type":"atlas",
+      "path": "../common/assets/animation/mega_win.json",
+      "movieclips":{
+        "mega_win_anim":{
+          "speed":0.10,
+          "textures":[
+            "mega_win"
+          ]
+        }
+      }
+    },
+    {
+      "id":"super_win_anim",
+      "type":"atlas",
+      "path": "../common/assets/animation/super_win.json",
+      "movieclips":{
+        "super_win_anim":{
+          "speed":0.10,
+          "textures":[
+            "super_win"
+          ]
+        }
+      }
+    },
+    {
+      "id": "coins",
+      "type": "atlas",
+      "path": "../common/assets/animation/coin.json",
+      "movieclips": {
+        "COIN": {
+          "speed": 0.25,
+          "textures": [
+            "coin_rotation_00",
+            "coin_rotation_01",
+            "coin_rotation_02",
+            "coin_rotation_03",
+            "coin_rotation_04",
+            "coin_rotation_05",
+            "coin_rotation_06",
+            "coin_rotation_07",
+            "coin_rotation_08"
+          ]
+        }
+      }
+    },
+    {
+      "id": "crystal",
+      "type": "atlas",
+      "path": "../common/assets/animation/gems.json",
+      "movieclips": {
+        "gems": {
+          "speed": 0.25,
+          "textures": [
+            "gem_0",
+            "gem_1",
+            "gem_2",
+            "gem_3",
+            "gem_4",
+            "gem_5",
+            "gem_6",
+            "gem_7",
+            "gem_8",
+            "gem_9",
+            "gem_10",
+            "gem_11"
+          ]
+        }
+      }
+    },
+    {
+      "id": "STAR",
+      "type": "atlas",
+      "path": "../common/assets/animation/star_rotation.json",
+      "movieclips": {
+        "STAR": {
+          "speed": 0.25,
+          "textures": [
+            "star_rotation_00",
+            "star_rotation_02",
+            "star_rotation_04",
+            "star_rotation_06",
+            "star_rotation_08",
+            "star_rotation_10",
+            "star_rotation_12",
+            "star_rotation_14",
+            "star_rotation_16",
+            "star_rotation_18"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "src": "res\\audio\\dt\\sfx_sprite.ogg",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "AAsfx_sprite",
+        "startTime": 0,
+        "duration": 47020.40816326531
+      },
+      {
+        "id": "Common_PopUp",
+        "startTime": 48000,
+        "duration": 2736.0997732426285
+      },
+      {
+        "id": "Freespin_Intro_Outro",
+        "startTime": 51000,
+        "duration": 2401.428571428568
+      },
+      {
+        "id": "Freespin_Respin_Trigger",
+        "startTime": 54000,
+        "duration": 2500
+      }
+    ]
+  }
+}

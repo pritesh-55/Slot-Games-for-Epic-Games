@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-touch-fullscreen" content="yes">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+
+        <link rel="stylesheet" href="../common/assets/ui_3/html/global.css">
+        <link rel="stylesheet" href="../common/assets/ui_3/html/vex/vex.css"/>
+        <link rel="stylesheet" href="../common/assets/ui_3/html/vex/vex-theme-plain.css">
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
+
+    </head>
+
+    <body onload="new DO.App().init();">
+
+        <div id="remove_after_load">
+            <div class="start_spinner" ></div>
+        </div>
+
+        <script src="../common/js/jquery-1.11.3.min.js"></script>
+        <script src="../common/js/pixi.min.js"></script>
+        <script src="../common/js/pixi-spine.js"></script>
+        <script src="../common/js/howler.min.js"></script>
+        <script src="../common/js/TweenLite.min.js"></script>
+        <script src="../common/js/EasePack.min.js"></script>
+        <script src="../common/js/TimelineLite.min.js"></script>
+        <script src="../common/js/TweenMax.min.js"></script>
+        <script src="../common/js/screenfull.js"></script>
+        <script src="../common/js/webfont.min.js"></script>
+        <script src="../common/js/platform.js"></script>
+        <script src="../common/js/vex.js"></script>
+        <script src="../common/js/vex.dialog.js"></script>
+        <script src="../common/js/require.js"></script>
+        <script src="../common/js/iscoop-2.0.0.js"></script>
+
+        <script src="src/App.js"></script>
+        <script src="src/config.js"></script>
+        <script src="src/game_scenes/GameBaseScene.js"></script>
+        <script src="src/game_scenes/GameFreeSpinsScene.js"></script>
+        <script src="src/server/VortexConnection.js"></script>
+    </body>
+</html>
