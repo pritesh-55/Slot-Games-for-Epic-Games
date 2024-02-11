@@ -1,0 +1,21 @@
+{"frames": {
+
+"bg_front_add_mode":
+{
+	"frame": {"x":0,"y":0,"w":1920,"h":971},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1920,"h":971},
+	"sourceSize": {"w":1920,"h":971},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "bg_front_add_mode.png",
+	"format": "RGBA8888",
+	"size": {"w":1920,"h":971},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:7b4628b5d26026af7160dd6ecabf2832:acdbb1e1d19dd6ab3944a302131677c9:dcd50a007a94e01583c57b082d5d5e33$"
+}
+}

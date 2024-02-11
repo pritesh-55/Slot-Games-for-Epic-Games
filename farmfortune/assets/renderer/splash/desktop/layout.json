@@ -1,0 +1,243 @@
+{
+  "name": "Splash Layout",
+  "params": {
+    "pages": 3
+  },
+  "components": [
+    {
+      "id": "splash_bg",
+      "construct": "DO.Core.Renderer.UI.Image(assets, 'BG')",
+      "position": {
+        "x": "50%",
+        "y": "50%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "pivot": "CENTRE"
+    },
+    {
+      "id": "splash_bg_frame",
+      "construct": "DO.Core.Renderer.UI.Image(assets, 'splash_bg_frame')",
+      "position": {
+        "x": "64%",
+        "y": "47%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "pivot": "CENTRE",
+      "visible": false
+    },
+
+    {
+      "id": "screen_btn_1",
+      "construct": "DO.Core.Renderer.UI.Toggle(assets, 'pagination_select', 'pagination_unselect', true)",
+      "position": {
+        "x": "60%",
+        "y": "65%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "pivot": "CENTRE",
+      "visible": false
+    },
+    {
+      "id":"splash_screen_1",
+      "position":{
+        "x":"0%",
+        "y":"0%"
+      },
+      "visible":true,
+      "scale":{
+        "x":1,
+        "y":1
+      },
+      "pivot":"TOP_LEFT",
+      "components":[
+        {
+          "id": "Splash_base_1",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'Splash_base')",
+          "position": {
+            "x": "61%",
+            "y": "40%"
+          },
+          "pivot": "CENTRE",
+          "scale": {
+            "x": 0.6,
+            "y": 0.6
+          },
+          "visible": true
+        },
+        {
+          "id": "screen_bg_1",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'Screen1')",
+          "position": {
+            "x": "65.3%",
+            "y": "37%"
+          },
+          "pivot": "CENTRE",
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "visible": true
+        },
+        {
+          "id": "screen_text_1",
+          "construct": "DO.Core.Renderer.UI.StandardText('splash_screen_text_1', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 27, wordWrapWidth: 420 , wordWrap: true, stroke: '0x000000',strokeThickness : 5 ,dropShadow : true, dropShadowBlur : 10, fill : ['#F5E001','#F5E001'], align : 'center' })",
+          "position": {
+            "x": "75.2%",
+            "y": "64%"
+          },
+          "pivot": "CENTRE",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "screen_btn_2",
+      "construct": "DO.Core.Renderer.UI.Toggle(assets, 'pagination_select', 'pagination_unselect', false)",
+      "position": {
+        "x": "64%",
+        "y": "65%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "pivot": "CENTRE",
+      "visible": false
+    },
+    {
+      "id":"splash_screen_3",
+      "position":{
+        "x":"0%",
+        "y":"0%"
+      },
+      "visible":true,
+      "scale":{
+        "x":1,
+        "y":1
+      },
+      "pivot":"TOP_LEFT",
+      "components":[
+        {
+          "id": "Splash_base_3",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'Splash_base')",
+          "position": {
+            "x": "30.1%",
+            "y": "40%"
+          },
+          "pivot": "CENTRE",
+          "scale": {
+            "x": 0.6,
+            "y": 0.6
+          },
+          "visible": true
+        },
+        {
+          "id": "screen_bg_3",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'Screen3')",
+          "position": {
+            "x": "34.4%",
+            "y": "37%"
+          },
+          "pivot": "CENTRE",
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "visible": true
+        },
+        {
+          "id": "screen_text_3",
+          "construct": "DO.Core.Renderer.UI.StandardText('splash_screen_text_3', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 27, wordWrapWidth: 420 , wordWrap: true, stroke: '0x000000',strokeThickness : 5 ,dropShadow : true, dropShadowBlur : 10, fill : ['#F5E001','#F5E001'], align : 'center' })",
+          "position": {
+            "x": "45.3%",
+            "y": "64%"
+          },
+          "pivot": "CENTRE",
+          "visible": true
+        }
+      ]
+    },
+
+    {
+      "id": "game_logo",
+      "construct": "DO.Core.Renderer.UI.Image(assets, 'game_logo')",
+      "position": {
+        "x": "50%",
+        "y": "12%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "pivot": "CENTRE",
+      "visible": true
+    },
+    {
+      "id": "screen_btn_3",
+      "construct": "DO.Core.Renderer.UI.Toggle(assets, 'pagination_select', 'pagination_unselect', false)",
+      "position": {
+        "x": "68%",
+        "y": "65%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "pivot": "CENTRE",
+      "visible": false
+    },
+    {
+      "id": "splash_button_continue",
+      "construct": "DO.Core.Renderer.UI.SpriteButton(assets, 'continue_btn:continue_normal','continue_btn:continue_over','continue_btn:continue_down', '@start_game_caps', 1, {fontFamily : 'Roboto-Bold', fontSize: 48 ,  fill : 0xffffff, align : 'center', stroke: '0x185216',strokeThickness : 3 ,dropShadow : true, dropShadowBlur : 10, fill : ['#ffffff','#ffffff']})",
+      "position": {
+        "x": "50%",
+        "y": "86%"
+      },
+      "fx": {
+        "create": "DO.Core.Renderer.UI.FX.popOut(800)"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "pivot": "CENTRE"
+    },
+    {
+      "id": "splash_show_again",
+      "construct": "DO.Core.Renderer.UI.Toggle(assets, 'on_off:on', 'on_off:off', false)",
+      "position": {
+        "x": "79.8%",
+        "y": "94.4%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "pivot": "CENTRE",
+      "visible": false
+    },
+    {
+      "id": "splash_show_again_label",
+      "construct": "DO.Core.Renderer.UI.StandardText('@dont_show_next_time', {fontFamily : 'Arial-Rounded-MT-Bold ',fontStyle : 'bold', fontSize: 25, fill : '#ffffff' , align : 'center',stroke: '#0033ff',strokeThickness : 3 , dropShadow : true, dropShadowBlur : 10, dropShadowDistance: 2})",
+      "position": {
+        "x": "90%",
+        "y": "96%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "pivot": "LEFT",
+      "visible": false
+    }
+  ]
+}

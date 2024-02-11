@@ -1,0 +1,21 @@
+{"frames": {
+
+"bg_sky":
+{
+	"frame": {"x":0,"y":0,"w":1920,"h":1080},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1920,"h":1080},
+	"sourceSize": {"w":1920,"h":1080},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "bg_sky.jpg",
+	"format": "RGB888",
+	"size": {"w":1920,"h":1080},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:78fa354162e18d5bfb3b3f7264d53521:5f5ff03d8af0d137133d1f845a06f303:1ee8570c3d2b459ac89374fb8a0a962c$"
+}
+}

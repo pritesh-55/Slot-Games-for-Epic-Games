@@ -1,0 +1,21 @@
+{"frames": {
+
+"stars_normal":
+{
+	"frame": {"x":0,"y":0,"w":1859,"h":468},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1859,"h":468},
+	"sourceSize": {"w":1859,"h":468},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "stars_normal.png",
+	"format": "RGBA8888",
+	"size": {"w":1859,"h":468},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:eec421df5cd4c1fca3abadbf28714b1a:33a0e45ca36456792e776fa40e808039:821db4acf0f7b67bd9428e7ab4c3c212$"
+}
+}

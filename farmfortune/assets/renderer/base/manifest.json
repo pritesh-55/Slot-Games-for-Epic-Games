@@ -1,0 +1,1334 @@
+{
+  "name": "Base Game Manifest",
+  "items": [
+    {
+      "id": "layout_base",
+      "type": "json",
+      "path": {
+        "desktop": "./assets/renderer/base/desktop/layout.json",
+        "mobile": "./assets/renderer/base/mobile/layout.json"
+      }
+    },
+    {
+      "id": "layout_free_spins_intro",
+      "type": "json",
+      "path": {
+        "desktop": "./assets/renderer/base/desktop/layout_free_spins_intro.json",
+        "mobile": "./assets/renderer/base/mobile/layout_free_spins_intro.json"
+      }
+    },
+    {
+      "id": "layout_feature_transition",
+      "type": "json",
+      "path": {
+        "desktop": "./assets/renderer/base/desktop/layout_feature_transition.json"
+      }
+    },
+    {
+      "id": "bg_normal",
+      "type": "image",
+      "path": "./assets/renderer/base/desktop/animation/bg_normal.jpg"
+    },
+    {
+      "id":"bg_front_normal",
+      "type":"atlas",
+      "path":"./assets/renderer/base/desktop/animation/bg_front_normal.json",
+      "movieclips" :{
+        "bg_front_normal": {
+          "pre_cache":15,
+          "speed":0.1,
+          "textures":[
+            "bg_front_normal"
+          ]
+        }
+      }
+    },
+    {
+      "id":"bg_front_add_mode",
+      "type":"atlas",
+      "path":"./assets/renderer/base/desktop/animation/bg_front_add_mode.json",
+      "movieclips" :{
+        "bg_front_add_mode": {
+          "pre_cache":15,
+          "speed":0.1,
+          "textures":[
+            "bg_front_add_mode"
+          ]
+        }
+      }
+    },
+    {
+      "id":"bg_sky",
+      "type":"atlas",
+      "path":"./assets/renderer/base/desktop/animation/bg_sky.json",
+      "movieclips" :{
+        "bg_sky": {
+          "pre_cache":15,
+          "speed":0.1,
+          "textures":[
+            "bg_sky"
+          ]
+        }
+      }
+    },
+    {
+      "id":"clouds",
+      "type":"atlas",
+      "path":"./assets/renderer/base/desktop/animation/clouds.json",
+      "movieclips" :{
+        "clouds": {
+          "pre_cache":15,
+          "speed":0.1,
+          "textures":[
+            "clouds"
+          ]
+        }
+      }
+    },
+    {
+      "id": "rotor_blade",
+      "type": "image",
+      "path": "./assets/renderer/base/desktop/static/rotor_blade.png"
+    },
+    {
+      "id": "rotor_blade_dot",
+      "type": "image",
+      "path": "./assets/renderer/base/desktop/static/rotor_blade_dot.png"
+    },
+    {
+      "id":"flying_birds",
+      "type":"atlas",
+      "path":"./assets/renderer/base/desktop/animation/flying_birds.json",
+      "movieclips" :{
+        "flying_birds": {
+          "pre_cache":2,
+          "speed":0.1,
+          "textures":[
+            "flying_birds_00",
+            "flying_birds_01",
+            "flying_birds_02",
+            "flying_birds_03",
+            "flying_birds_04",
+            "flying_birds_05",
+            "flying_birds_06",
+            "flying_birds_07",
+            "flying_birds_08"
+          ]
+        }
+      }
+    },
+    {
+      "id": "reel_frame",
+      "type": "image",
+      "path": "./assets/renderer/base/desktop/static/reel_frame.png"
+    },
+    {
+      "id": "game_panel_bg",
+      "type": "image",
+      "path": "../common/assets/ui_2/generic/ui_panel/game_panel_bg.png"
+    },
+    {
+      "id": "base_portrait_bg",
+      "type": "image",
+      "path": {
+        "desktop": null,
+        "mobile": "./assets/renderer/base/mobile/static/base_game_portrait.jpg"
+      }
+    },
+    {
+      "id": "logo_anim",
+      "type": "image",
+      "path": "./assets/renderer/base/desktop/animation/game_mode_type/logo_anim.png"
+    },
+    {
+      "id": "win_frame",
+      "type": "atlas",
+      "path": "../common/assets/animation/win_frame.json",
+      "movieclips": {
+        "WIN:SYMBOL:FRAME": {
+          "speed": 1,
+          "textures": [
+            "win_frame_00",
+            "win_frame_01",
+            "win_frame_02",
+            "win_frame_03",
+            "win_frame_04",
+            "win_frame_05",
+            "win_frame_06",
+            "win_frame_07"
+          ]
+        }
+      }
+    },
+    {
+      "id": "anticipation_frame",
+      "type": "atlas",
+      "path": "../common/assets/animation/anticipation.json",
+      "movieclips": {
+        "TEASE_FRAME:FRAME_ANIM": {
+          "pre_cache": 1,
+          "speed": 0.15,
+          "textures": [
+            "anticipation_00",
+            "anticipation_01",
+            "anticipation_02",
+            "anticipation_03",
+            "anticipation_04",
+            "anticipation_05",
+            "anticipation_06",
+            "anticipation_07"
+          ]
+        }
+      }
+    },
+    {
+      "id": "STATIC_SYMBOLS",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/symbols.json",
+      "movieclips": {
+        "SYMBOL:Anim": {
+          "speed": 0.1,
+          "textures": [
+            "AA",
+            "BB",
+            "CC",
+            "DD",
+            "EE",
+            "FF",
+            "GG",
+            "HH",
+            "II",
+            "JJ",
+            "SC",
+            "WW"
+          ]
+        }
+      }
+    },
+    {
+      "id": "MESSAGE_SYMBOLS",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/player-symbol.json",
+      "movieclips": {
+        "SYMBOL:Anim": {
+          "speed": 0.1,
+          "textures": [
+            "AA",
+            "BB",
+            "CC",
+            "DD",
+            "EE",
+            "FF",
+            "GG",
+            "HH",
+            "II",
+            "JJ",
+            "SC",
+            "WW"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:AA",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/hv_1.json",
+      "movieclips": {
+        "SYMBOL:AA:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "hv_1_00",
+            "hv_1_01",
+            "hv_1_02",
+            "hv_1_03",
+            "hv_1_04",
+            "hv_1_05",
+            "hv_1_06",
+            "hv_1_07",
+            "hv_1_08",
+            "hv_1_09",
+            "hv_1_10",
+            "hv_1_11",
+            "hv_1_12",
+            "hv_1_13",
+            "hv_1_14",
+            "hv_1_15",
+            "hv_1_16",
+            "hv_1_17",
+            "hv_1_18",
+            "hv_1_19",
+            "hv_1_20",
+            "hv_1_21",
+            "hv_1_22",
+            "hv_1_23",
+            "hv_1_24",
+            "hv_1_25",
+            "hv_1_26",
+            "hv_1_27",
+            "hv_1_28",
+            "hv_1_29",
+            "hv_1_30",
+            "hv_1_31",
+            "hv_1_32",
+            "hv_1_33",
+            "hv_1_34",
+            "hv_1_35",
+            "hv_1_36",
+            "hv_1_37",
+            "hv_1_38",
+            "hv_1_39",
+            "hv_1_40",
+            "hv_1_41",
+            "hv_1_42",
+            "hv_1_43",
+            "hv_1_44",
+            "hv_1_45",
+            "hv_1_46",
+            "hv_1_47",
+            "hv_1_48",
+            "hv_1_49",
+            "hv_1_50",
+            "hv_1_51",
+            "hv_1_52",
+            "hv_1_53",
+            "hv_1_54",
+            "hv_1_55",
+            "hv_1_56",
+            "hv_1_57",
+            "hv_1_58",
+            "hv_1_59"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:BB",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/hv_2.json",
+      "movieclips": {
+        "SYMBOL:BB:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "hv_2_00",
+            "hv_2_01",
+            "hv_2_02",
+            "hv_2_03",
+            "hv_2_04",
+            "hv_2_05",
+            "hv_2_06",
+            "hv_2_07",
+            "hv_2_08",
+            "hv_2_09",
+            "hv_2_10",
+            "hv_2_11",
+            "hv_2_12",
+            "hv_2_13",
+            "hv_2_14",
+            "hv_2_15",
+            "hv_2_16",
+            "hv_2_17",
+            "hv_2_18",
+            "hv_2_19",
+            "hv_2_20",
+            "hv_2_21",
+            "hv_2_22",
+            "hv_2_23",
+            "hv_2_24",
+            "hv_2_25",
+            "hv_2_26",
+            "hv_2_27",
+            "hv_2_28",
+            "hv_2_29",
+            "hv_2_30",
+            "hv_2_31",
+            "hv_2_32",
+            "hv_2_33",
+            "hv_2_34",
+            "hv_2_35",
+            "hv_2_36",
+            "hv_2_37",
+            "hv_2_38",
+            "hv_2_39",
+            "hv_2_40",
+            "hv_2_41",
+            "hv_2_42",
+            "hv_2_43",
+            "hv_2_44",
+            "hv_2_45",
+            "hv_2_46",
+            "hv_2_47",
+            "hv_2_48",
+            "hv_2_49",
+            "hv_2_50",
+            "hv_2_51",
+            "hv_2_52",
+            "hv_2_53",
+            "hv_2_54",
+            "hv_2_55",
+            "hv_2_56",
+            "hv_2_57",
+            "hv_2_58",
+            "hv_2_59"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:CC",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/mv_1.json",
+      "movieclips": {
+        "SYMBOL:CC:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "mv_1_00",
+            "mv_1_01",
+            "mv_1_02",
+            "mv_1_03",
+            "mv_1_04",
+            "mv_1_05",
+            "mv_1_06",
+            "mv_1_07",
+            "mv_1_08",
+            "mv_1_09",
+            "mv_1_10",
+            "mv_1_11",
+            "mv_1_12",
+            "mv_1_13",
+            "mv_1_14",
+            "mv_1_15",
+            "mv_1_16",
+            "mv_1_17",
+            "mv_1_18",
+            "mv_1_19",
+            "mv_1_20",
+            "mv_1_21",
+            "mv_1_22",
+            "mv_1_23",
+            "mv_1_24",
+            "mv_1_25",
+            "mv_1_26",
+            "mv_1_27",
+            "mv_1_28",
+            "mv_1_29",
+            "mv_1_30",
+            "mv_1_31",
+            "mv_1_32",
+            "mv_1_33",
+            "mv_1_34",
+            "mv_1_35",
+            "mv_1_36",
+            "mv_1_37",
+            "mv_1_38",
+            "mv_1_39",
+            "mv_1_40",
+            "mv_1_41",
+            "mv_1_42",
+            "mv_1_43",
+            "mv_1_44",
+            "mv_1_45",
+            "mv_1_46",
+            "mv_1_47",
+            "mv_1_48",
+            "mv_1_49",
+            "mv_1_50",
+            "mv_1_51",
+            "mv_1_52",
+            "mv_1_53",
+            "mv_1_54",
+            "mv_1_55",
+            "mv_1_56",
+            "mv_1_57",
+            "mv_1_58",
+            "mv_1_59"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:DD",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/mv_2.json",
+      "movieclips": {
+        "SYMBOL:DD:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "mv_2_00",
+            "mv_2_01",
+            "mv_2_02",
+            "mv_2_03",
+            "mv_2_04",
+            "mv_2_05",
+            "mv_2_06",
+            "mv_2_07",
+            "mv_2_08",
+            "mv_2_09",
+            "mv_2_10",
+            "mv_2_11",
+            "mv_2_12",
+            "mv_2_13",
+            "mv_2_14",
+            "mv_2_15",
+            "mv_2_16",
+            "mv_2_17",
+            "mv_2_18",
+            "mv_2_19",
+            "mv_2_20",
+            "mv_2_21",
+            "mv_2_22",
+            "mv_2_23",
+            "mv_2_24",
+            "mv_2_25",
+            "mv_2_26",
+            "mv_2_27",
+            "mv_2_28",
+            "mv_2_29",
+            "mv_2_30",
+            "mv_2_31",
+            "mv_2_32",
+            "mv_2_33",
+            "mv_2_34",
+            "mv_2_35",
+            "mv_2_36",
+            "mv_2_37",
+            "mv_2_38",
+            "mv_2_39",
+            "mv_2_40",
+            "mv_2_41",
+            "mv_2_42",
+            "mv_2_43",
+            "mv_2_44",
+            "mv_2_45",
+            "mv_2_46",
+            "mv_2_47",
+            "mv_2_48",
+            "mv_2_49",
+            "mv_2_50",
+            "mv_2_51",
+            "mv_2_52",
+            "mv_2_53",
+            "mv_2_54",
+            "mv_2_55",
+            "mv_2_56",
+            "mv_2_57",
+            "mv_2_58",
+            "mv_2_59"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:EE",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/mv_3.json",
+      "movieclips": {
+        "SYMBOL:EE:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "mv_3_00",
+            "mv_3_01",
+            "mv_3_02",
+            "mv_3_03",
+            "mv_3_04",
+            "mv_3_05",
+            "mv_3_06",
+            "mv_3_07",
+            "mv_3_08",
+            "mv_3_09",
+            "mv_3_10",
+            "mv_3_11",
+            "mv_3_12",
+            "mv_3_13",
+            "mv_3_14",
+            "mv_3_15",
+            "mv_3_16",
+            "mv_3_17",
+            "mv_3_18",
+            "mv_3_19",
+            "mv_3_20",
+            "mv_3_21",
+            "mv_3_22",
+            "mv_3_23",
+            "mv_3_24",
+            "mv_3_25",
+            "mv_3_26",
+            "mv_3_27",
+            "mv_3_28",
+            "mv_3_29",
+            "mv_3_30",
+            "mv_3_31",
+            "mv_3_32",
+            "mv_3_33",
+            "mv_3_34",
+            "mv_3_35",
+            "mv_3_36",
+            "mv_3_37",
+            "mv_3_38",
+            "mv_3_39",
+            "mv_3_40",
+            "mv_3_41",
+            "mv_3_42",
+            "mv_3_43",
+            "mv_3_44",
+            "mv_3_45",
+            "mv_3_46",
+            "mv_3_47",
+            "mv_3_48",
+            "mv_3_49",
+            "mv_3_50",
+            "mv_3_51",
+            "mv_3_52",
+            "mv_3_53",
+            "mv_3_54",
+            "mv_3_55",
+            "mv_3_56",
+            "mv_3_57",
+            "mv_3_58",
+            "mv_3_59"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:FF",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/a.json",
+      "movieclips": {
+        "SYMBOL:FF:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "a_00",
+            "a_01",
+            "a_02",
+            "a_03",
+            "a_04",
+            "a_05",
+            "a_06",
+            "a_07",
+            "a_08",
+            "a_09",
+            "a_10",
+            "a_11",
+            "a_12",
+            "a_13",
+            "a_14",
+            "a_15",
+            "a_16",
+            "a_17",
+            "a_18",
+            "a_19",
+            "a_20",
+            "a_21",
+            "a_22",
+            "a_23",
+            "a_24",
+            "a_25",
+            "a_26",
+            "a_27",
+            "a_28",
+            "a_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:GG",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/k.json",
+      "movieclips": {
+        "SYMBOL:GG:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "k_00",
+            "k_01",
+            "k_02",
+            "k_03",
+            "k_04",
+            "k_05",
+            "k_06",
+            "k_07",
+            "k_08",
+            "k_09",
+            "k_10",
+            "k_11",
+            "k_12",
+            "k_13",
+            "k_14",
+            "k_15",
+            "k_16",
+            "k_17",
+            "k_18",
+            "k_19",
+            "k_20",
+            "k_21",
+            "k_22",
+            "k_23",
+            "k_24",
+            "k_25",
+            "k_26",
+            "k_27",
+            "k_28",
+            "k_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:HH",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/q.json",
+      "movieclips": {
+        "SYMBOL:HH:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "q_00",
+            "q_01",
+            "q_02",
+            "q_03",
+            "q_04",
+            "q_05",
+            "q_06",
+            "q_07",
+            "q_08",
+            "q_09",
+            "q_10",
+            "q_11",
+            "q_12",
+            "q_13",
+            "q_14",
+            "q_15",
+            "q_16",
+            "q_17",
+            "q_18",
+            "q_19",
+            "q_20",
+            "q_21",
+            "q_22",
+            "q_23",
+            "q_24",
+            "q_25",
+            "q_26",
+            "q_27",
+            "q_28",
+            "q_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:II",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/j.json",
+      "movieclips": {
+        "SYMBOL:II:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "j_00",
+            "j_01",
+            "j_02",
+            "j_03",
+            "j_04",
+            "j_05",
+            "j_06",
+            "j_07",
+            "j_08",
+            "j_09",
+            "j_10",
+            "j_11",
+            "j_12",
+            "j_13",
+            "j_14",
+            "j_15",
+            "j_16",
+            "j_17",
+            "j_18",
+            "j_19",
+            "j_20",
+            "j_21",
+            "j_22",
+            "j_23",
+            "j_24",
+            "j_25",
+            "j_26",
+            "j_27",
+            "j_28",
+            "j_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:JJ",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/10.json",
+      "movieclips": {
+        "SYMBOL:JJ:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "10_00",
+            "10_01",
+            "10_02",
+            "10_03",
+            "10_04",
+            "10_05",
+            "10_06",
+            "10_07",
+            "10_08",
+            "10_09",
+            "10_10",
+            "10_11",
+            "10_12",
+            "10_13",
+            "10_14",
+            "10_15",
+            "10_16",
+            "10_17",
+            "10_18",
+            "10_19",
+            "10_20",
+            "10_21",
+            "10_22",
+            "10_23",
+            "10_24",
+            "10_25",
+            "10_26",
+            "10_27",
+            "10_28",
+            "10_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:SC",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/scatter.json",
+      "movieclips": {
+        "SYMBOL:SC:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "scatter_00",
+            "scatter_01",
+            "scatter_02",
+            "scatter_03",
+            "scatter_04",
+            "scatter_05",
+            "scatter_06",
+            "scatter_07",
+            "scatter_08",
+            "scatter_09",
+            "scatter_10",
+            "scatter_11",
+            "scatter_12",
+            "scatter_13",
+            "scatter_14",
+            "scatter_15",
+            "scatter_16",
+            "scatter_17",
+            "scatter_18",
+            "scatter_19",
+            "scatter_20",
+            "scatter_21",
+            "scatter_22",
+            "scatter_23",
+            "scatter_24",
+            "scatter_25",
+            "scatter_26",
+            "scatter_27",
+            "scatter_28",
+            "scatter_29",
+            "scatter_30",
+            "scatter_31",
+            "scatter_32",
+            "scatter_33",
+            "scatter_34",
+            "scatter_35",
+            "scatter_36",
+            "scatter_37",
+            "scatter_38",
+            "scatter_39",
+            "scatter_40",
+            "scatter_41",
+            "scatter_42",
+            "scatter_43",
+            "scatter_44",
+            "scatter_45",
+            "scatter_46",
+            "scatter_47",
+            "scatter_48",
+            "scatter_49",
+            "scatter_50",
+            "scatter_51",
+            "scatter_52",
+            "scatter_53",
+            "scatter_54",
+            "scatter_55",
+            "scatter_56",
+            "scatter_57",
+            "scatter_58",
+            "scatter_59"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:WW",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/wild.json",
+      "movieclips": {
+        "SYMBOL:WW:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "wild_00",
+            "wild_01",
+            "wild_02",
+            "wild_03",
+            "wild_04",
+            "wild_05",
+            "wild_06",
+            "wild_07",
+            "wild_08",
+            "wild_09",
+            "wild_10",
+            "wild_11",
+            "wild_12",
+            "wild_13",
+            "wild_14",
+            "wild_15",
+            "wild_16",
+            "wild_17",
+            "wild_18",
+            "wild_19",
+            "wild_20",
+            "wild_21",
+            "wild_22",
+            "wild_23",
+            "wild_24",
+            "wild_25",
+            "wild_26",
+            "wild_27",
+            "wild_28",
+            "wild_29",
+            "wild_30",
+            "wild_31",
+            "wild_32",
+            "wild_33",
+            "wild_34",
+            "wild_35",
+            "wild_36",
+            "wild_37",
+            "wild_38",
+            "wild_39",
+            "wild_40",
+            "wild_41",
+            "wild_42",
+            "wild_43",
+            "wild_44",
+            "wild_45",
+            "wild_46",
+            "wild_47",
+            "wild_48",
+            "wild_49",
+            "wild_50",
+            "wild_51",
+            "wild_52",
+            "wild_53",
+            "wild_54",
+            "wild_55",
+            "wild_56",
+            "wild_57",
+            "wild_58",
+            "wild_59"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:SC_landing",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/scatter_landing.json",
+      "movieclips": {
+        "SYMBOL:SC_landing:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "scatter_landing_00",
+            "scatter_landing_01",
+            "scatter_landing_02",
+            "scatter_landing_03",
+            "scatter_landing_04",
+            "scatter_landing_05",
+            "scatter_landing_06",
+            "scatter_landing_07",
+            "scatter_landing_08",
+            "scatter_landing_09",
+            "scatter_landing_10",
+            "scatter_landing_11",
+            "scatter_landing_12",
+            "scatter_landing_13",
+            "scatter_landing_14",
+            "scatter_landing_15",
+            "scatter_landing_16",
+            "scatter_landing_17",
+            "scatter_landing_18",
+            "scatter_landing_19",
+            "scatter_landing_20",
+            "scatter_landing_21",
+            "scatter_landing_22",
+            "scatter_landing_23",
+            "scatter_landing_24",
+            "scatter_landing_25",
+            "scatter_landing_26",
+            "scatter_landing_27",
+            "scatter_landing_28",
+            "scatter_landing_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:WW_landing",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/wild_landing.json",
+      "movieclips": {
+        "SYMBOL:WW_landing:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "wild_landing_00",
+            "wild_landing_01",
+            "wild_landing_02",
+            "wild_landing_03",
+            "wild_landing_04",
+            "wild_landing_05",
+            "wild_landing_06",
+            "wild_landing_07",
+            "wild_landing_08",
+            "wild_landing_09",
+            "wild_landing_10",
+            "wild_landing_11",
+            "wild_landing_12",
+            "wild_landing_13",
+            "wild_landing_14",
+            "wild_landing_15",
+            "wild_landing_16",
+            "wild_landing_17",
+            "wild_landing_18",
+            "wild_landing_19",
+            "wild_landing_20",
+            "wild_landing_21",
+            "wild_landing_22",
+            "wild_landing_23",
+            "wild_landing_24",
+            "wild_landing_25",
+            "wild_landing_26",
+            "wild_landing_27",
+            "wild_landing_28",
+            "wild_landing_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "number_counter",
+      "type": "atlas",
+      "path": "./assets/renderer/common/number_counter.json",
+      "movieclips": null
+    },
+    {
+      "id": "all_meter",
+      "type": "image",
+      "path": "./assets/renderer/free_spins/mobile/static/all_meter.png"
+    },
+    {
+      "id": "multiplier_meter",
+      "type": "image",
+      "path": "./assets/renderer/free_spins/mobile/static/multiplier_meter.png"
+    },
+    {
+      "id":"continue_btn",
+      "type":"atlas",
+      "path":"../common/assets/ui_2/generic/static/continue_btn.json"
+    },
+    {
+      "id":"intro_panel",
+      "type":"image",
+      "path": "../common/assets/ui_2/generic/static/intro_panel.png"
+    },
+    {
+      "id": "ui_base",
+      "type": "image",
+      "path": "../common/assets/ui_2/generic/static/ui_base.png"
+    },
+    {
+      "id": "layout_jackpot",
+      "type": "json",
+      "path": {
+        "desktop": "./assets/renderer/base/desktop/layout_jackpot.json",
+        "mobile": "./assets/renderer/base/mobile/layout_jackpot.json"
+      }
+    },
+    {
+      "id": "JP_btn-0",
+      "type": "atlas",
+      "path": "../common/assets/jackpot/animation/JP_btn-0.json"
+    },
+    {
+      "id": "JP_Meter_image",
+      "type": "atlas",
+      "path": "../common/assets/jackpot/animation/JP_Meter.json"
+    },
+    {
+      "id": "main_wheel_idle",
+      "type": "image",
+      "path": "../common/assets/jackpot/static/main_wheel_idle.png"
+    },
+    {
+      "id": "main_wheel_spin",
+      "type": "image",
+      "path": "../common/assets/jackpot/static/main_wheel_spin.png"
+    },
+    {
+      "id": "wheel_back_idle",
+      "type": "image",
+      "path": "../common/assets/jackpot/static/wheel_back_idle.png"
+    },
+    {
+      "id": "wheel_back_spin",
+      "type": "image",
+      "path": "../common/assets/jackpot/static/wheel_back_spin.png"
+    },
+    {
+      "id": "JP_Meter",
+      "type": "image",
+      "path": "../common/assets/jackpot/static/JP_Meter.png"
+    },
+    {
+      "id": "spin_button",
+      "type": "atlas",
+      "path": "../common/assets/jackpot/animation/Spin_btn-0.json"
+    },
+    {
+      "id": "win_section",
+      "type": "atlas",
+      "path": "../common/assets/jackpot/animation/win_section.json",
+      "movieclips": {
+        "win_section": {
+          "speed": 0.1,
+          "textures": [
+            "win_section_00",
+            "win_section_01",
+            "win_section_02",
+            "win_section_03",
+            "win_section_04",
+            "win_section_05"
+          ]
+        }
+      }
+    },
+    {
+      "id": "win_starting_glow",
+      "type": "atlas",
+      "path": "../common/assets/jackpot/animation/win_starting_glow.json",
+      "movieclips": {
+        "win_starting_glow": {
+          "speed": 0.1,
+          "textures": [
+            "win_starting_glow_00",
+            "win_starting_glow_01",
+            "win_starting_glow_02",
+            "win_starting_glow_03",
+            "win_starting_glow_04",
+            "win_starting_glow_05",
+            "win_starting_glow_06",
+            "win_starting_glow_07",
+            "win_starting_glow_08",
+            "win_starting_glow_09",
+            "win_starting_glow_10",
+            "win_starting_glow_11",
+            "win_starting_glow_12",
+            "win_starting_glow_13"
+          ]
+        }
+      }
+    },
+    {
+      "id": "global_sounds",
+      "type": "sound",
+      "path":"./assets/audio/sfx_sprite",
+      "global": true,
+      "volume": 1,
+      "properties": {
+        "sprite": {
+          "TickUp_Sound": [
+            32000,
+            3240.000000000002
+          ],
+          "line_win": [
+            16000,
+            927.8911564625857
+          ],
+          "REEL_DROP": [
+            25000,
+            500
+          ],
+          "REEL_DROP1": [
+            25000,
+            500
+          ],
+          "REEL_DROP2": [
+            25000,
+            500
+          ],
+          "REEL_DROP3": [
+            25000,
+            500
+          ],
+          "REEL_DROP4": [
+            25000,
+            500
+          ],
+          "TEASE": [
+            0,
+            6363.628117913832
+          ],
+          "WIN_SUMMARY": [
+            0,
+            0
+          ],
+          "WW:Landing": [
+            36000,
+            1500
+          ],
+          "SC:Landing": [
+            28000,
+            1500
+          ],
+
+          "L1:WIN": [
+            26000,
+            1071.020408163264
+          ],
+          "SCATTER:WIN": [
+            39000,
+            1402.4036281179165
+          ],
+          "WILD:WIN": [
+            41000,
+            1750
+          ],
+          "INTRO": [
+            47000,
+            2401.428571428568
+          ],
+          "SUMMARY": [
+            47000,
+            2401.428571428568
+          ],
+          "RESPIN_TRIGGER": [
+            50000,
+            2500
+          ],
+          "Common_PopUp": [
+            44000,
+            2736.0997732426285
+          ],
+          "GENERIC_CLICK": [
+            15000,
+            39.07029478458135
+          ],
+          "ReeL_spin": [
+            17000,
+            7927.959183673469
+          ],
+          "plus_minus": [
+            15000,
+            39.07029478458135
+          ],
+          "SPIN_BUTTON": [
+            30000,
+            149.99999999999858
+          ],
+          "RESPIN_SPIN": [
+            0,
+            0
+          ],
+          "RESPIN_STOP": [
+            0,
+            0
+          ],
+          "Wild_Walking": [
+            59000,
+            1700.0000000000027
+          ],
+          "pickem_reveal": [
+            42000,
+            1531.4739229024922
+          ],
+          "Click_Toggle_Button": [
+            9000,
+            500
+          ],
+          "counting_up_FreeGame": [
+            10000,
+            1737.7551020408166
+          ],
+          "Error_Appearance": [
+            12000,
+            948.4807256235825
+          ],
+          "TickUp_End": [
+            31000,
+            521.7687074829946
+          ]
+        }
+      }
+    },
+    {
+      "id": "music_base",
+      "type": "sound",
+      "path": "./assets/audio/base_music",
+      "global": true,
+      "properties": {
+      }
+    },
+    {
+      "id": "music_freegame",
+      "type": "sound",
+      "path": "./assets/audio/fg_music",
+      "global": true,
+      "properties": {
+      }
+    },
+    {
+      "id": "music_base_outro",
+      "type": "sound",
+      "path": "./assets/audio/base_music",
+      "global": true,
+      "properties": {
+      }
+    },
+    {
+      "id": "music_big_win",
+      "type": "sound",
+      "path": "../common/assets/audio/big_win",
+      "global": true,
+      "properties": {
+      }
+    },
+    {
+      "id": "music_mega_win",
+      "type": "sound",
+      "path": "../common/assets/audio/mega_win",
+      "global": true,
+      "properties": {
+      }
+    },
+    {
+      "id": "music_super_win",
+      "type": "sound",
+      "path": "../common/assets/audio/super_win",
+      "global": true,
+      "properties": {
+      }
+    }
+  ]
+}

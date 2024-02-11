@@ -1,0 +1,17 @@
+{
+  "name": "Feature transition Layout",
+  "params": {
+  },
+  "components": [
+    {
+      "id": "bgDimmer",
+      "construct": "DO.Core.Renderer.UI.BackgroundDimmer(0,0.2)",
+      "position": {
+        "x": "50%",
+        "y": "50%"
+      },
+      "visible": true,
+      "pivot": "CENTRE"
+    }
+  ]
+}

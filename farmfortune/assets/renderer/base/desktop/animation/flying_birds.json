@@ -1,0 +1,93 @@
+{"frames": {
+
+"flying_birds_00":
+{
+	"frame": {"x":0,"y":0,"w":256,"h":105},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":256,"h":105},
+	"sourceSize": {"w":256,"h":105},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"flying_birds_01":
+{
+	"frame": {"x":0,"y":105,"w":256,"h":105},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":256,"h":105},
+	"sourceSize": {"w":256,"h":105},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"flying_birds_02":
+{
+	"frame": {"x":0,"y":210,"w":256,"h":105},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":256,"h":105},
+	"sourceSize": {"w":256,"h":105},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"flying_birds_03":
+{
+	"frame": {"x":256,"y":0,"w":256,"h":105},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":256,"h":105},
+	"sourceSize": {"w":256,"h":105},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"flying_birds_04":
+{
+	"frame": {"x":256,"y":105,"w":256,"h":105},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":256,"h":105},
+	"sourceSize": {"w":256,"h":105},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"flying_birds_05":
+{
+	"frame": {"x":256,"y":210,"w":256,"h":105},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":256,"h":105},
+	"sourceSize": {"w":256,"h":105},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"flying_birds_06":
+{
+	"frame": {"x":512,"y":0,"w":256,"h":105},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":256,"h":105},
+	"sourceSize": {"w":256,"h":105},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"flying_birds_07":
+{
+	"frame": {"x":512,"y":105,"w":256,"h":105},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":256,"h":105},
+	"sourceSize": {"w":256,"h":105},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"flying_birds_08":
+{
+	"frame": {"x":512,"y":210,"w":256,"h":105},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":256,"h":105},
+	"sourceSize": {"w":256,"h":105},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "flying_birds.png",
+	"format": "RGBA8888",
+	"size": {"w":768,"h":315},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:24cf84dd33c2ef3151324628822383ee:a662bb2f08c7b16b69936bc044b98f2d:dcae1d95f9df0d08ca1fbc993b951b6c$"
+}
+}

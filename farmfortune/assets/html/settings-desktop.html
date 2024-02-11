@@ -1,0 +1,439 @@
+<!-- settings divs -->
+
+<div id="settings_wrapper" xmlns:>
+    <div id="settings_header">
+        <span id="settings_page_title" class="page_title"></span>
+    </div>
+    <div id="settings_menu">
+        <div id="settings_icon_holder">
+            <div id="settings_general" class="icon text-center lang:settings_general_desk"></div>
+            <div id="settings_pays" class="icon text-center lang:settings_pays_caps"></div>
+            <div id="settings_rules" class="icon_new text-center lang:settings_rules_desk"></div>
+            <!--<div id="settings_history" class="icon text-center lang:settings_history_desk"></div>-->
+        </div>
+        <div id="button_exit_settings"></div>
+        <div id="pay_page_pager" class="pager">
+            <div class="pager-btn pager-left"></div>
+            <div class="pager-text" style="color: black;margin-top: 600px;display: none"></div>
+            <div class="pager-btn pager-right"></div>
+            <div style="margin-left: -3%;transform: rotate(270deg);margin-top: 339px;position: absolute;z-index: 2">
+                <div class="paginatonIndexOver1" id="index1" style="display: none;"></div>
+                <div class="paginatonIndex2" id="index2" style="display: none;"></div>
+                <div class="paginatonIndex3" id="index3" style="display: none;"></div>
+                <div class="paginatonIndex4" id="index4" style="display: none;"></div>
+                <div class="paginatonIndex5" id="index5" style="display: none;"></div>
+                <div class="paginatonIndex6" id="index6" style="display: none;"></div>
+                <div class="paginatonIndex7" id="index7" style="display: none;"></div>
+                <div class="paginatonIndex8" id="index8" style="display: none;"></div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div id="settings_pages">
+        <!-- general settings -->
+        <div id="settings_page_general" class="scrollable">
+            <div class="half-width">
+                <h4 class="settings_title lang:settings_audio"></h4>
+                <!-- volume slider -->
+                <div class="item_holder_tall" style="display: none;" id="volume">
+                    <span class="item_title_slider lang:settings_music_volume"></span>
+                    <div id="slider_volume"></div>
+                </div>
+                <!-- sound effects -->
+                <div class="item_holder_short">
+                    <span class="item_title lang:settings_fx_switch"></span>
+                    <div id="checkbox_soundeffects"></div>
+                </div>
+                <!-- music and ambience -->
+                <div class="item_holder_short">
+                    <span class="item_title lang:settings_music_ambience"></span>
+                    <div id="checkbox_music"></div>
+                </div>
+            </div>
+            <div class="half-width">
+                <h4 class="settings_title lang:settings_options"></h4>
+                <!-- session limit -->
+                <div class="item_holder_tall" id="session_time_limit">
+                    <span class="item_title_slider lang:reality_check"></span>
+                    <div id="slider_session_limit"></div>
+                </div>
+                <!-- quick spin -->
+                <div class="item_holder_short" id="quick_spin">
+                    <span class="item_title lang:settings_quick_spin"></span>
+                    <div id="checkbox_quickspin"></div>
+                </div>
+                <!-- quick spin -->
+        
+            </div>
+        </div>
+        <!-- rules -->
+        <div id="settings_page_rules" class="scrollable"></div>
+        <!-- pays -->
+        <div id="settings_page_pays" class="scrollable" style="width: 91%;margin: auto;">
+            <div id="page1" class="paytable_page">
+                <div class="lang:payouts" style="color:#ffea4c;font-size: 39px;font-family: 'Bahnschrift'; font-weight:bold ;text-align: center;width: 100%; margin-bottom: -39px;margin-left: 2%;"></div>
+                <div div class="paytable" style="width: 100%; height:300px">
+                    <div class="Payouts_Text" style="margin-top:8px"></div>
+                    <div style="width: 100%;position: relative;float: left;top: 0%;">
+                        <div>
+                            <div class=" lang:scatter" style="color:#bisque;font-size: 24px;padding-left: 7.5%;font-weight:bolder;"></div>
+                            <!--<div class="lang:total_bet1" style="position: absolute;float: right;margin-left: 30%;margin-top: 8%;font-size: 22px;color: #ffdb00">X3</div>
+                            <div class="lang:total_bet" style="position: absolute;float: right;margin-left: 34%;margin-top: 8%;font-size: 22px;"></div>-->
+                            <div class="symbol-B1" style=" height: 132px; position: relative; width: 126px;left: 2.5%; display:inline-block;padding: 19px;"></div>
+                            <!--new item added-->
+                            <div class="symbol_pays" style=" margin-left: 10%;margin-top: 4%;">
+                                <ul style="list-style-type: none;margin-left: -72%;margin-top: -110%">
+                                    <li>
+                                        <span class="oak">5</span>
+                                        <span id="symbol-pays_SCx5" class="oak_pays">x5</span>
+                                    </li>
+                                    <li>
+                                        <span class="oak">4</span>
+                                        <span id="symbol-pays_SCx4" class="oak_pays">x4</span>
+                                    </li>
+                                    <li>
+                                        <span class="oak">3</span>
+                                        <span id="symbol-pays_SCx3" class="oak_pays">x3</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span class="lang:scatter_defintion" style="position: absolute;margin-left: 2%;padding-top: 5%;"></span>
+                        </div>
+                        <div style="margin-top: 0%;">
+                            <div class=" lang:wild" style="color:#bisque;font-size: 24px;padding-left: 74px; padding-bottom: 0px;font-weight: bolder;"></div>
+                            <div style="width: 100%;height: 132px;">
+                                <div class="symbol_holder symbol-WW" style=" height: 117px; position: relative; width: 133px; display:inline-block;padding: 22px;float: left;margin-left: 2%;"></div>
+                            </div>
+                            <div class="lang:pays_wild" style="position: relative;float: right;margin-top: -10%;width: 51.1%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div id="page2" class="paytable_page" style="margin-top: 1.5%;width: 106%;">
+                <div class="lang:payouts" style="color:#ffea4c;font-size: 39px;font-family: 'Bahnschrift'; font-weight:bold ;text-align: center;width: 100%; margin-bottom: -16px;margin-left: 2%;"></div>
+                <div class="paytable" style="width: 100%;">
+                    <div class="Payouts_Text" style="margin-top:8px;"></div>
+                    <div style="margin-top:2%;">
+                        <div style="position:relative;float:left;width: 33%;left: 3%;margin-top: 2%;">
+                            <div class="symbol_holder symbol-H1"></div>
+                            <div class="symbol_pays" style="text-align: left">
+                                <ul style="list-style-type: none;padding-left: 13px;">
+                                    <li>
+                                        <span class="oak">5</span>
+                                        <span id="symbol-pays_AAx5" class="oak_pays">x5</span>
+                                    </li>
+                                    <li>
+                                        <span class="oak">4</span>
+                                        <span id="symbol-pays_AAx4" class="oak_pays">x4</span>
+                                    </li>
+                                    <li >
+                                        <span class="oak">3</span>
+                                        <span id="symbol-pays_AAx3" class="oak_pays">x3</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div style="position:relative;float:left;padding-left: 19px;width: 33%;left: 3%;margin-top: 2%;">
+                            <div class="symbol_holder symbol-H2"></div>
+                            <div class="symbol_pays" style="text-align: left">
+                                <ul style="list-style-type: none;padding-left: 13px;">
+                                    <li>
+                                        <span class="oak">5</span>
+                                        <span id="symbol-pays_BBx5" class="oak_pays">x5</span>
+                                    </li>
+                                    <li>
+                                        <span class="oak">4</span>
+                                        <span id="symbol-pays_BBx4" class="oak_pays">x4</span>
+                                    </li>
+                                    <li>
+                                        <span class="oak">3</span>
+                                        <span id="symbol-pays_BBx3" class="oak_pays">x3</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div style="position:relative;float:left;width: 33%;left: 70%;margin-top: -19%;">
+                            <div class="symbol_holder symbol-H3" style="padding-bottom: 58px;"></div>
+                            <div class="symbol_pays" style="text-align: left; padding-bottom: 14px;">
+                                <ul style="list-style-type: none;padding-left: 13px;">
+                                    <li>
+                                        <span class="oak">5</span>
+                                        <span id="symbol-pays_CCx5" class="oak_pays">x5</span>
+                                    </li>
+                                    <li>
+                                        <span class="oak">4</span>
+                                        <span id="symbol-pays_CCx4" class="oak_pays">x4</span>
+                                    </li>
+                                    <li>
+                                        <span class="oak">3</span>
+                                        <span id="symbol-pays_CCx3" class="oak_pays">x3</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div style="position:relative;float:left;width: 33%;left: -11%;margin-top: 2%;">
+                            <div class="symbol_holder symbol-M1" style="padding-bottom: 58px;"></div>
+                            <div class="symbol_pays" style="text-align: left; padding-bottom: 14px;">
+                                <ul style="list-style-type: none;padding-left: 13px;">
+                                    <li>
+                                        <span class="oak">5</span>
+                                        <span id="symbol-pays_DDx5" class="oak_pays">x5</span>
+                                    </li>
+                                    <li>
+                                        <span class="oak">4</span>
+                                        <span id="symbol-pays_DDx4" class="oak_pays">x4</span>
+                                    </li>
+                                    <li>
+                                        <span class="oak">3</span>
+                                        <span id="symbol-pays_DDx3" class="oak_pays">x3</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+						<div style="position:relative;float:left;width: 33%;left: -9%;margin-top: 2%;">
+                            <div class="symbol_holder symbol-M2" style="padding-bottom: 58px;"></div>
+                            <div class="symbol_pays" style="text-align: left; padding-bottom: 14px;">
+                                <ul style="list-style-type: none;padding-left: 13px;">
+                                    <li>
+                                        <span class="oak">5</span>
+                                        <span id="symbol-pays_EEx5" class="oak_pays">x5</span>
+                                    </li>
+                                    <li>
+                                        <span class="oak">4</span>
+                                        <span id="symbol-pays_EEx4" class="oak_pays">x4</span>
+                                    </li>
+                                    <li>
+                                        <span class="oak">3</span>
+                                        <span id="symbol-pays_EEx3" class="oak_pays">x3</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="page3" class="paytable_page" style="margin-top: 1.5%;width: 106%;">
+                <div class="lang:payouts" style="color:#ffea4c;font-size: 39px;font-family: 'Bahnschrift'; font-weight:bold ;text-align: center;width: 100%; margin-bottom: -16px;margin-left: 2%;"></div>
+                <div class="paytable" style="width: 100%;">
+                    <div class="Payouts_Text" style="margin-top:8px;"></div>
+                    <div style="margin-top:2%;">
+                        <div style="position:relative;float:left;width: 33%;left: 3%;margin-top: 2%;">
+                            <div class="symbol_holder symbol-M3"></div>
+                            <div class="symbol_pays" style="text-align: left">
+                                <ul style="list-style-type: none;padding-left: 13px;">
+                                    <li>
+                                        <span class="oak">5</span>
+                                        <span id="symbol-pays_FFx5" class="oak_pays">x5</span>
+                                    </li>
+                                    <li>
+                                        <span class="oak">4</span>
+                                        <span id="symbol-pays_FFx4" class="oak_pays">x4</span>
+                                    </li>
+                                    <li >
+                                        <span class="oak">3</span>
+                                        <span id="symbol-pays_FFx3" class="oak_pays">x3</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div style="position:relative;float:left;padding-left: 19px;width: 33%;left: 3%;margin-top: 2%;">
+                            <div class="symbol_holder symbol-L1"></div>
+                            <div class="symbol_pays" style="text-align: left">
+                                <ul style="list-style-type: none;padding-left: 13px;">
+                                    <li>
+                                        <span class="oak">5</span>
+                                        <span id="symbol-pays_GGx5" class="oak_pays">x5</span>
+                                    </li>
+                                    <li>
+                                        <span class="oak">4</span>
+                                        <span id="symbol-pays_GGx4" class="oak_pays">x4</span>
+                                    </li>
+                                    <li>
+                                        <span class="oak">3</span>
+                                        <span id="symbol-pays_GGx3" class="oak_pays">x3</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div style="position:relative;float:left;width: 33%;left: 70%;margin-top: -19%;">
+                            <div class="symbol_holder symbol-L2" style="padding-bottom: 58px;"></div>
+                            <div class="symbol_pays" style="text-align: left; padding-bottom: 14px;">
+                                <ul style="list-style-type: none;padding-left: 13px;">
+                                    <li>
+                                        <span class="oak">5</span>
+                                        <span id="symbol-pays_HHx5" class="oak_pays">x5</span>
+                                    </li>
+                                    <li>
+                                        <span class="oak">4</span>
+                                        <span id="symbol-pays_HHx4" class="oak_pays">x4</span>
+                                    </li>
+                                    <li>
+                                        <span class="oak">3</span>
+                                        <span id="symbol-pays_HHx3" class="oak_pays">x3</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div style="position:relative;float:left;width: 33%;left: -11%;margin-top: 2%;">
+                            <div class="symbol_holder symbol-L3" style="padding-bottom: 58px;"></div>
+                            <div class="symbol_pays" style="text-align: left; padding-bottom: 14px;">
+                                <ul style="list-style-type: none;padding-left: 13px;">
+                                    <li>
+                                        <span class="oak">5</span>
+                                        <span id="symbol-pays_IIx5" class="oak_pays">x5</span>
+                                    </li>
+                                    <li>
+                                        <span class="oak">4</span>
+                                        <span id="symbol-pays_IIx4" class="oak_pays">x4</span>
+                                    </li>
+                                    <li>
+                                        <span class="oak">3</span>
+                                        <span id="symbol-pays_IIx3" class="oak_pays">x3</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div style="position:relative;float:left;width: 33%;left: -9%;margin-top: 2%;">
+                            <div class="symbol_holder symbol-L4" style="padding-bottom: 58px;"></div>
+                            <div class="symbol_pays" style="text-align: left; padding-bottom: 14px;">
+                                <ul style="list-style-type: none;padding-left: 13px;">
+                                    <li>
+                                        <span class="oak">5</span>
+                                        <span id="symbol-pays_JJx5" class="oak_pays">x5</span>
+                                    </li>
+                                    <li>
+                                        <span class="oak">4</span>
+                                        <span id="symbol-pays_JJx4" class="oak_pays">x4</span>
+                                    </li>
+                                    <li>
+                                        <span class="oak">3</span>
+                                        <span id="symbol-pays_JJx3" class="oak_pays">x3</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="page4" class="paytable_page"style="margin-top: -1%">
+
+                <div class="paytable" style="width: 100%;height:508px;">
+
+                    <div>
+                        <div class="lang:free_game" style="color:#ffea4c;font-size: 39px;font-family: 'Bahnschrift'; font-weight:bold ;text-align: center;width: 100%; margin-bottom: -16px;margin-left: 2%;"></div>
+                        <div class="Paylines_Text" style="margin-bottom: 0px;"></div>
+                    </div>
+
+                    <div style="width: 100%;height:200px;margin-top: 20px">
+                        <div style="width:50%; position: relative;float: left">
+                            <div class="Free_game"></div>
+                        </div>
+
+                        <div style="width:50%; position: relative;float: right;top: -8%;">
+                            <span class="lang:Free_game_text" style="font-size: 17.2px;color: #ffffff">During reel spins there is a chance to convert all symbols Wild on reels 2-5.</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="page5" class="paytable_page"style="margin-top: -1%">
+                <div>
+                    <div style="height: 500px;width:100%;">
+                        <div style="margin-left: 5%">
+                            <div class="lang:payline" style="color:#ffea4c;font-size: 39px;font-family: 'Bahnschrift'; font-weight:bold ;text-align: center;width: 100%; margin-bottom: -16px;"></div>
+                            <div class="Paylines_Text" style="margin-bottom: 0px;"></div>
+                        </div>
+                        <div style="margin-top: -86px;">
+                            <div class="payline_2" style="margin:-7% 10.5% auto auto; width: 76%; position : relative; height: 349px;margin-top: 0%"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+<!--            <div id="page6" class="paytable_page"style="margin-top: -1%">-->
+<!--                <div>-->
+<!--                    <div style="height: 500px;width:100%;">-->
+<!--                        <div style="margin-left: 5%">-->
+<!--                            <div class="lang:paylines1" style="color:#ffea4c;font-size: 39px;font-family: 'Bahnschrift'; font-weight:bold ;text-align: center;width: 100%; margin-bottom: -16px;"></div>-->
+<!--                            <div class="Paylines_Text" style="margin-bottom: 0px;"></div>-->
+<!--                        </div>-->
+<!--                        <div style="margin-top: -86px;">-->
+<!--                            <div class="Payline_1" style="margin:-7% 10.5% auto auto; width: 76%; position : relative; height: 349px;margin-top: 0%"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                </div>-->
+<!--            </div>-->
+            <!--<div id="page6" class="paytable_page"style="margin-top: -1%">
+
+                <div class="paytable" style="width: 100%;height:508px;">
+
+                    <div>
+                        <div class="lang:" style="color:#9CA0A1;font-size: 39px;font-family: 'Bahnschrift'; font-weight:bold ;text-align: center;width: 100%; margin-bottom: -16px;margin-left: 2%;"></div>
+                        <div class="Paylines_Text" style="margin-bottom: 0px;"></div>
+                    </div>
+
+                    <div style="width: 100%;height:200px;margin-top: 20px">
+                        <div style="width:50%; position: relative;float: left">
+                            <div class=""></div>
+                        </div>
+
+                        <div style="width:50%; position: relative;float: right;top: -50%;">
+                            <span class="lang:" style="font-size: 12.2px;color: #ffffff">During reel spins there is a chance to convert all symbols Wild on reels 2-5.</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="page7" class="paytable_page"style="margin-top: -1%">
+                <div>
+                    <div style="height: 500px;width:100%;">
+                        <div style="margin-left: 5%">
+                            <div class="lang:paylines" style="color:#9CA0A1;font-size: 39px;font-family: 'Bahnschrift'; font-weight:bold ;text-align: center;width: 100%; margin-bottom: -16px;"></div>
+                            <div class="Paylines_Text" style="margin-bottom: 0px;"></div>
+                        </div>
+                        <div style="margin-top: -72px;">
+                            <div class="Payline_1" style="margin:-7% 19.5% auto auto; width: 56%; position : relative; height: 378px;margin-top: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+            <div id="page6" class="paytable_page" style="overflow-y: auto;margin-top: -1%;margin-left: 50%">
+
+
+                <div  class="paytable" style="width:100%;height:470px;">
+                <div class="lang:General_Rules" style="color:#ffea4c;font-size: 39px;font-family: 'Bahnschrift'; font-weight:bold ;text-align: center;width: 100%; margin-bottom: -16px"></div>
+                    <div class="Payouts_Text" style="margin-top:8px"></div>
+                    <div class="lang:general_rule" style="font-size: 18px;width: 100%"></div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- history -->
+        <div id="settings_page_history" class="scrollable">
+            <div id="history_table_wrapper">
+                <div id = "history_heading_container">
+                    <div id = "history">History</div>
+                </div>
+                <div id="historyData"></div>
+                <div id="history_info">
+
+                </div>
+                <div id="coinTableData"></div>
+                <div id="coinInfoPageContainer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- version -->
+
+</div>

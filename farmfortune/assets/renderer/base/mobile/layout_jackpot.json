@@ -1,0 +1,482 @@
+{
+  "name": "Jackpot Layout",
+  "params": {
+    "audio": {
+    },
+    "sectionTexts": ["@diamond_Text", "@gold_Text", "@silver_Text", "@bronze_Text"]
+  },
+  "components": [
+    {
+      "id": "bgDimmer",
+      "construct": "DO.Core.Renderer.UI.BackgroundDimmer(0,0.7)",
+      "position": {
+        "x": "50%",
+        "y": "50%"
+      },
+      "visible": true,
+      "pivot": "CENTRE"
+    },
+    {
+      "id": "jackpot_static_meter",
+      "position": {
+        "x": "40%",
+        "y": "41%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "pivot": "CENTRE",
+      "components": [
+        {
+          "id": "JP_Meter",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'JP_Meter')",
+          "position": {
+            "x": "17%",
+            "y": "50%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "JP_diamond_meters_Idle",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'JP_Meter_image:diamond_idle')",
+          "position": {
+            "x": "17%",
+            "y": "33.2%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "visible": true,
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "JP_diamond_meters_win",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'JP_Meter_image:diamond_win')",
+          "position": {
+            "x": "17%",
+            "y": "33.2%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "visible": false,
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "JP_diamond_meter_Text",
+          "construct": "DO.Core.Renderer.UI.StandardText('@diamond_Text', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 60, fill : ['#fe0102','#fe0102'], align : 'center', stroke:'#ffffff',strokeThickness : 4, lineJoin: 'round',dropShadow : true,dropShadowDistance: 8,dropShadowBlur:0,dropShadowAngle :8,dropShadowColor :'#7c0000', wordWrap: true , wordWrapWidth: 350  })",
+          "position": {
+            "x": "25%",
+            "y": "29.3%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "jack_diamond_meter_value",
+          "construct": "DO.Core.Renderer.UI.StandardText('15', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 55, fill : ['#BF0202','#BF0202'], align : 'center', stroke:'#FFFFFF',strokeThickness : 5, lineJoin: 'round',dropShadow : false,dropShadowDistance: 0,dropShadowBlur:0,dropShadowAngle :0,dropShadowColor :'#000000' })",
+          "position": {
+            "x": "16.5%",
+            "y": "35.5%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "JP_gold_meters_Idle",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'JP_Meter_image:gold_idle')",
+          "position": {
+            "x": "17%",
+            "y": "47.3%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "visible": true,
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "JP_gold_meters_win",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'JP_Meter_image:gold_win')",
+          "position": {
+            "x": "17%",
+            "y": "47%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "visible": false,
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "JP_gold_meter_Text",
+          "construct": "DO.Core.Renderer.UI.StandardText('@gold_Text', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 60, fill : ['#ADF501','#ADF501'], align : 'center', stroke:'#ffffff',strokeThickness : 4, lineJoin: 'round',dropShadow : true,dropShadowDistance: 8,dropShadowBlur:0,dropShadowAngle :8,dropShadowColor :'#065201', wordWrap: true , wordWrapWidth: 350  })",
+          "position": {
+            "x": "22%",
+            "y": "43.5%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "jack_gold_meter_value",
+          "construct": "DO.Core.Renderer.UI.StandardText('24', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 55, fill : ['#429803','#429803'], align : 'center', stroke:'#FFFFFF',strokeThickness : 5, lineJoin: 'round',dropShadow : false,dropShadowDistance: 0,dropShadowBlur:0,dropShadowAngle :0,dropShadowColor :'#000000' })",
+          "position": {
+            "x": "16.5%",
+            "y": "49.5%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "JP_silver_meters_Idle",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'JP_Meter_image:silver_idle')",
+          "position": {
+            "x": "17%",
+            "y": "61%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "visible": true,
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "JP_silver_meters_win",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'JP_Meter_image:silver_win')",
+          "position": {
+            "x": "17%",
+            "y": "61%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "visible": false,
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "JP_silver_meter_Text",
+          "construct": "DO.Core.Renderer.UI.StandardText('@silver_Text', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 60, fill : ['#00AFE1','#00AFE1'], align : 'center', stroke:'#ffffff',strokeThickness : 4, lineJoin: 'round',dropShadow : true,dropShadowDistance: 8,dropShadowBlur:0,dropShadowAngle :7.6,dropShadowColor :'#011E4B', wordWrap: true , wordWrapWidth: 350  })",
+          "position": {
+            "x": "23%",
+            "y": "57%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "jack_silver_meter_value",
+          "construct": "DO.Core.Renderer.UI.StandardText('32', {fontFamily: 'Arial-Rounded-MT-Bold', fontWeight: 'bolder', fontSize: 55, fill: ['#043899', '#043899'], align: 'center', stroke: '#FFFFFF', strokeThickness: 5, lineJoin: 'round', dropShadow: true, dropShadowDistance: 0, dropShadowBlur: 10, dropShadowAngle: 8, dropShadowColor: '#DB2324', wordWrap: true, wordWrapWidth: 350 })",
+          "position": {
+            "x": "16.5%",
+            "y": "63.5%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "JP_bronze_meters_Idle",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'JP_Meter_image:bronze_idle')",
+          "position": {
+            "x": "17%",
+            "y": "75%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "visible": true,
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "JP_bronze_meters_win",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'JP_Meter_image:bronze_win')",
+          "position": {
+            "x": "17%",
+            "y": "75%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "visible": false,
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "JP_bronze_meter_Text",
+          "construct": "DO.Core.Renderer.UI.StandardText('@bronze_Text', {fontFamily: 'Arial-Rounded-MT-Bold', fontWeight: 'bolder', fontSize: 60, fill: ['#DD00E7', '#DD00E7'], align: 'center', stroke: '#ffffff', strokeThickness: 4, lineJoin: 'round', dropShadow: true, dropShadowDistance: 8, dropShadowBlur: 0, dropShadowAngle: 7.6, dropShadowColor: '#470154', dropShadowAdditional: true, dropShadowAdditionalDistance: 8, dropShadowAdditionalBlur: 0, dropShadowAdditionalAngle: 7.6, dropShadowAdditionalColor: '#000000', wordWrap: true, wordWrapWidth: 350 })",
+          "position": {
+            "x": "24%",
+            "y": "71%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "jack_bronze_meter_value",
+          "construct": "DO.Core.Renderer.UI.StandardText('43', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 55, fill : ['#BA00D0','#BA00D0'], align : 'center', stroke:'#FFFFFF',strokeThickness : 5, lineJoin: 'round',dropShadow : false,dropShadowDistance: 0,dropShadowBlur:0,dropShadowAngle :0,dropShadowColor :'#000000' })",
+          "position": {
+            "x": "16.5%",
+            "y": "77%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "wheel_assets_normal",
+          "position": {
+            "x": "30%",
+            "y": "40%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "visible": true,
+          "pivot": "CENTRE",
+          "components": [
+            {
+              "id": "wheel_back_idle",
+              "construct": "DO.Core.Renderer.UI.Image(assets, 'wheel_back_idle')",
+              "position": {
+                "x": "50%",
+                "y": "50%"
+              },
+              "scale": {
+                "x": 1,
+                "y": 1
+              },
+              "visible": true
+            },
+            {
+              "id": "main_wheel_idle",
+              "construct": "DO.Core.Renderer.UI.Image(assets, 'main_wheel_idle')",
+              "position": {
+                "x": "50%",
+                "y": "50%"
+              },
+              "scale": {
+                "x": 1,
+                "y": 1
+              },
+              "visible": true
+            }
+          ]
+        },
+        {
+          "id": "wheel_assets_glow",
+          "position": {
+            "x": "30%",
+            "y": "40%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "visible": false,
+          "pivot": "CENTRE",
+          "components": [
+            {
+              "id": "wheel_back_spin",
+              "construct": "DO.Core.Renderer.UI.Image(assets, 'wheel_back_spin')",
+              "position": {
+                "x": "50%",
+                "y": "50%"
+              },
+              "scale": {
+                "x": 1,
+                "y": 1
+              },
+              "visible": true
+            },
+            {
+              "id": "main_wheel_spin",
+              "construct": "DO.Core.Renderer.UI.Image(assets, 'main_wheel_spin')",
+              "position": {
+                "x": "50%",
+                "y": "50%"
+              },
+              "scale": {
+                "x": 1,
+                "y": 1
+              },
+              "visible": true
+            }
+          ]
+        },
+        {
+          "id": "win_section",
+          "construct": "DO.Core.Renderer.UI.MovieClipWrapper(assets,'win_section',false,false)",
+          "position": {
+            "x": "57.2%",
+            "y": "47.2%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "visible": false
+        },
+        {
+          "id": "win_starting_glow",
+          "construct": "DO.Core.Renderer.UI.MovieClipWrapper(assets,'win_starting_glow',false,false)",
+          "position": {
+            "x": "57.2%",
+            "y": "35.2%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "visible": false
+        },
+        {
+          "id":"spin_button_anim",
+          "construct":"DO.Core.Renderer.UI.SpriteButton(assets, 'spin_button:Spin_btn_normal','spin_button:Spin_btn_hover', 'spin_button:Spin_btn_disabled','',1)",
+          "position":{
+            "x":"57%",
+            "y":"48%"
+          },
+          "scale":{
+            "x":1,
+            "y":1
+          },
+          "visible": true,
+          "pivot":"CENTRE"
+        },
+        {
+          "id": "spin_button_Text",
+          "construct": "DO.Core.Renderer.UI.StandardText('@wheel_spin', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 35, fill : ['#002173','#002173'], align : 'center', stroke:'#550000',strokeThickness : 0, lineJoin: 'round',dropShadow : false,dropShadowDistance: 0,dropShadowBlur:10,dropShadowAngle :8,dropShadowColor :'#DB2324', wordWrap: true , wordWrapWidth: 350  })",
+          "position": {
+            "x":"59.2%",
+            "y":"52.8%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        }
+      ]
+    },
+    {
+      "id": "win_amount",
+      "construct": "DO.Core.Renderer.UI.SpriteText(assets,'000')",
+      "visible": false,
+      "params": {
+        "max_chars": 15,
+        "kerning": 0,
+        "fixed_width": 100,
+        "mappings": {
+          "0": "number_counter:0",
+          "1": "number_counter:1",
+          "2": "number_counter:2",
+          "3": "number_counter:3",
+          "4": "number_counter:4",
+          "5": "number_counter:5",
+          "6": "number_counter:6",
+          "7": "number_counter:7",
+          "8": "number_counter:8",
+          "9": "number_counter:9",
+          ".": "number_counter:dot",
+          ",": "number_counter:comma"
+        },
+        "endPos": {"x": 800, "y": 700},
+        "startPosDL": {"x": 960, "y": 574},
+        "startPosP": {"x": 920, "y": 1550}
+      },
+      "position": {
+        "x": "50%",
+        "y": "50%"
+      },
+      "scale": {
+        "x": 0.6,
+        "y": 0.6
+      },
+      "pivot": "CENTRE"
+    }
+  ],
+  "portrait":{
+    "stage":{
+      "factorX": 1.1,
+      "factorY": 0.32,
+      "x": 0,
+      "y": 0
+    },
+    "jackpot_static_meter":{
+      "position":{
+        "x":"50%",
+        "y":"105%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    "win_amount": {
+      "position": {
+        "x": "48%",
+        "y": "148%"
+      }
+    }
+  },
+  "landscape":{
+    "stage":{
+      "factorX": 1,
+      "factorY": 1,
+      "x": 0,
+      "y": 0
+    },
+    "jackpot_static_meter":{
+      "position":{
+        "x":"40%",
+        "y":"38%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    "win_amount": {
+      "position": {
+        "x": "50%",
+        "y": "42%"
+      }
+    }
+  }
+}

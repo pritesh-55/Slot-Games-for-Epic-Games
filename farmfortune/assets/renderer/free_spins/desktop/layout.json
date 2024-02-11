@@ -1,0 +1,992 @@
+{
+  "name":"Free Spins Game Layout",
+  "params":{
+    "audio":{
+      "music":{
+        "ambient":["music_freegame"
+        ],
+        "spin":"ReeL_spin",
+        "spin_start_points":[
+          0,
+          3.704,
+          7.371,
+          11.070,
+          14.768,
+          18.471,
+          22.167,
+          25.841
+        ]
+      },
+      "fx":{
+        "reel_drops":[
+          "REEL_DROP",
+          "REEL_DROP1",
+          "REEL_DROP2",
+          "REEL_DROP3",
+          "REEL_DROP4"
+        ]
+      }
+    },
+    "scatters":[
+      "SC"
+    ]
+  },
+  "components":[
+    {
+      "id": "fs_normal",
+      "construct": "DO.Core.Renderer.UI.Image(assets, 'fs_normal')",
+      "position": {
+        "x": "50%",
+        "y": "50%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "visible": false
+    },
+    {
+      "id": "freespins_bg_normal",
+      "construct": "DO.Core.Renderer.UI.MovieClipWrapper(assets,'freespins_bg_normal',true,true)",
+      "position": {
+        "x": "50%",
+        "y": "50%"
+      },
+      "pivot": "CENTRE",
+      "visible": true,
+      "scale": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "id": "freespins_bg_add_mode",
+      "construct": "DO.Core.Renderer.UI.MovieClipWrapper(assets,'freespins_bg_add_mode',true,true)",
+      "position": {
+        "x": "50%",
+        "y": "50%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "pivot": "CENTRE",
+      "visible": false
+    },
+    {
+      "id": "stars_normal",
+      "construct": "DO.Core.Renderer.UI.MovieClipWrapper(assets,'stars_normal',true,true)",
+      "position": {
+        "x": "50%",
+        "y": "20%"
+      },
+      "pivot": "CENTRE",
+      "visible": true,
+      "scale": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "id": "stars_add_mode",
+      "construct": "DO.Core.Renderer.UI.MovieClipWrapper(assets,'stars_add_mode',true,true)",
+      "position": {
+        "x": "50%",
+        "y": "20%"
+      },
+      "pivot": "CENTRE",
+      "visible": false,
+      "scale": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "id": "particles_2x_speed",
+      "construct": "DO.Core.Renderer.UI.MovieClipWrapper(assets,'particles_2x_speed',true,true)",
+      "position": {
+        "x": "88%",
+        "y": "70%"
+      },
+      "pivot": "CENTRE",
+      "visible": true,
+      "scale": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "id": "rotor_blade_free",
+      "construct": "DO.Core.Renderer.UI.Image(assets, 'rotor_blade_free')",
+      "position": {
+        "x": "10%",
+        "y": "24%"
+      },
+      "pivot": 0,
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "visible": true
+    },
+    {
+      "id": "rotor_blade_free_dot",
+      "construct": "DO.Core.Renderer.UI.Image(assets, 'rotor_blade_free_dot')",
+      "position": {
+        "x": "10%",
+        "y": "24%"
+      },
+      "pivot": "CENTRE",
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "visible": true
+    },
+    {
+      "id": "aperture_holder",
+      "position": {
+        "x": "41%",
+        "y": "37%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "visible":true,
+      "pivot": "CENTRE",
+      "components": [
+        {
+          "id": "aperture_frame",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'reel_frame')",
+          "position": {
+            "x": "50%",
+            "y": "50%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "aperture",
+          "construct": "DO.Slots.Aperture(assets, 'BASE')",
+          "position": {
+            "x": "16.1%",
+            "y": "17.2%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "TOP_LEFT",
+          "params": {
+            "isCascadeSpin": false,
+            "reelStopSequence": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "reels": [
+              {
+                "strip": "EE,CC,EE,CC,II,GG,HH,GG,FF,JJ,AA,GG,AA,GG,FF,II,AA,CC,BB,GG,EE,JJ,EE,EE,CC,HH,HH,DD,II,BB,WW,AA,DD,DD,DD,JJ,DD,BB,BB,EE,BB,CC,II,CC,DD,BB,DD,CC,WW,HH,HH,BB,JJ,DD,CC,FF,HH,HH,HH,HH,GG,FF,CC,FF,EE,FF,EE,FF",
+                "height": 700,
+                "symbols_per_reel": 3,
+                "top_margin": 0,
+                "motion_blur": 30,
+                "down": true,
+                "animation": {
+                  "tease_peek": 0.1,
+                  "spin_speed": 1.8,
+                  "accel_speed": 1,
+                  "stop_speed": 0,
+                  "start": {
+                    "delay": 0,
+                    "ramp_distance": 110,
+                    "ramp_time": 0.3,
+                    "back_delay": 0.2
+                  },
+                  "drop": {
+                    "delay": 0.85,
+                    "back_delay": 0.05,
+                    "bounce_distance": 40,
+                    "bounce_time": 0.1
+                  }
+                }
+              },
+              {
+                "strip": "EE,CC,EE,CC,II,GG,HH,GG,FF,JJ,AA,GG,AA,GG,FF,II,AA,CC,BB,GG,EE,JJ,EE,EE,CC,HH,HH,DD,II,BB,WW,AA,DD,DD,DD,JJ,DD,BB,BB,EE,BB,CC,II,CC,DD,BB,DD,CC,WW,HH,HH,BB,JJ,DD,CC,FF,HH,HH,HH,HH,GG,FF,CC,FF,EE,FF,EE,FF",
+                "height": 700,
+                "symbols_per_reel": 3,
+                "top_margin": 0,
+                "motion_blur": 30,
+                "down": true,
+                "animation": {
+                  "tease_peek": 0.1,
+                  "spin_speed": 1.8,
+                  "accel_speed": 1,
+                  "stop_speed": 0,
+                  "start": {
+                    "delay": 0,
+                    "ramp_distance": 120,
+                    "ramp_time": 0.3,
+                    "back_delay": 0.4
+                  },
+                  "drop": {
+                    "delay": 0.85,
+                    "back_delay": 0.05,
+                    "bounce_distance": 40,
+                    "bounce_time": 0.1
+                  }
+                }
+              },
+              {
+                "strip": "EE,CC,EE,CC,II,GG,HH,GG,FF,JJ,AA,GG,AA,GG,FF,II,AA,CC,BB,GG,EE,JJ,EE,EE,CC,HH,HH,DD,II,BB,WW,AA,DD,DD,DD,JJ,DD,BB,BB,EE,BB,CC,II,CC,DD,BB,DD,CC,WW,HH,HH,BB,JJ,DD,CC,FF,HH,HH,HH,HH,GG,FF,CC,FF,EE,FF,EE,FF",
+                "height": 700,
+                "symbols_per_reel": 3,
+                "top_margin": 0,
+                "motion_blur": 30,
+                "down": true,
+                "animation": {
+                  "tease_peek": 0.1,
+                  "spin_speed": 1.8,
+                  "accel_speed": 1,
+                  "stop_speed": 0,
+                  "start": {
+                    "delay": 0,
+                    "ramp_distance": 130,
+                    "ramp_time": 0.3,
+                    "back_delay": 0.6
+                  },
+                  "drop": {
+                    "delay": 0.85,
+                    "back_delay": 0.05,
+                    "bounce_distance": 40,
+                    "bounce_time": 0.1
+                  }
+                }
+              },
+              {
+                "strip": "EE,CC,EE,CC,II,GG,HH,GG,FF,JJ,AA,GG,AA,GG,FF,II,AA,CC,BB,GG,EE,JJ,EE,EE,CC,HH,HH,DD,II,BB,WW,AA,DD,DD,DD,JJ,DD,BB,BB,EE,BB,CC,II,CC,DD,BB,DD,CC,WW,HH,HH,BB,JJ,DD,CC,FF,HH,HH,HH,HH,GG,FF,CC,FF,EE,FF,EE,FF",
+                "height": 700,
+                "symbols_per_reel": 3,
+                "top_margin": 0,
+                "motion_blur": 30,
+                "down": true,
+                "animation": {
+                  "tease_peek": 0.1,
+                  "spin_speed": 1.8,
+                  "accel_speed": 1,
+                  "stop_speed": 0,
+                  "start": {
+                    "delay": 0,
+                    "ramp_distance": 140,
+                    "ramp_time": 0.3,
+                    "back_delay": 0.8
+                  },
+                  "drop": {
+                    "delay": 0.85,
+                    "back_delay": 0.05,
+                    "bounce_distance": 40,
+                    "bounce_time": 0.1
+                  }
+                }
+              },
+              {
+                "strip": "EE,CC,EE,CC,II,GG,HH,GG,FF,JJ,AA,GG,AA,GG,FF,II,AA,CC,BB,GG,EE,JJ,EE,EE,CC,HH,HH,DD,II,BB,WW,AA,DD,DD,DD,JJ,DD,BB,BB,EE,BB,CC,II,CC,DD,BB,DD,CC,WW,HH,HH,BB,JJ,DD,CC,FF,HH,HH,HH,HH,GG,FF,CC,FF,EE,FF,EE,FF",
+                "height": 700,
+                "symbols_per_reel": 3,
+                "top_margin": 0,
+                "motion_blur": 30,
+                "down": true,
+                "animation": {
+                  "tease_peek": 0.1,
+                  "spin_speed": 1.8,
+                  "accel_speed": 1,
+                  "stop_speed": 0,
+                  "start": {
+                    "delay": 0,
+                    "ramp_distance": 150,
+                    "ramp_time": 0.3,
+                    "back_delay": 1
+                  },
+                  "drop": {
+                    "delay": 0.85,
+                    "back_delay": 0.05,
+                    "bounce_distance": 40,
+                    "bounce_time": 0.1
+                  }
+                }
+              }
+            ],
+            "symbols": {
+              "WW": {
+                "texture": "STATIC_SYMBOLS:WW",
+                "animation": {
+                  "duration": null,
+                  "clip": "SYMBOL:WW:WIN",
+                  "drop": "SYMBOL:WW_landing:WIN",
+                  "reelDrop": null,
+                  "active": null,
+                  "spineId": null,
+                  "frame": "WIN:SYMBOL:FRAME",
+                  "offsets": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "audio": {
+                  "win": "WILD:WIN",
+                  "drop": "WW:Landing"
+                },
+                "bring_to_front": true
+              },
+              "SC": {
+                "texture": "STATIC_SYMBOLS:SC",
+                "animation": {
+                  "duration": null,
+                  "clip": "SYMBOL:SC:WIN",
+                  "drop": "SYMBOL:SC_landing:WIN",
+                  "reelDrop": null,
+                  "active": null,
+                  "spineId": null,
+                  "frame": "WIN:SYMBOL:FRAME",
+                  "offsets": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "audio": {
+                  "win": "SCATTER:WIN",
+                  "drop": "SC:Landing"
+                },
+                "bring_to_front": true,
+                "tease": {
+                  "near_miss": 0,
+                  "audio": [
+                    "TEASE",
+                    "TEASE"
+                  ],
+                  "duration": [
+                    1300,
+                    2600
+                  ]
+                }
+              },
+              "AA": {
+                "texture": "STATIC_SYMBOLS:AA",
+                "animation": {
+                  "duration": null,
+                  "clip": "SYMBOL:AA:WIN",
+                  "drop": null,
+                  "reelDrop": null,
+                  "active": null,
+                  "spineId": null,
+                  "frame": "WIN:SYMBOL:FRAME",
+                  "offsets": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "audio": {
+                  "win": "",
+                  "drop": null
+                }
+              },
+              "BB": {
+                "texture": "STATIC_SYMBOLS:BB",
+                "animation": {
+                  "duration": null,
+                  "clip": "SYMBOL:BB:WIN",
+                  "drop": null,
+                  "reelDrop": null,
+                  "active": null,
+                  "spineId": null,
+                  "frame": "WIN:SYMBOL:FRAME",
+                  "offsets": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "audio": {
+                  "win": "",
+                  "drop": null
+                }
+              },
+              "CC": {
+                "texture": "STATIC_SYMBOLS:CC",
+                "animation": {
+                  "duration": null,
+                  "clip": "SYMBOL:CC:WIN",
+                  "drop": null,
+                  "reelDrop": null,
+                  "active": null,
+                  "spineId": null,
+                  "frame": "WIN:SYMBOL:FRAME",
+                  "offsets": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "audio": {
+                  "win": "",
+                  "drop": null
+                }
+              },
+              "DD": {
+                "texture": "STATIC_SYMBOLS:DD",
+                "animation": {
+                  "duration": null,
+                  "clip": "SYMBOL:DD:WIN",
+                  "drop": null,
+                  "reelDrop": null,
+                  "active": null,
+                  "spineId": null,
+                  "frame": "WIN:SYMBOL:FRAME",
+                  "offsets": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "audio": {
+                  "win": "",
+                  "drop": null
+                }
+              },
+              "EE": {
+                "texture": "STATIC_SYMBOLS:EE",
+                "animation": {
+                  "duration": null,
+                  "clip": "SYMBOL:EE:WIN",
+                  "drop": null,
+                  "reelDrop": null,
+                  "active": null,
+                  "spineId": null,
+                  "frame": "WIN:SYMBOL:FRAME",
+                  "offsets": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "audio": {
+                  "win": "L1:WIN",
+                  "drop": null
+                }
+              },
+              "FF": {
+                "texture": "STATIC_SYMBOLS:FF",
+                "animation": {
+                  "duration": null,
+                  "clip": "SYMBOL:FF:WIN",
+                  "drop": null,
+                  "reelDrop": null,
+                  "active": null,
+                  "spineId": null,
+                  "frame": "WIN:SYMBOL:FRAME",
+                  "offsets": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "audio": {
+                  "win": "L1:WIN",
+                  "drop": null
+                }
+              },
+              "GG": {
+                "texture": "STATIC_SYMBOLS:GG",
+                "animation": {
+                  "duration": null,
+                  "clip": "SYMBOL:GG:WIN",
+                  "drop": null,
+                  "reelDrop": null,
+                  "active": null,
+                  "spineId": null,
+                  "frame": "WIN:SYMBOL:FRAME",
+                  "offsets": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "audio": {
+                  "win": "L1:WIN",
+                  "drop": null
+                }
+              },
+              "HH": {
+                "texture": "STATIC_SYMBOLS:HH",
+                "animation": {
+                  "duration": null,
+                  "clip": "SYMBOL:HH:WIN",
+                  "drop": null,
+                  "reelDrop": null,
+                  "active": null,
+                  "spineId": null,
+                  "frame": "WIN:SYMBOL:FRAME",
+                  "offsets": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "audio": {
+                  "win": "L1:WIN",
+                  "drop": null
+                }
+              },
+              "II": {
+                "texture": "STATIC_SYMBOLS:II",
+                "animation": {
+                  "duration": null,
+                  "clip": "SYMBOL:II:WIN",
+                  "drop": null,
+                  "reelDrop": null,
+                  "active": null,
+                  "spineId": null,
+                  "frame": "WIN:SYMBOL:FRAME",
+                  "offsets": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "audio": {
+                  "win": "II:WIN",
+                  "drop": null
+                }
+              },
+              "JJ": {
+                "texture": "STATIC_SYMBOLS:JJ",
+                "animation": {
+                  "duration": null,
+                  "clip": "SYMBOL:JJ:WIN",
+                  "drop": null,
+                  "reelDrop": null,
+                  "active": null,
+                  "spineId": null,
+                  "frame": "WIN:SYMBOL:FRAME",
+                  "offsets": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "audio": {
+                  "win": "JJ:WIN",
+                  "drop": null
+                }
+              }
+            },
+            "reel_spacing": 243.5,
+            "teaseSymbolIds": {
+              "SC": 2
+            },
+            "default_symbol_scale": 1,
+            "quickSpinMultiplier": 6,
+            "spinMultiplier": 2,
+            "interruptSpinMultiplier": 15
+          }
+        },
+        {
+          "id": "win_manager",
+          "index": 1,
+          "construct": "DO.Slots.WinManager(assets, 'BASE')",
+          "plugins": {
+            "payline_renderer": {
+              "class": "DO.Slots.Plugins.PaylineRenderer",
+              "params": {
+                "game_id": "BASE",
+                "line_styling": {
+                  "width": 5
+                },
+                "lineImages": null
+              }
+            },
+            "symbol_animator": {
+              "class": "DO.Slots.Plugins.SymbolAnimator",
+              "params": {
+                "anim_container": "symbol_anim_container",
+                "tease": {
+                  "SC": {
+                    "frame": {
+                      "movieclip": "TEASE_FRAME:FRAME_ANIM",
+                      "offsets": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "scale": 1
+                    },
+                    "background": {
+                      "movieclip": "TEASE_FRAME:FRAME_ANIM",
+                      "offsets": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "scale": 1
+                    }
+                  }
+                },
+                "game_id": "BASE",
+                "noWinSymbolAlpha": 0.5,
+                "popout!": {
+                  "duration": 0.5,
+                  "offsets": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "scale": 1
+                }
+              }
+            }
+          },
+          "position": {
+            "x": "6%",
+            "y": "4%"
+          },
+          "pivot": "TOP_LEFT",
+          "params": {
+            "aperture": "aperture",
+            "payline_renderer": "payline_renderer",
+            "symbol_animator": "symbol_animator",
+            "showPlayerMessages": true,
+            "hideWinToggle": false,
+            "win_display_duration": 2800,
+            "win_summary_duration": 3000,
+            "win_cycle_delay": 3000
+          }
+        },
+        {
+          "id": "symbol_anim_container",
+          "construct": "PIXI.Container()",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "TOP_LEFT"
+        }
+      ]
+    },
+    {
+      "id":"fx_container",
+      "construct":"PIXI.Container()",
+      "position":{
+        "x":0,
+        "y":0
+      },
+      "scale":{
+        "x":1,
+        "y":1
+      },
+      "pivot":"TOP_LEFT"
+    },
+    {
+      "id":"free_spins_win",
+      "position":{
+        "x":"15.5%",
+        "y":"100%"
+      },
+      "visible":true,
+      "scale":{
+        "x":1,
+        "y":1
+      },
+      "pivot":"TOP_LEFT",
+      "components":[
+        {
+          "id":"meter",
+          "construct":"DO.Core.Renderer.UI.Image(assets, 'all_meter')",
+          "position": {
+            "x": "76.35%",
+            "y": "11.4%"
+          },
+          "visible":true,
+          "scale":{
+            "x":1,
+            "y":1
+          },
+          "pivot":"CENTRE"
+        },
+        {
+          "id":"free_spins_win_text",
+          "construct":"DO.Core.Renderer.UI.StandardText('@Freespins_WIN', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 30, fill : ['#fff716','#fff716'], align : 'center', stroke:'#000000',strokeThickness : 1, lineJoin: 'round',dropShadow : true,dropShadowDistance: 0,dropShadowBlur:0,dropShadowAngle :0,dropShadowColor :'#000000' })",
+          "position":{
+            "x":"76%",
+            "y":"4.5%"
+          },
+          "pivot":"LEFT",
+          "visible":true
+        },
+        {
+          "id":"total_win_value",
+          "construct":"DO.Core.Renderer.UI.StandardText('', {fontFamily : 'Arial-Rounded-MT-Bold', fontSize: 40, fill: ['#FFFFFF'], align : 'center', stroke: '#FFFFFF',strokeThickness : 0 ,dropShadow : true, dropShadowBlur : 0, fill : ['#008BEB','#008BEB']})",
+          "fit": "FreeSpinsWin",
+          "position":{
+            "x":"76%",
+            "y":"10%"
+          },
+          "pivot":"CENTRE",
+          "visible":true
+        },
+        {
+          "id":"free_spins_left_text",
+          "construct":"DO.Core.Renderer.UI.StandardText('@freespins_caps', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 30, fill : ['#fff716','#fff716'], align : 'center', stroke:'#000000',strokeThickness : 1, lineJoin: 'round',dropShadow : true,dropShadowDistance: 0,dropShadowBlur:0,dropShadowAngle :0,dropShadowColor :'#000000' })",
+          "position":{
+            "x":"76%",
+            "y":"17%"
+          },
+          "pivot":"LEFT",
+          "visible":true
+        },
+        {
+          "id":"spins_count",
+          "construct":"DO.Core.Renderer.UI.StandardText('', {fontFamily : 'Arial-Rounded-MT-Bold', fontSize: 40, fill: ['#FFFFFF'], align : 'center', stroke: '#FFFFFF',strokeThickness : 0 ,dropShadow : true, dropShadowBlur : 0, fill : ['#008BEB','#008BEB']})",
+          "visible":true,
+          "position":{
+            "x":"76%",
+            "y":"22.5%"
+          },
+          "scale":{
+            "x":1,
+            "y":1
+          },
+          "pivot":"LEFT"
+        }
+      ]
+    },
+    {
+      "id": "free_game_logo_mobile",
+      "construct": "DO.Core.Renderer.UI.Image(assets, 'free_game_logo_mobile')",
+      "position": {
+        "x": "48.5%",
+        "y": "8.3%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "visible": true
+    },
+    {
+      "id": "game_panel_bg",
+      "construct": "DO.Core.Renderer.UI.Image(assets, 'game_panel_bg')",
+      "position": {
+        "x": "50%",
+        "y": "93%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "pivot": "CENTRE"
+    },
+    {
+      "id":"multiplier",
+      "position":{
+        "x":"-16.5%",
+        "y":"95%"
+      },
+      "visible":true,
+      "scale":{
+        "x":1,
+        "y":1
+      },
+      "pivot":"TOP_LEFT",
+      "components":[
+        {
+          "id":"multiplier_meter",
+          "construct":"DO.Core.Renderer.UI.Image(assets, 'multiplier_meter')",
+          "position": {
+            "x": "25.6%",
+            "y": "11.4%"
+          },
+          "scale":{
+            "x":1,
+            "y":1
+          },
+          "pivot":"CENTRE",
+          "visible":true
+        },
+        {
+          "id":"multiplier_text",
+          "construct":"DO.Core.Renderer.UI.StandardText('@multiplier_caps', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 30, fill : ['#fff716','#fff716'], align : 'center', stroke:'#000000',strokeThickness : 1, lineJoin: 'round',dropShadow : true,dropShadowDistance: 0,dropShadowBlur:0,dropShadowAngle :0,dropShadowColor :'#000000' })",
+          "position":{
+            "x":"25.5%",
+            "y":"2%"
+          },
+          "pivot":"LEFT",
+          "visible":true
+        },
+        {
+          "id":"multiplier_count",
+          "construct":"DO.Core.Renderer.UI.StandardText('', {fontFamily : 'Arial-Rounded-MT-Bold', fontSize: 40, fill: ['#FFFFFF'], align : 'center', stroke: '#FFFFFF',strokeThickness : 0 ,dropShadow : true, dropShadowBlur : 0, fill : ['#008BEB','#008BEB']})",
+          "visible":true,
+          "position":{
+            "x":"25.5%",
+            "y":"8%"
+          },
+          "scale":{
+            "x":1,
+            "y":1
+          },
+          "pivot":"LEFT"
+        }
+      ]
+    },
+    {
+      "id":"total_win_text",
+      "construct":"DO.Core.Renderer.UI.StandardText('@totalwin', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 35, fill : ['#fff716','#fff716'], align : 'center', stroke:'#000000',strokeThickness : 5, lineJoin: 'round',dropShadow : true,dropShadowDistance: 0,dropShadowBlur:0,dropShadowAngle :0,dropShadowColor :'#000000' })",
+      "position":{
+        "x":"27.2%",
+        "y":"89.2%"
+      },
+      "pivot":"LEFT",
+      "visible":true
+    },
+    {
+      "id":"bet_text",
+      "construct":"DO.Core.Renderer.UI.StandardText('@bet', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 35, fill : ['#fff716','#fff716'], align : 'center', stroke:'#000000',strokeThickness : 5, lineJoin: 'round',dropShadow : true,dropShadowDistance: 0,dropShadowBlur:0,dropShadowAngle :0,dropShadowColor :'#000000' })",
+      "position":{
+        "x":"73.9%",
+        "y":"89.2%"
+      },
+      "pivot":"LEFT",
+      "visible":true
+    },
+    {
+      "id": "player_prompt",
+      "construct": "DO.Core.Renderer.UI.PlayerMessagePanel(assets, 'MESSAGE_SYMBOLS', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 32, fill : ['#fff716','#fff716'], align : 'center', stroke:'#000000',strokeThickness : 3, lineJoin: 'round',dropShadow : true,dropShadowDistance: 0,dropShadowBlur:0,dropShadowAngle :0,dropShadowColor :'#000000', wordWrapWidth: 500 , wordWrap: true})",
+      "position": {
+        "x": "50%",
+        "y": "92%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "pivot": "CENTRE"
+    },
+    {
+      "id":"win_amount",
+      "construct":"DO.Core.Renderer.UI.SpriteText(assets,'0000')",
+      "visible":false,
+      "params":{
+        "max_chars":15,
+        "kerning":0,
+        "fixed_width" : 100,
+        "mappings": {
+          "0": "number_counter:0",
+          "1": "number_counter:1",
+          "2": "number_counter:2",
+          "3": "number_counter:3",
+          "4": "number_counter:4",
+          "5": "number_counter:5",
+          "6": "number_counter:6",
+          "7": "number_counter:7",
+          "8": "number_counter:8",
+          "9": "number_counter:9",
+          ".": "number_counter:dot",
+          ",": "number_counter:comma"
+        },
+        "endPos": {"x": 800, "y": 700},
+        "startPosDL": {"x": 990, "y": 500},
+        "startPosP": {"x": 920, "y": 1550}
+      },
+      "position":{
+        "x":"51.5%",
+        "y":"50%"
+      },
+      "scale":{
+        "x":0.9,
+        "y":0.9
+      },
+      "pivot":"CENTRE"
+    },
+    {
+      "id":"retrigger_announcer",
+      "position":{
+        "x":"0%",
+        "y":"3%"
+      },
+      "visible":false,
+      "scale":{
+        "x":1,
+        "y":1
+      },
+      "pivot":"TOP_LEFT",
+      "components":[
+        {
+          "construct":"DO.Core.Renderer.UI.BackgroundDimmer(0,0.8)",
+          "position":{
+            "x":"50%",
+            "y":"50%"
+          },
+          "pivot":"CENTRE"
+        },
+        {
+          "id": "intro_panel",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'intro_panel')",
+          "position": {
+            "x": "50%",
+            "y": "48%"
+          },
+          "visible": true,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "congrats_text",
+          "construct": "DO.Core.Renderer.UI.StandardText('@congratulations_caps', {fontFamily : 'Arial-Rounded-MT-Regular',fontWeight: 'bolder', fontSize: 80, fill : ['#FFFFFF','#FFFFFF'], align : 'center', stroke:'#E212ED',strokeThickness : 7, lineJoin: 'round',dropShadow : true,dropShadowDistance: 0,dropShadowBlur:30,dropShadowAngle :0,dropShadowColor :'' })",
+          "fit": "aperture_frame",
+          "visible": true,
+          "position": {
+            "x": "50%",
+            "y": "36%"
+          },
+          "pivot": "LEFT"
+        },
+        {
+          "id": "you_won_text",
+          "construct": "DO.Core.Renderer.UI.StandardText('@spot_bonus_every_spin', {fontFamily : 'Arial-Rounded-MT-Regular',fontWeight: 'bolder', fontSize: 80, fill : ['#FFFFFF','#FFFFFF'], align : 'center', stroke:'#E212ED',strokeThickness : 7, lineJoin: 'round',dropShadow : true,dropShadowDistance: 0,dropShadowBlur:30,dropShadowAngle :0,dropShadowColor :'' })",
+          "fit": "aperture_frame",
+          "position": {
+            "x": "50%",
+            "y": "44%"
+          },
+          "visible": true,
+          "pivot": "LEFT"
+        },
+        {
+          "id": "awarded_retrigger_count",
+          "construct": "DO.Core.Renderer.UI.StandardText('', {fontFamily : 'Arial-Rounded-MT-Regular', fontSize: 160, fill : ['#ff3300'], align : 'center', stroke:'#E212ED',strokeThickness : 15 ,dropShadow : true, dropShadowBlur : 20, fill : ['#ffcc00','#ffcc00']})",
+          "visible": true,
+          "position": {
+            "x": "50%",
+            "y": "61%"
+          },
+          "fx": {
+            "create": "DO.Core.Renderer.UI.FX.popOut(300)"
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "free_spins_text",
+          "construct": "DO.Core.Renderer.UI.StandardText('@free_game_more', {fontFamily : 'Arial-Rounded-MT-Regular',fontWeight: 'bolder', fontSize: 80, fill : ['#FFFFFF','#FFFFFF'], align : 'center', stroke:'#E212ED',strokeThickness : 7, lineJoin: 'round',dropShadow : true,dropShadowDistance: 0,dropShadowBlur:30,dropShadowAngle :0,dropShadowColor :'' })",
+          "position": {
+            "x": "50%",
+            "y": "68%"
+          },
+          "fit": "aperture_frame",
+          "visible": true,
+          "pivot": "LEFT"
+        }
+      ]
+    }
+  ]
+}

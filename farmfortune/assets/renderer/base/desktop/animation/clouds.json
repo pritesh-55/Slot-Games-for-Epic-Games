@@ -1,0 +1,21 @@
+{"frames": {
+
+"clouds":
+{
+	"frame": {"x":0,"y":0,"w":2384,"h":289},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":2384,"h":289},
+	"sourceSize": {"w":2384,"h":289},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "clouds.png",
+	"format": "RGBA8888",
+	"size": {"w":2384,"h":289},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:d4b4a8f5a638418cc985fa9be175da55:a52b3bdb0d50d6be070b3ca55865576f:e96b5453eed6fb7cc3a8e55168758fa4$"
+}
+}

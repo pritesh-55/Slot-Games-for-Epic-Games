@@ -1,0 +1,151 @@
+{
+  "name": "Free Spins Game Manifest",
+  "items": [
+    {
+      "id": "layout_free_spins",
+      "type": "json",
+      "path": {
+        "desktop": "./assets/renderer/free_spins/desktop/layout.json",
+        "mobile": "./assets/renderer/free_spins/mobile/layout.json"
+      }
+    },
+    {
+      "id": "layout_free_spins_summary",
+      "type": "json",
+      "path": {
+        "desktop": "./assets/renderer/free_spins/desktop/layout_summary.json",
+        "mobile": "./assets/renderer/free_spins/mobile/layout_summary.json"
+      }
+    },
+    {
+      "id": "fs_normal",
+      "type": "image",
+      "path": "./assets/renderer/free_spins/desktop/static/fs_normal.jpg"
+    },
+    {
+      "id": "free_spin_portrait",
+      "type": "image",
+      "path": {
+        "desktop": null,
+        "mobile": "./assets/renderer/free_spins/mobile/static/free_spin_portrait.jpg"
+      }
+    },
+    {
+      "id":"freespins_bg_normal",
+      "type":"atlas",
+      "path":"./assets/renderer/free_spins/desktop/animation/freespins_bg_normal.json",
+      "movieclips" :{
+        "freespins_bg_normal": {
+          "pre_cache":15,
+          "speed":0.1,
+          "textures":[
+            "freespins_bg_normal"
+          ]
+        }
+      }
+    },
+    {
+      "id":"freespins_bg_add_mode",
+      "type":"atlas",
+      "path":"./assets/renderer/free_spins/desktop/animation/freespins_bg_add_mode.json",
+      "movieclips" :{
+        "freespins_bg_add_mode": {
+          "pre_cache":15,
+          "speed":0.1,
+          "textures":[
+            "freespins_bg_add_mode"
+          ]
+        }
+      }
+    },
+    {
+      "id":"stars_normal",
+      "type":"atlas",
+      "path":"./assets/renderer/free_spins/desktop/animation/stars_normal.json",
+      "movieclips" :{
+        "stars_normal": {
+          "pre_cache":15,
+          "speed":0.1,
+          "textures":[
+            "stars_normal"
+          ]
+        }
+      }
+    },
+    {
+      "id":"stars_add_mode",
+      "type":"atlas",
+      "path":"./assets/renderer/free_spins/desktop/animation/stars_add_mode.json",
+      "movieclips" :{
+        "stars_add_mode": {
+          "pre_cache":15,
+          "speed":0.1,
+          "textures":[
+            "stars_add_mode"
+          ]
+        }
+      }
+    },
+    {
+      "id":"particles_2x_speed",
+      "type":"atlas",
+      "path":"./assets/renderer/free_spins/desktop/animation/particles_2x_speed.json",
+      "movieclips" :{
+        "particles_2x_speed": {
+          "pre_cache":15,
+          "speed":0.15,
+          "textures":[
+            "particles_2x_speed_00",
+            "particles_2x_speed_01",
+            "particles_2x_speed_02",
+            "particles_2x_speed_03",
+            "particles_2x_speed_04",
+            "particles_2x_speed_05",
+            "particles_2x_speed_06",
+            "particles_2x_speed_07",
+            "particles_2x_speed_08",
+            "particles_2x_speed_09",
+            "particles_2x_speed_10",
+            "particles_2x_speed_11",
+            "particles_2x_speed_12",
+            "particles_2x_speed_13",
+            "particles_2x_speed_14",
+            "particles_2x_speed_15",
+            "particles_2x_speed_16",
+            "particles_2x_speed_17",
+            "particles_2x_speed_18",
+            "particles_2x_speed_19",
+            "particles_2x_speed_20",
+            "particles_2x_speed_21",
+            "particles_2x_speed_22",
+            "particles_2x_speed_23",
+            "particles_2x_speed_24",
+            "particles_2x_speed_25",
+            "particles_2x_speed_26",
+            "particles_2x_speed_27",
+            "particles_2x_speed_28",
+            "particles_2x_speed_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "rotor_blade_free",
+      "type": "image",
+      "path": "./assets/renderer/free_spins/desktop/static/rotor_blade_free.png"
+    },
+    {
+      "id": "rotor_blade_free_dot",
+      "type": "image",
+      "path": "./assets/renderer/free_spins/desktop/static/rotor_blade_free_dot.png"
+    },
+    {
+      "id": "free_game_logo_mobile",
+      "type": "image",
+      "path": {
+        "desktop": "./assets/renderer/free_spins/mobile/static/mobile_free_game.png",
+        "mobile": "./assets/renderer/free_spins/mobile/static/mobile_free_game.png"
+      }
+    }
+  ]
+}

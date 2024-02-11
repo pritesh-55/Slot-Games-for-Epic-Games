@@ -1,0 +1,21 @@
+{"frames": {
+
+"stars_add_mode":
+{
+	"frame": {"x":0,"y":0,"w":1859,"h":468},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1859,"h":468},
+	"sourceSize": {"w":1859,"h":468},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "stars_add_mode.png",
+	"format": "RGBA8888",
+	"size": {"w":1859,"h":468},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:3dc3cd6cf438aac2c39a63ed47783c3c:754f5e5ae9840a244618adbab9a3bb1c:bef1d78aa945f92fdd43b12a20853830$"
+}
+}

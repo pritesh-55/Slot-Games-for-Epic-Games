@@ -1,0 +1,21 @@
+{"frames": {
+
+"rotor_blade_free":
+{
+	"frame": {"x":0,"y":0,"w":288,"h":271},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":288,"h":271},
+	"sourceSize": {"w":288,"h":271},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "rotor_blade_free.png",
+	"format": "RGBA8888",
+	"size": {"w":288,"h":271},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:422830520fc10a3d57c4f03ff796be45:ea5646da75898c2b9b78043d9553c702:344be84a3f56439d2923bb5796dab451$"
+}
+}
