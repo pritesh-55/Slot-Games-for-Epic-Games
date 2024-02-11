@@ -1,0 +1,21 @@
+{"frames": {
+
+"moon_with_star_add_mode":
+{
+	"frame": {"x":1,"y":1,"w":1920,"h":1080},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1920,"h":1080},
+	"sourceSize": {"w":1920,"h":1080},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "moon_with_star_add_mode.png",
+	"format": "RGBA8888",
+	"size": {"w":1922,"h":1082},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:67d6f355e843dd0e531b048f0ce8941c:e90d6f7cf73fcd118c0f74f5c2d9acf9:7af975ef894f1f30ade1a4e538de1ac6$"
+}
+}

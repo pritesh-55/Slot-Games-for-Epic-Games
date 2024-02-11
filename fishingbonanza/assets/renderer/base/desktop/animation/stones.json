@@ -1,0 +1,21 @@
+{"frames": {
+
+"stones":
+{
+	"frame": {"x":1,"y":1,"w":530,"h":293},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":530,"h":293},
+	"sourceSize": {"w":530,"h":293},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "stones.png",
+	"format": "RGBA8888",
+	"size": {"w":532,"h":295},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:c026019edb8cde11d1f3eb9cc72bb0a4:9e382b444b7855cbb2f1b2d20aed6357:59c4bcbb85e1d41ef3bf4e12e20e6139$"
+}
+}

@@ -1,0 +1,21 @@
+{"frames": {
+
+"freegame_bg":
+{
+	"frame": {"x":0,"y":0,"w":1920,"h":1080},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1920,"h":1080},
+	"sourceSize": {"w":1920,"h":1080},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "freegame_bg.jpg",
+	"format": "RGB888",
+	"size": {"w":1920,"h":1080},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:63d0a93121af8ae9cf9f0bcc3659fe13:106af8bb360e25bfde6a3b4ee54fbe19:746ba661ce8e9b689d09d50e4c929ce8$"
+}
+}

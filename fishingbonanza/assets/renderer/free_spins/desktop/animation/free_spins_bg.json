@@ -1,0 +1,21 @@
+{"frames": {
+
+"free_spins_bg":
+{
+	"frame": {"x":1,"y":1,"w":1920,"h":1080},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1920,"h":1080},
+	"sourceSize": {"w":1920,"h":1080},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "free_spins_bg.png",
+	"format": "RGBA8888",
+	"size": {"w":1922,"h":1082},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:cbfdf936cb2f76d6c35f11d5d3627cb0:285fcc047dff024a351d60f9130d1b66:fda475f1469833f402cd7f3119be2bc2$"
+}
+}

@@ -1,0 +1,248 @@
+{
+  "name": "Free Spins Game Manifest",
+  "items": [
+    {
+      "id": "layout_free_spins",
+      "type": "json",
+      "path": {
+        "desktop": "./assets/renderer/free_spins/desktop/layout.json",
+        "mobile": "./assets/renderer/free_spins/mobile/layout.json"
+      }
+    },
+    {
+      "id": "layout_free_spins_summary",
+      "type": "json",
+      "path": {
+        "desktop": "./assets/renderer/free_spins/desktop/layout_summary.json",
+        "mobile": "./assets/renderer/free_spins/mobile/layout_summary.json"
+      }
+    },
+    {
+      "id": "freegame_mobile_portrait",
+      "type": "image",
+      "path":  {
+        "mobile": "./assets/renderer/free_spins/mobile/static/free_spin_portrait.jpg"
+      }
+    },
+    {
+      "id": "free_game_logo_mobile",
+      "type": "image",
+      "path": {
+        "mobile": "./assets/renderer/free_spins/mobile/static/mobile_free_game.png"
+      }
+    },
+    {
+      "id": "freegame_bg",
+      "type": "atlas",
+      "path": "./assets/renderer/free_spins/desktop/animation/freegame_bg.json",
+      "movieclips": {
+        "freegame_bg": {
+          "speed": 0.15,
+          "textures": [
+            "freegame_bg"
+          ]
+        }
+      }
+    },
+    {
+      "id": "freespins_logo",
+      "type": "atlas",
+      "bandwidth_filter": "BANDWIDTH_HIGH",
+      "path": "./assets/renderer/free_spins/desktop/animation/freespins_logo.json",
+      "movieclips": {
+        "freespins_logo": {
+          "speed": 0.08,
+          "textures": [
+            "freespins_logo_00",
+            "freespins_logo_01",
+            "freespins_logo_02",
+            "freespins_logo_03",
+            "freespins_logo_04",
+            "freespins_logo_05",
+            "freespins_logo_06",
+            "freespins_logo_07",
+            "freespins_logo_08",
+            "freespins_logo_09",
+            "freespins_logo_10",
+            "freespins_logo_11",
+            "freespins_logo_12",
+            "freespins_logo_13",
+            "freespins_logo_14",
+            "freespins_logo_15",
+            "freespins_logo_16",
+            "freespins_logo_17",
+            "freespins_logo_18",
+            "freespins_logo_19",
+            "freespins_logo_20",
+            "freespins_logo_21",
+            "freespins_logo_22",
+            "freespins_logo_23",
+            "freespins_logo_24",
+            "freespins_logo_25",
+            "freespins_logo_26",
+            "freespins_logo_27",
+            "freespins_logo_28",
+            "freespins_logo_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "base_portrait_bg",
+      "type": "image",
+      "path": {
+        "desktop": null,
+        "mobile": "./assets/renderer/free_spins/mobile/static/free_spin_portrait.jpg"
+      }
+    },
+    {
+      "id": "free_spins_bg",
+      "type": "atlas",
+      "bandwidth_filter": "BANDWIDTH_HIGH",
+      "path": {
+        "desktop": "./assets/renderer/free_spins/desktop/animation/free_spins_bg.json",
+        "mobile" : "./assets/renderer/free_spins/desktop/animation/free_spins_bg.json"
+      },
+      "movieclips": {
+        "free_spins_bg": {
+          "speed": 0.08,
+          "textures": [
+            "free_spins_bg"
+          ]
+        }
+      }
+    },
+    {
+      "id": "moon_with_star_add_mode",
+      "type": "atlas",
+      "bandwidth_filter": "BANDWIDTH_HIGH",
+      "path": {
+        "desktop": "./assets/renderer/free_spins/desktop/animation/moon_with_star_add_mode.json"
+      },
+      "movieclips": {
+        "moon_with_star_add_mode": {
+          "speed": 0.08,
+          "textures": [
+            "moon_with_star_add_mode"
+          ]
+        }
+      }
+    },
+    {
+      "id": "moon_with_star_normal",
+      "type": "atlas",
+      "bandwidth_filter": "BANDWIDTH_HIGH",
+      "path": {
+        "desktop": "./assets/renderer/free_spins/desktop/animation/moon_with_star_normal.json"
+      },
+      "movieclips": {
+        "moon_with_star_normal": {
+          "speed": 0.08,
+          "textures": [
+            "moon_with_star_normal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "bench",
+      "type": "atlas",
+      "path": "./assets/renderer/free_spins/desktop/animation/bench.json",
+      "movieclips": {
+        "bench": {
+          "speed": 0.15,
+          "textures": [
+            "bench"
+          ]
+        }
+      }
+    },
+    {
+      "id": "free_sea",
+      "type": "multi_atlas",
+      "path": "./assets/renderer/free_spins/desktop/animation/free_sea0.json|./assets/renderer/free_spins/desktop/animation/free_sea1.json",
+      "movieclips": {
+        "free_sea": {
+          "speed": 0.15,
+          "textures": [
+            "free_sea_00",
+            "free_sea_01",
+            "free_sea_02",
+            "free_sea_03",
+            "free_sea_04",
+            "free_sea_05",
+            "free_sea_06",
+            "free_sea_07",
+            "free_sea_08",
+            "free_sea_09",
+            "free_sea_10",
+            "free_sea_11",
+            "free_sea_12",
+            "free_sea_13",
+            "free_sea_14",
+            "free_sea_15",
+            "free_sea_16",
+            "free_sea_17",
+            "free_sea_18",
+            "free_sea_19",
+            "free_sea_20",
+            "free_sea_21",
+            "free_sea_22",
+            "free_sea_23",
+            "free_sea_24",
+            "free_sea_25",
+            "free_sea_26",
+            "free_sea_27",
+            "free_sea_28",
+            "free_sea_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "front_fire_flies",
+      "type": "atlas",
+      "bandwidth_filter": "BANDWIDTH_HIGH",
+      "path": {
+        "desktop": "./assets/renderer/free_spins/desktop/animation/front_fire_flies.json"
+      },
+      "movieclips": {
+        "front_fire_flies": {
+          "speed": 0.15,
+          "textures": [
+            "front_fire_flies_00",
+            "front_fire_flies_01",
+            "front_fire_flies_02",
+            "front_fire_flies_03",
+            "front_fire_flies_04",
+            "front_fire_flies_05",
+            "front_fire_flies_06",
+            "front_fire_flies_07",
+            "front_fire_flies_08",
+            "front_fire_flies_09",
+            "front_fire_flies_10",
+            "front_fire_flies_11",
+            "front_fire_flies_12",
+            "front_fire_flies_13",
+            "front_fire_flies_14",
+            "front_fire_flies_15",
+            "front_fire_flies_16",
+            "front_fire_flies_17",
+            "front_fire_flies_18",
+            "front_fire_flies_19",
+            "front_fire_flies_20",
+            "front_fire_flies_21",
+            "front_fire_flies_22",
+            "front_fire_flies_23",
+            "front_fire_flies_24",
+            "front_fire_flies_25",
+            "front_fire_flies_26",
+            "front_fire_flies_27",
+            "front_fire_flies_28",
+            "front_fire_flies_29"
+          ]
+        }
+      }
+    }
+  ]
+}

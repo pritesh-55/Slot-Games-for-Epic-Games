@@ -1,0 +1,93 @@
+{"frames": {
+
+"meter_splash_00":
+{
+	"frame": {"x":0,"y":196,"w":339,"h":57},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":41,"w":339,"h":57},
+	"sourceSize": {"w":340,"h":98},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"meter_splash_01":
+{
+	"frame": {"x":339,"y":187,"w":337,"h":68},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":30,"w":337,"h":68},
+	"sourceSize": {"w":340,"h":98},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"meter_splash_02":
+{
+	"frame": {"x":0,"y":0,"w":331,"h":98},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":0,"w":331,"h":98},
+	"sourceSize": {"w":340,"h":98},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"meter_splash_03":
+{
+	"frame": {"x":0,"y":98,"w":305,"h":98},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":0,"w":305,"h":98},
+	"sourceSize": {"w":340,"h":98},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"meter_splash_04":
+{
+	"frame": {"x":305,"y":98,"w":295,"h":89},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":22,"y":9,"w":295,"h":89},
+	"sourceSize": {"w":340,"h":98},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"meter_splash_05":
+{
+	"frame": {"x":600,"y":77,"w":273,"h":88},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":33,"y":10,"w":273,"h":88},
+	"sourceSize": {"w":340,"h":98},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"meter_splash_06":
+{
+	"frame": {"x":331,"y":0,"w":257,"h":77},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":41,"y":21,"w":257,"h":77},
+	"sourceSize": {"w":340,"h":98},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"meter_splash_07":
+{
+	"frame": {"x":600,"y":0,"w":281,"h":45},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":53,"w":281,"h":45},
+	"sourceSize": {"w":340,"h":98},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"meter_splash_08":
+{
+	"frame": {"x":600,"y":45,"w":281,"h":32},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":29,"y":66,"w":281,"h":32},
+	"sourceSize": {"w":340,"h":98},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "meter_splash.png",
+	"format": "RGBA8888",
+	"size": {"w":881,"h":255},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:730be131a6962aa4e658b23d2a03ddd3:980037cd77ccc23ce1b4a155946d7cf7:e575b88209ec97c6aa966a079209bc0d$"
+}
+}

@@ -1,0 +1,21 @@
+{"frames": {
+
+"bench":
+{
+	"frame": {"x":0,"y":0,"w":1920,"h":358},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":30,"w":1920,"h":358},
+	"sourceSize": {"w":1920,"h":388},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "bench.png",
+	"format": "RGBA8888",
+	"size": {"w":1920,"h":358},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:8a4201dbdcc1ecc79ab322b161d00973:5fb04910f020d5baf0344b4840650e60:07ff1f093993471452b1aede057a077a$"
+}
+}

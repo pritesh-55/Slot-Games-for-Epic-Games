@@ -1,0 +1,22 @@
+{"frames": {
+
+	"PickBonus_Symbol":
+	{
+		"frame": {"x":1,"y":1,"w":275,"h":270},
+		"rotated": false,
+		"trimmed": false,
+		"spriteSourceSize": {"x":0,"y":0,"w":275,"h":270},
+		"sourceSize": {"w":275,"h":270},
+		"pivot": {"x":0.5,"y":0.5}
+	}},
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "PickBonus_Symbol.png",
+		"format": "RGBA8888",
+		"size": {"w":275,"h":270},
+		"scale": "1",
+		"smartupdate": "$TexturePacker:SmartUpdate:1e0d141f0ba4d90f08016685fd17284e:c8ede26575c62e09fc287e0b01d60493:5ab853674aef90cc7042765815230984$"
+	}
+	}
+	

@@ -1,0 +1,196 @@
+{
+  "name":"Bonus Game Manifest",
+  "items":[
+    {
+      "id":"bonus_layout",
+      "type":"json",
+      "path":{
+        "desktop":"./assets/renderer/bonus/desktop/layout.json",
+        "mobile":"./assets/renderer/bonus/mobile/layout.json"
+      }
+    },
+    {
+      "id":"bonus_layout_summary",
+      "type":"json",
+      "path":{
+        "desktop":"./assets/renderer/bonus/desktop/bonus_layout_summary.json",
+        "mobile":"./assets/renderer/bonus/mobile/bonus_layout_summary.json"
+      }
+    },
+    {
+      "id": "pickbonus_frame",
+      "type": "image",
+      "path": "./assets/renderer/bonus/desktop/static/pickbonus_frame.png"
+    },
+    {
+      "id": "pickbonus_bg",
+      "type": "image",
+      "path":"./assets/renderer/bonus/desktop/static/pickbonus_bg.jpg"
+    },
+    {
+      "id": "bonus_bg_portrait",
+      "type": "image",
+      "path": {
+        "desktop": null,
+        "mobile": "./assets/renderer/bonus/mobile/pickbonus_bg_mobile.jpg"
+      }
+    },
+    {
+      "id": "collect",
+      "type": "image",
+      "path": "./assets/renderer/bonus/desktop/static/collect.png"
+    },
+    {
+      "id": "outrow",
+      "type": "image",
+      "path": "./assets/renderer/bonus/desktop/static/outrow.png"
+    },
+    {
+      "id":"BONUS_WIN_box",
+      "type":"image",
+      "path": "./assets/renderer/bonus/desktop/static//BONUS_WIN_box.png"
+    },
+    {
+      "id":"BONUS_WIN",
+      "type":"image",
+      "path": "./assets/renderer/bonus/desktop/static//BONUS_WIN.png"
+    },
+    {
+      "id":"bonus_icon_win",
+      "type":"atlas",
+      "path":"./assets/renderer/bonus/desktop/animation/shell_click_amount.json",
+      "movieclips":{
+        "bonus_icon_win":{
+          "speed":0.25,
+          "textures":[
+            "shell_click_amount_00",
+            "shell_click_amount_01",
+            "shell_click_amount_02",
+            "shell_click_amount_03",
+            "shell_click_amount_04",
+            "shell_click_amount_05",
+            "shell_click_amount_06",
+            "shell_click_amount_07",
+            "shell_click_amount_08",
+            "shell_click_amount_09",
+            "shell_click_amount_10"
+          ]
+        }
+      }
+    },
+    {
+      "id":"bonus_icon_loss",
+      "type":"atlas",
+      "path":"./assets/renderer/bonus/desktop/animation/shell_click_without_amount.json",
+      "movieclips":{
+        "bonus_icon_loss":{
+          "speed":0.25,
+          "textures":[
+            "shell_click_without_amount_00",
+            "shell_click_without_amount_01",
+            "shell_click_without_amount_02",
+            "shell_click_without_amount_03",
+            "shell_click_without_amount_04",
+            "shell_click_without_amount_05",
+            "shell_click_without_amount_06",
+            "shell_click_without_amount_07",
+            "shell_click_without_amount_08",
+            "shell_click_without_amount_09",
+            "shell_click_without_amount_10"
+          ]
+        }
+      }
+    },
+    {
+      "id":"bonus_icon",
+      "type":"atlas",
+      "path":"./assets/renderer/bonus/desktop/animation/shell_idle.json",
+      "movieclips":{
+        "bonus_icon":{
+          "speed":0.14,
+          "textures":[
+            "shell_idle_00",
+            "shell_idle_01",
+            "shell_idle_02",
+            "shell_idle_03",
+            "shell_idle_04",
+            "shell_idle_05",
+            "shell_idle_06",
+            "shell_idle_07",
+            "shell_idle_08",
+            "shell_idle_09",
+            "shell_idle_10",
+            "shell_idle_11",
+            "shell_idle_12",
+            "shell_idle_13",
+            "shell_idle_14"
+          ]
+        }
+      }
+    },
+    {
+      "id":"shell_hover",
+      "type":"atlas",
+      "path":"./assets/renderer/bonus/desktop/animation/shell_hover.json",
+      "movieclips":{
+        "shell_hover":{
+          "speed":0.08,
+          "textures":[
+            "shell_hover_00",
+            "shell_hover_01",
+            "shell_hover_02",
+            "shell_hover_03",
+            "shell_hover_04",
+            "shell_hover_05",
+            "shell_hover_06",
+            "shell_hover_07",
+            "shell_hover_08",
+            "shell_hover_09",
+            "shell_hover_10",
+            "shell_hover_11",
+            "shell_hover_12",
+            "shell_hover_13",
+            "shell_hover_14"
+          ]
+        }
+      }
+    },
+    {
+      "id":"meter_splash",
+      "type":"atlas",
+      "path":"./assets/renderer/bonus/desktop/animation/meter_splash.json",
+      "movieclips":{
+        "meter_splash":{
+          "speed":0.12,
+          "textures":[
+            "meter_splash_00",
+            "meter_splash_01",
+            "meter_splash_02",
+            "meter_splash_03",
+            "meter_splash_04",
+            "meter_splash_05",
+            "meter_splash_06",
+            "meter_splash_07",
+            "meter_splash_08"
+          ]
+        }
+      }
+    },
+    {
+      "id": "bonus_win_amount",
+      "type": "atlas",
+      "path": "./assets/renderer/bonus/desktop/animation/bonus_amount.json",
+      "movieclips": null
+    },
+    {
+      "id": "continue_btn",
+      "type": "atlas",
+      "path": "../common/assets/ui_6/generic/static/continue_btn.json"
+    },
+    {
+      "id": "play_btn",
+      "type": "atlas",
+      "path": "./assets/renderer/bonus/desktop/animation/play_btn.json"
+    }
+  ]
+}

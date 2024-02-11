@@ -1,0 +1,133 @@
+{
+  "name": "Bonus Game Intro Layout",
+  "params": {
+    "audio": {
+      "music": {
+        "ambient": "music_base"
+      }
+    }
+  },
+  "components": [
+    {
+      "id": "bgDimmer",
+      "construct": "DO.Core.Renderer.UI.BackgroundDimmer(0,0.5)",
+      "position": {
+        "x": "50%",
+        "y": "50%"
+      },
+      "visible": true,
+      "pivot": "CENTRE"
+    },
+    {
+      "id": "intro_holder",
+      "position": {
+        "x": "50%",
+        "y": "50%"
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "pivot": "CENTRE",
+      "components": [
+        {
+          "id": "intro_panel",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'intro_panel')",
+          "position": {
+            "x": "50%",
+            "y": "48%"
+          },
+          "visible": true,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "bonus_intro_text_1",
+          "construct": "DO.Core.Renderer.UI.StandardText('@welcome', {fontFamily : 'Arial-Rounded-MT-Regular',fontWeight: 'bolder', fontSize: 100, fill : ['#009059','#009059'], align : 'center', stroke:'#00FF96',strokeThickness : 7, lineJoin: 'round',dropShadow : true,dropShadowDistance: 0,dropShadowBlur:30,dropShadowAngle :0,dropShadowColor :'' })",
+          "fit": "aperture_frame",
+          "visible": true,
+          "position": {
+            "x": "50%",
+            "y": "38%"
+          },
+          "pivot": "LEFT"
+        },
+        {
+          "id": "bonus_intro_text_2",
+          "construct": "DO.Core.Renderer.UI.StandardText('@to_the', {fontFamily : 'Arial-Rounded-MT-Regular',fontWeight: 'bolder', fontSize: 100, fill : ['#009059','#009059'], align : 'center', stroke:'#00FF96',strokeThickness : 7, lineJoin: 'round',dropShadow : true,dropShadowDistance: 0,dropShadowBlur:30,dropShadowAngle :0,dropShadowColor :'' })",
+          "fit": "aperture_frame",
+          "position": {
+            "x": "50%",
+            "y": "54%"
+          },
+          "visible": true,
+          "pivot": "LEFT"
+        },
+        {
+          "id": "bonus_intro_text_3",
+          "construct": "DO.Core.Renderer.UI.StandardText('@pick', {fontFamily : 'Arial-Rounded-MT-Regular',fontWeight: 'bolder', fontSize: 100, fill : ['#009059','#009059'], align : 'center', stroke:'#00FF96',strokeThickness : 7, lineJoin: 'round',dropShadow : true,dropShadowDistance: 0,dropShadowBlur:30,dropShadowAngle :0,dropShadowColor :'' })",
+          "position": {
+            "x": "50%",
+            "y": "68%"
+          },
+          "fit": "aperture_frame",
+          "visible": true,
+          "pivot": "LEFT"
+        },
+        {
+          "id": "button_start_feature",
+          "construct": "DO.Core.Renderer.UI.SpriteButton(assets, 'continue_btn:continue_normal','continue_btn:continue_over', 'continue_btn:continue_disable', '@start_caps', 1, {fontFamily : 'Arial-Rounded-MT-Regular', fontSize: 40 ,  fill : ['#33FF85'], align : 'center', stroke: '#33FF85',strokeThickness : 3 ,dropShadow : true, dropShadowBlur : 10, fill : ['#33FF85','#33FF85']})",
+          "position": {
+            "x": "50%",
+            "y": "73%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        }
+      ]
+    }
+  ],
+  "portrait":{
+    "stage":{
+      "factorX": 1.1,
+      "factorY": 0.32,
+      "x": 0,
+      "y": 0
+    },
+    "intro_holder":{
+      "position":{
+        "x":"27%",
+        "y":"95%"
+      },
+      "pivot":"CENTRE",
+      "scale":{
+        "x":1.3,
+        "y":1.3
+      }
+    }
+  },
+  "landscape":{
+    "stage":{
+      "factorX": 1,
+      "factorY": 1,
+      "x": 0,
+      "y": 0
+    },
+    "intro_holder": {
+      "position":{
+        "x":"25.4%",
+        "y":"27.2%"
+      },
+      "scale":{
+        "x":1,
+        "y":1
+      }
+    }
+  }
+}

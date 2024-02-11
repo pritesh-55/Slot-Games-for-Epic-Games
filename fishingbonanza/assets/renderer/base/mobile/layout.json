@@ -1,0 +1,1226 @@
+{
+  "name":"Base Game Layout",
+  "params":{
+    "audio":{
+      "music":{
+        "ambient":"music_base",
+        "auto_spins":"ReeL_spin",
+        "spin":"ReeL_spin",
+        "respin":"RESPIN_SPIN",
+        "spin_start_points":[
+          0,
+          3.704,
+          7.371,
+          11.070,
+          14.768,
+          18.471,
+          22.167,
+          25.841
+        ]
+      },
+      "fx":{
+        "reel_drops":[
+          "REEL_DROP",
+          "REEL_DROP1",
+          "REEL_DROP2",
+          "REEL_DROP3",
+          "REEL_DROP4"
+        ],
+        "RESPIN_STOP":[
+          "RESPIN_STOP",
+          "RESPIN_STOP",
+          "RESPIN_STOP",
+          "RESPIN_STOP",
+          "RESPIN_STOP"
+        ]
+      }
+    },
+    "scatters":[
+      "SC"
+    ],
+    "sceneAnimations":["banner"]
+  },
+  "components":[
+    {
+      "id":"background",
+      "construct":"DO.Core.Renderer.UI.Image(assets, 'base_bg')",
+      "position":{
+        "x":"50%",
+        "y":"50%"
+      },
+      "pivot":"CENTRE",
+      "scale":{
+        "x":1,
+        "y":1
+      }
+    },
+    {
+      "id":"portrait_bg",
+      "construct":"DO.Core.Renderer.UI.Image(assets, 'base_portrait_bg')",
+      "position":{
+        "x":"95%",
+        "y":"300.5%"
+      },
+      "scale":{
+        "x":1.85,
+        "y":1.85
+      },
+      "pivot":"CENTRE"
+    },
+    {
+      "id":"ui_base",
+      "construct":"DO.Core.Renderer.UI.Image(assets, 'ui_base')",
+      "position":{
+        "x":"49.6%",
+        "y":"112%"
+      },
+      "scale":{
+        "x":0.8,
+        "y":0.4
+      },
+      "visible": false,
+      "pivot":"CENTRE"
+    },
+    {
+      "id": "aperture_holder",
+      "position": {
+        "x": "38%",
+        "y": "33.5%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "pivot": "CENTRE",
+      "components": [
+        {
+          "id": "aperture_frame",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'base_reel_frame')",
+          "position": {
+            "x": "48.5%",
+            "y": "50%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "aperture",
+          "construct": "DO.Slots.Aperture(assets, 'BASE')",
+          "position": {
+            "x": "20.4%",
+            "y": "13.4%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "TOP_LEFT",
+          "params": {
+            "isCascadeSpin": false,
+            "reelStopSequence": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "reels": [
+              {
+                "strip": "EE,CC,EE,CC,BN,GG,CC,GG,FF,AA,GG,AA,GG,FF,AA,CC,BB,GG,EE,EE,EE,CC,CC,SC,DD,BB,WW,AA,DD,DD,DD,DD,BB,BB,EE,BB,CC,CC,DD,BB,DD,CC,WW,CC,CC,BB,DD,CC,FF,CC,CC,CC,CC,GG,FF,DD,FF,EE,FF,EE,FF",
+                "height":592,
+                "symbols_per_reel": 3,
+                "top_margin": 99,
+                "motion_blur": 30,
+                "down": true,
+                "animation": {
+                  "tease_peek": 0.1,
+                  "spin_speed": 1.8,
+                  "accel_speed": 1,
+                  "stop_speed": 0,
+                  "start": {
+                    "delay": 0,
+                    "ramp_distance": 110,
+                    "ramp_time": 0.3,
+                    "back_delay": 0.2
+                  },
+                  "drop": {
+                    "delay": 0.85,
+                    "back_delay": 0.05,
+                    "bounce_distance": 40,
+                    "bounce_time": 0.1
+                  }
+                },
+                "anticipation_scale": {"x":0, "y": 0}
+              },
+              {
+                "strip": "EE,CC,EE,CC,BN,GG,CC,GG,FF,AA,GG,AA,GG,FF,AA,CC,BB,GG,EE,EE,EE,CC,CC,SC,DD,BB,WW,AA,DD,DD,DD,DD,BB,BB,EE,BB,CC,CC,DD,BB,DD,CC,WW,CC,CC,BB,DD,CC,FF,CC,CC,CC,CC,GG,FF,DD,FF,EE,FF,EE,FF",
+                "height": 790,
+                "symbols_per_reel": 4,
+                "top_margin": 0,
+                "motion_blur": 30,
+                "down": true,
+                "animation": {
+                  "tease_peek": 0.1,
+                  "spin_speed": 1.8,
+                  "accel_speed": 1,
+                  "stop_speed": 0,
+                  "start": {
+                    "delay": 0,
+                    "ramp_distance": 120,
+                    "ramp_time": 0.3,
+                    "back_delay": 0.4
+                  },
+                  "drop": {
+                    "delay": 0.85,
+                    "back_delay": 0.05,
+                    "bounce_distance": 40,
+                    "bounce_time": 0.1
+                  }
+                },
+                "anticipation_scale": {"x":0.9, "y": 1.15}
+              },
+              {
+                "strip": "EE,CC,EE,CC,BN,GG,CC,GG,FF,AA,GG,AA,GG,FF,AA,CC,BB,GG,EE,EE,EE,CC,CC,SC,DD,BB,WW,AA,DD,DD,DD,DD,BB,BB,EE,BB,CC,CC,DD,BB,DD,CC,WW,CC,CC,BB,DD,CC,FF,CC,CC,CC,CC,GG,FF,DD,FF,EE,FF,EE,FF",
+                "height": 790,
+                "symbols_per_reel": 4,
+                "top_margin": 0,
+                "motion_blur": 30,
+                "down": true,
+                "animation": {
+                  "tease_peek": 0.1,
+                  "spin_speed": 1.8,
+                  "accel_speed": 1,
+                  "stop_speed": 0,
+                  "start": {
+                    "delay": 0,
+                    "ramp_distance": 130,
+                    "ramp_time": 0.3,
+                    "back_delay": 0.6
+                  },
+                  "drop": {
+                    "delay": 0.85,
+                    "back_delay": 0.05,
+                    "bounce_distance": 40,
+                    "bounce_time": 0.1
+                  }
+                },
+                "anticipation_scale": {"x":0.9, "y": 1.15}
+              },
+              {
+                "strip": "EE,CC,EE,CC,BN,GG,CC,GG,FF,AA,GG,AA,GG,FF,AA,CC,BB,GG,EE,EE,EE,CC,CC,SC,DD,BB,WW,AA,DD,DD,DD,DD,BB,BB,EE,BB,CC,CC,DD,BB,DD,CC,WW,CC,CC,BB,DD,CC,FF,CC,CC,CC,CC,GG,FF,DD,FF,EE,FF,EE,FF",
+                "height": 790,
+                "symbols_per_reel": 4,
+                "top_margin": 0,
+                "motion_blur": 30,
+                "down": true,
+                "animation": {
+                  "tease_peek": 0.1,
+                  "spin_speed": 1.8,
+                  "accel_speed": 1,
+                  "stop_speed": 0,
+                  "start": {
+                    "delay": 0,
+                    "ramp_distance": 140,
+                    "ramp_time": 0.3,
+                    "back_delay": 0.8
+                  },
+                  "drop": {
+                    "delay": 0.85,
+                    "back_delay": 0.05,
+                    "bounce_distance": 40,
+                    "bounce_time": 0.1
+                  }
+                },
+                "anticipation_scale": {"x":0.9, "y": 1.15}
+              },
+              {
+                "strip": "EE,CC,EE,CC,BN,GG,CC,GG,FF,AA,GG,AA,GG,FF,AA,CC,BB,GG,EE,EE,EE,CC,CC,SC,DD,BB,WW,AA,DD,DD,DD,DD,BB,BB,EE,BB,CC,CC,DD,BB,DD,CC,WW,CC,CC,BB,DD,CC,FF,CC,CC,CC,CC,GG,FF,DD,FF,EE,FF,EE,FF",
+                "height":592,
+                "symbols_per_reel": 3,
+                "top_margin": 99,
+                "motion_blur": 30,
+                "down": true,
+                "animation": {
+                  "tease_peek": 0.1,
+                  "spin_speed": 1.8,
+                  "accel_speed": 1,
+                  "stop_speed": 0,
+                  "start": {
+                    "delay": 0,
+                    "ramp_distance": 150,
+                    "ramp_time": 0.3,
+                    "back_delay": 1
+                  },
+                  "drop": {
+                    "delay": 0.85,
+                    "back_delay": 0.05,
+                    "bounce_distance": 40,
+                    "bounce_time": 0.1
+                  }
+                },
+                "anticipation_scale": {"x":0, "y": 0}
+              }
+            ],
+            "symbols": {
+              "WW": {
+                "texture": "STATIC_SYMBOLS:WW",
+                "animation": {
+                  "duration": null,
+                  "clip": "SYMBOL:WW:WIN",
+                  "drop": "SYMBOL:WW_LANDING:WIN",
+                  "reelDrop": null,
+                  "active": null,
+                  "spineId": null,
+                  "frame": "WIN:SYMBOL:FRAME",
+                  "offsets": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "audio": {
+                  "win": "wild:win",
+                  "drop": "WW:Landing"
+                },
+                "bring_to_front": true
+              },
+              "BN": {
+                "texture": "STATIC_SYMBOLS:BN",
+                "animation": {
+                  "duration": null,
+                  "clip": "SYMBOL:BN:WIN",
+                  "drop": "SYMBOL:BN_LANDING:WIN",
+                  "reelDrop": null,
+                  "active": null,
+                  "spineId": null,
+                  "frame": "WIN:SYMBOL:FRAME",
+                  "offsets": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "audio": {
+                  "win": "pick_bonus:win",
+                  "drop": "BN:Landing"
+                },
+                "bring_to_front": true,
+                "tease": {
+                  "near_miss": 0,
+                  "audio": [
+                    "TEASE",
+                    "TEASE"
+                  ],
+                  "duration": [
+                    1300,
+                    2600
+                  ]
+                }
+              },
+              "SC": {
+                "texture": "STATIC_SYMBOLS:SC",
+                "animation": {
+                  "duration": null,
+                  "clip": "SYMBOL:SC:WIN",
+                  "drop": "SYMBOL:SC_LANDING:WIN",
+                  "reelDrop": null,
+                  "active": null,
+                  "spineId": null,
+                  "frame": "WIN:SYMBOL:FRAME",
+                  "offsets": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "audio": {
+                  "win": "scatter:win",
+                  "drop": "SC:Landing"
+                },
+                "bring_to_front": true,
+                "tease": {
+                  "near_miss": 0,
+                  "audio": [
+                    "TEASE",
+                    "TEASE"
+                  ],
+                  "duration": [
+                    1300,
+                    2600
+                  ]
+                }
+              },
+              "AA": {
+                "texture": "STATIC_SYMBOLS:AA",
+                "animation": {
+                  "duration": null,
+                  "clip": "SYMBOL:AA:WIN",
+                  "drop": null,
+                  "reelDrop": null,
+                  "active": null,
+                  "spineId": null,
+                  "frame": "WIN:SYMBOL:FRAME",
+                  "offsets": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "audio": {
+                  "win": "",
+                  "drop": null
+                }
+              },
+              "BB": {
+                "texture": "STATIC_SYMBOLS:BB",
+                "animation": {
+                  "duration": null,
+                  "clip": "SYMBOL:BB:WIN",
+                  "drop": null,
+                  "reelDrop": null,
+                  "active": null,
+                  "spineId": null,
+                  "frame": "WIN:SYMBOL:FRAME",
+                  "offsets": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "audio": {
+                  "win": "",
+                  "drop": null
+                }
+              },
+              "CC": {
+                "texture": "STATIC_SYMBOLS:CC",
+                "animation": {
+                  "duration": null,
+                  "clip": "SYMBOL:CC:WIN",
+                  "drop": null,
+                  "reelDrop": null,
+                  "active": null,
+                  "spineId": null,
+                  "frame": "WIN:SYMBOL:FRAME",
+                  "offsets": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "audio": {
+                  "win": "",
+                  "drop": null
+                }
+              },
+              "DD": {
+                "texture": "STATIC_SYMBOLS:DD",
+                "animation": {
+                  "duration": null,
+                  "clip": "SYMBOL:DD:WIN",
+                  "drop": null,
+                  "reelDrop": null,
+                  "active": null,
+                  "spineId": null,
+                  "frame": "WIN:SYMBOL:FRAME",
+                  "offsets": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "audio": {
+                  "win": "",
+                  "drop": null
+                }
+              },
+              "EE": {
+                "texture": "STATIC_SYMBOLS:EE",
+                "animation": {
+                  "duration": null,
+                  "clip": "SYMBOL:EE:WIN",
+                  "drop": null,
+                  "reelDrop": null,
+                  "active": null,
+                  "spineId": null,
+                  "frame": "WIN:SYMBOL:FRAME",
+                  "offsets": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "audio": {
+                  "win": "L1:WIN",
+                  "drop": null
+                }
+              },
+              "FF": {
+                "texture": "STATIC_SYMBOLS:FF",
+                "animation": {
+                  "duration": null,
+                  "clip": "SYMBOL:FF:WIN",
+                  "drop": null,
+                  "reelDrop": null,
+                  "active": null,
+                  "spineId": null,
+                  "frame": "WIN:SYMBOL:FRAME",
+                  "offsets": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "audio": {
+                  "win": "L1:WIN",
+                  "drop": null
+                }
+              },
+              "GG": {
+                "texture": "STATIC_SYMBOLS:GG",
+                "animation": {
+                  "duration": null,
+                  "clip": "SYMBOL:GG:WIN",
+                  "drop": null,
+                  "reelDrop": null,
+                  "active": null,
+                  "spineId": null,
+                  "frame": "WIN:SYMBOL:FRAME",
+                  "offsets": {
+                    "x": 0,
+                    "y": 0
+                  }
+                },
+                "audio": {
+                  "win": "L1:WIN",
+                  "drop": null
+                }
+              }
+            },
+            "reel_spacing": 215,
+            "teaseSymbolIds": {
+              "SC": 2,
+              "BN": 2
+            },
+            "default_symbol_scale": 1,
+            "quickSpinMultiplier": 6,
+            "spinMultiplier": 2,
+            "interruptSpinMultiplier": 15
+          }
+        },
+        {
+          "id": "win_manager",
+          "index": 1,
+          "construct": "DO.Slots.WinManager(assets, 'BASE')",
+          "plugins": {
+            "payline_renderer": {
+              "class": "DO.Slots.Plugins.PaylineRenderer",
+              "params": {
+                "game_id": "BASE",
+                "line_styling": {
+                  "width": 5
+                },
+                "lineImages": null
+              }
+            },
+            "symbol_animator": {
+              "class": "DO.Slots.Plugins.SymbolAnimator",
+              "params": {
+                "anim_container": "symbol_anim_container",
+                "tease": {
+                  "SC": {
+                    "frame": {
+                      "movieclip": "TEASE_FRAME:FRAME_ANIM",
+                      "offsets": {
+                        "x": 6,
+                        "y": 0
+                      },
+                      "scale": 1
+                    },
+                    "background": null
+                  },
+                  "BN": {
+                    "frame": {
+                      "movieclip": "TEASE_FRAME:FRAME_ANIM",
+                      "offsets": {
+                        "x": 6,
+                        "y": 0
+                      },
+                      "scale": 1
+                    },
+                    "background": null
+                  }
+                },
+                "game_id": "BASE",
+                "noWinSymbolAlpha": 0.5,
+                "popout!": {
+                  "duration": 0.5,
+                  "offsets": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "scale": 1
+                }
+              }
+            }
+          },
+          "position": {
+            "x": "6%",
+            "y": "4%"
+          },
+          "pivot": "TOP_LEFT",
+          "params": {
+            "aperture": "aperture",
+            "payline_renderer": "payline_renderer",
+            "symbol_animator": "symbol_animator",
+            "showPlayerMessages": true,
+            "hideWinToggle": false,
+            "win_display_duration": 2200,
+            "win_summary_duration": 2200,
+            "win_cycle_delay": 3000
+          }
+        },
+        {
+          "id": "symbol_anim_container",
+          "construct": "PIXI.Container()",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "TOP_LEFT"
+        }
+      ]
+    },
+    {
+      "id":"banner",
+      "construct": "DO.Core.Renderer.UI.MovieClipWrapper(assets,'logo_anim',false,false)",
+      "position":{
+        "x":"50%",
+        "y":"5%"
+      },
+      "visible": true,
+      "scale":{
+        "x":1,
+        "y":1
+      },
+      "pivot":"CENTRE"
+    },
+    {
+      "id": "fishingrod",
+      "construct": "DO.Core.Renderer.UI.Image(assets, 'fishingrod')",
+      "position": {
+        "x": "19%",
+        "y": "64%"
+      },
+      "visible": false,
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "pivot": "CENTRE"
+    },
+    {
+      "id": "game_panel_bg",
+      "construct": "DO.Core.Renderer.UI.Image(assets, 'game_panel_bg')",
+      "position": {
+        "x": "50%",
+        "y": "92.6%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "pivot":"CENTRE"
+    },
+    {
+      "id": "player_prompt",
+      "construct": "DO.Core.Renderer.UI.PlayerMessagePanel(assets, 'MESSAGE_SYMBOLS', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 32, fill : ['#4EFF33','#4EFF33'], align : 'center', stroke:'#000000',strokeThickness : 3, lineJoin: 'round',dropShadow : true,dropShadowDistance: 0,dropShadowBlur:0,dropShadowAngle :0,dropShadowColor :'#000000', wordWrapWidth: 500 , wordWrap: true})",
+      "position": {
+        "x": "50%",
+        "y": "90%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "pivot": "CENTRE"
+    },
+    {
+      "id": "win_amount",
+      "construct": "DO.Core.Renderer.UI.SpriteText(assets,'0000')",
+      "visible": false,
+      "params": {
+        "max_chars": 15,
+        "kerning": 0,
+        "fixed_width": 100,
+        "mappings": {
+          "0": "number_counter:0",
+          "1": "number_counter:1",
+          "2": "number_counter:2",
+          "3": "number_counter:3",
+          "4": "number_counter:4",
+          "5": "number_counter:5",
+          "6": "number_counter:6",
+          "7": "number_counter:7",
+          "8": "number_counter:8",
+          "9": "number_counter:9",
+          ".": "number_counter:dot",
+          ",": "number_counter:comma"
+        },
+        "endPos": {"x": 800, "y": 700},
+        "startPosDL": {"x": 1020, "y": 500},
+        "startPosP": {"x": 920, "y": 1550}
+      },
+      "position": {
+        "x": "50%",
+        "y": "55%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "pivot": "CENTRE"
+    },
+    {
+      "id": "jackpot_meter_top",
+      "position": {
+        "x": "42.5%",
+        "y": "07%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "visible": true,
+      "pivot": "CENTRE",
+      "components": [
+        {
+          "id": "diamond_meters",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'JP_btn-0:DIAMOND_btn')",
+          "position": {
+            "x": "21%",
+            "y": "4%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "diamond_meter_Text",
+          "construct": "DO.Core.Renderer.UI.StandardText('@diamond_Text', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 23, fill : ['#FFFFFF','#FFFFFF'], align : 'center', stroke:'#550000',strokeThickness : 10, lineJoin: 'round',dropShadow : true,dropShadowDistance: 0,dropShadowBlur:10,dropShadowAngle :8,dropShadowColor :'#DB2324', wordWrap: true , wordWrapWidth: 350  })",
+          "position": {
+            "x": "20.5%",
+            "y": "5.7%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "diamond_meter_value",
+          "construct": "DO.Core.Renderer.UI.StandardText('', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 25, fill : ['#FFFFFF','#FFFFFF'], align : 'center', stroke:'#000000',strokeThickness : 5, lineJoin: 'round',dropShadow : false,dropShadowDistance: 0,dropShadowBlur:0,dropShadowAngle :0,dropShadowColor :'#000000', wordWrap: true , wordWrapWidth: 150})",
+          "position": {
+            "x": "24.5%",
+            "y": "5.5%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "LEFT"
+        },
+        {
+          "id": "gold_meters",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'JP_btn-0:GOLD_btn')",
+          "position": {
+            "x": "96%",
+            "y": "4%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "gold_meter_Text",
+          "construct": "DO.Core.Renderer.UI.StandardText('@gold_Text', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 23, fill : ['#FFFFFF','#FFFFFF'], align : 'center', stroke:'#1D5200',strokeThickness : 10, lineJoin: 'round',dropShadow : true,dropShadowDistance: 0,dropShadowBlur:10,dropShadowAngle :8,dropShadowColor :'#57BA19', wordWrap: true , wordWrapWidth: 350  })",
+          "position": {
+            "x": "93.2%",
+            "y": "5.8%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "gold_meter_value",
+          "construct": "DO.Core.Renderer.UI.StandardText('', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 25, fill : ['#FFFFFF','#FFFFFF'], align : 'center', stroke:'#000000',strokeThickness : 5, lineJoin: 'round',dropShadow : false,dropShadowDistance: 0,dropShadowBlur:0,dropShadowAngle :0,dropShadowColor :'#000000', wordWrap: true , wordWrapWidth: 150})",
+          "position": {
+            "x": "99%",
+            "y": "5.5%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "LEFT"
+        },
+        {
+          "id": "silver_meters",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'JP_btn-0:SILVER_btn')",
+          "position": {
+            "x": "21%",
+            "y": "11%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "silver_meter_Text",
+          "construct": "DO.Core.Renderer.UI.StandardText('@silver_Text', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 23, fill : ['#FFFFFF','#FFFFFF'], align : 'center', stroke:'#001552',strokeThickness : 10, lineJoin: 'round',dropShadow : true,dropShadowDistance: 0,dropShadowBlur:10,dropShadowAngle :8,dropShadowColor :'#259FD6', wordWrap: true , wordWrapWidth: 350  })",
+          "position": {
+            "x": "18.8%",
+            "y": "12.8%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "silver_meter_value",
+          "construct": "DO.Core.Renderer.UI.StandardText('', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 25, fill : ['#FFFFFF','#FFFFFF'], align : 'center', stroke:'#000000',strokeThickness : 5, lineJoin: 'round',dropShadow : false,dropShadowDistance: 0,dropShadowBlur:0,dropShadowAngle :0,dropShadowColor :'#000000', wordWrap: true , wordWrapWidth: 150})",
+          "position": {
+            "x": "24%",
+            "y": "12.5%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "LEFT"
+        },
+        {
+          "id": "bronze_meters",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'JP_btn-0:BRONZE_btn')",
+          "position": {
+            "x": "96%",
+            "y": "11%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "bronze_meter_Text",
+          "construct": "DO.Core.Renderer.UI.StandardText('@bronze_Text', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 23, fill : ['#FFFFFF','#FFFFFF'], align : 'center', stroke:'#490060',strokeThickness : 10, lineJoin: 'round',dropShadow : true,dropShadowDistance: 0,dropShadowBlur:10,dropShadowAngle :8,dropShadowColor :'#A403DF', wordWrap: true , wordWrapWidth: 350  })",
+          "position": {
+            "x": "94.7%",
+            "y": "12.8%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "bronze_meter_value",
+          "construct": "DO.Core.Renderer.UI.StandardText('', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 25, fill : ['#FFFFFF','#FFFFFF'], align : 'center', stroke:'#000000',strokeThickness : 5, lineJoin: 'round',dropShadow : false,dropShadowDistance: 0,dropShadowBlur:0,dropShadowAngle :0,dropShadowColor :'#000000', wordWrap: true , wordWrapWidth: 150})",
+          "position": {
+            "x": "99%",
+            "y": "12.5%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "LEFT"
+        }
+      ]
+    }
+  ],
+  "portrait":{
+    "stage":{
+      "factorX": 1.1,
+      "factorY": 0.32,
+      "x": 0,
+      "y": 0
+    },
+    "background": {
+      "imageId": "background",
+      "position":{
+        "x":"50%",
+        "y":"50%"
+      },
+      "pivot":"CENTRE",
+      "scale":{
+        "x":1,
+        "y":1
+      }
+    },
+    "player_prompt":{
+      "position":{
+        "x":"82%",
+        "y":"291%"
+      },
+      "scale": {
+        "x": 1.4,
+        "y": 1.4
+      }
+    },
+    "game_panel_bg":{
+      "position":{
+        "x":"63%",
+        "y":"288%"
+      },"scale": {
+        "x": 1.2,
+        "y": 1.2
+      }
+    },
+    "aperture_holder":{
+      "position":{
+        "x":"49.2%",
+        "y":"100%"
+      },
+      "pivot":"CENTRE",
+      "scale":{
+        "x":1.5,
+        "y":1.5
+      }
+    },
+    "win_amount": {
+      "position": {
+        "x": "48%",
+        "y": "150%"
+      }
+    },
+    "banner":{
+      "position":{
+        "x":"69%",
+        "y":"57%"
+      },
+      "scale":{
+        "x":2,
+        "y":2
+      }
+    },
+    "diamond_meters": {
+      "position": {
+        "x": "24%",
+        "y": "60%"
+      },
+      "scale": {
+        "x": 1.5,
+        "y": 1.5
+      }
+    },
+    "diamond_meter_Text": {
+      "position": {
+        "x": "17.5%",
+        "y": "64.3%"
+      },
+      "scale": {
+        "x": 1.5,
+        "y": 1.5
+      }
+    },
+    "diamond_meter_value": {
+      "position": {
+        "x": "20.5%",
+        "y": "64%"
+      },
+      "scale": {
+        "x": 1.5,
+        "y": 1.5
+      }
+    },
+    "gold_meters": {
+      "position": {
+        "x": "90%",
+        "y": "60%"
+      },
+      "scale": {
+        "x": 1.5,
+        "y": 1.5
+      }
+    },
+    "gold_meter_Text": {
+      "position": {
+        "x": "80%",
+        "y": "64.3%"
+      },
+      "scale": {
+        "x": 1.5,
+        "y": 1.5
+      }
+    },
+    "gold_meter_value": {
+      "position": {
+        "x": "85.5%",
+        "y": "64%"
+      },
+      "scale": {
+        "x": 1.5,
+        "y": 1.5
+      }
+    },
+    "silver_meters": {
+      "position": {
+        "x": "24%",
+        "y": "70%"
+      },
+      "scale": {
+        "x": 1.5,
+        "y": 1.5
+      }
+    },
+    "silver_meter_Text": {
+      "position": {
+        "x": "15%",
+        "y": "74.3%"
+      },
+      "scale": {
+        "x": 1.5,
+        "y": 1.5
+      }
+    },
+    "silver_meter_value": {
+      "position": {
+        "x": "20%",
+        "y": "74%"
+      },
+      "scale": {
+        "x": 1.5,
+        "y": 1.5
+      }
+    },
+    "bronze_meters": {
+      "position": {
+        "x": "90%",
+        "y": "70%"
+      },
+      "scale": {
+        "x": 1.5,
+        "y": 1.5
+      }
+    },
+    "bronze_meter_Text": {
+      "position": {
+        "x": "82.5%",
+        "y": "74.3%"
+      },
+      "scale": {
+        "x": 1.5,
+        "y": 1.5
+      }
+    },
+    "bronze_meter_value": {
+      "position": {
+        "x": "86.5%",
+        "y": "74%"
+      },
+      "scale": {
+        "x": 1.5,
+        "y": 1.5
+      }
+    }
+  },
+  "landscape":{
+    "stage":{
+      "factorX": 1,
+      "factorY": 1,
+      "x": 0,
+      "y": 0
+    },
+    "background": {
+      "imageId": "background",
+      "position": {
+        "x": "50%",
+        "y": "50%"
+      },
+      "pivot": "CENTRE",
+      "scale": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    "game_panel_bg":{
+      "position":{
+        "x":"50%",
+        "y":"92.6%"
+      },"scale": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    "player_prompt": {
+      "position":{
+        "x":"50%",
+        "y":"92%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    "aperture_holder": {
+      "position": {
+        "x": "33.5%",
+        "y": "37%"
+      },
+      "pivot": "CENTRE",
+      "scale": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    "win_amount": {
+      "position": {
+        "x": "55%",
+        "y": "35%"
+      }
+    },
+    "banner": {
+      "position": {
+        "x": "11%",
+        "y": "25%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    "diamond_meters": {
+      "position": {
+        "x": "14%",
+        "y": "4%"
+      },
+      "scale": {
+        "x": 1.1,
+        "y": 1.1
+      }
+    },
+    "diamond_meter_Text": {
+      "position": {
+        "x": "13.5%",
+        "y": "5.7%"
+      },
+      "scale": {
+        "x": 1.1,
+        "y": 1.1
+      }
+    },
+    "diamond_meter_value": {
+      "position": {
+        "x": "17.5%",
+        "y": "5.5%"
+      },
+      "scale": {
+        "x": 1.1,
+        "y": 1.1
+      }
+    },
+    "gold_meters": {
+      "position": {
+        "x": "95%",
+        "y": "4%"
+      },
+      "scale": {
+        "x": 1.1,
+        "y": 1.1
+      }
+    },
+    "gold_meter_Text": {
+      "position": {
+        "x": "92.2%",
+        "y": "5.8%"
+      },
+      "scale": {
+        "x": 1.1,
+        "y": 1.1
+      }
+    },
+    "gold_meter_value": {
+      "position": {
+        "x": "98%",
+        "y": "5.5%"
+      },
+      "scale": {
+        "x": 1.1,
+        "y": 1.1
+      }
+    },
+    "silver_meters": {
+      "position": {
+        "x": "14%",
+        "y": "11%"
+      },
+      "scale": {
+        "x": 1.1,
+        "y": 1.1
+      }
+    },
+    "silver_meter_Text": {
+      "position": {
+        "x": "11.8%",
+        "y": "12.8%"
+      },
+      "scale": {
+        "x": 1.1,
+        "y": 1.1
+      }
+    },
+    "silver_meter_value": {
+      "position": {
+        "x": "17%",
+        "y": "12.5%"
+      },
+      "scale": {
+        "x": 1.1,
+        "y": 1.1
+      }
+    },
+    "bronze_meters": {
+      "position": {
+        "x": "95%",
+        "y": "11%"
+      },
+      "scale": {
+        "x": 1.1,
+        "y": 1.1
+      }
+    },
+    "bronze_meter_Text": {
+      "position": {
+        "x": "93.7%",
+        "y": "12.8%"
+      },
+      "scale": {
+        "x": 1.1,
+        "y": 1.1
+      }
+    },
+    "bronze_meter_value": {
+      "position": {
+        "x": "98%",
+        "y": "12.5%"
+      },
+      "scale": {
+        "x": 1.1,
+        "y": 1.1
+      }
+    }
+  }
+}

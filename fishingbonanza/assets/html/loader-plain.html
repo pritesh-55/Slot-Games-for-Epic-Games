@@ -1,0 +1,87 @@
+<style>
+
+    #loader
+    {
+        background-repeat: no-repeat;
+        position: fixed;
+        background-size: cover;
+        left: 0;
+        top:  0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        z-index: -1;
+    }
+
+    #logo_holder
+    {
+        position: absolute;
+        left: 50%;
+        top: 45%;
+        z-index:999999999; width:100%; height:100%;background-repeat:no-repeat
+    }
+    #logo_holder_loader
+    {
+        position: absolute;
+        width: 200px;
+        height: 140px;
+        left: 50%;
+        bottom: 5%;
+    }
+
+
+
+    progress
+    {
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        left: 0;
+        top: 250px;
+        background-color: #292929;
+        color: white;
+    }
+
+    progress::-webkit-progress-bar
+    {
+
+        background-color: #292929;
+        color: orange;
+    }
+
+    progress::-webkit-progress-value
+    {
+
+        background-color: orange;
+        -webkit-box-shadow: 0 0 8px 3px rgba(255, 170, 0, 0.5);
+        box-shadow: 0 0 8px 3px rgba(255, 170, 0, 0.5);
+    }
+
+    progress::-moz-progress-bar
+    {
+
+        background-color: orange;
+        border: none;
+        -webkit-box-shadow: 0 0 8px 3px rgba(255, 170, 0, 0.5);
+        box-shadow: 0 0 8px 3px rgba(255, 170, 0, 0.5);
+    }
+
+    #loader .app_version
+    {
+        text-align: right;
+        position: absolute;
+        right: 3px;
+        top: 1px;
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.4);
+    }
+
+</style>
+<div id="logo_holder">
+    <div class="logo"></div>
+    <progress id="loader_progress_bar1" max="100" value="0" style="z-index: 999999"></progress>
+    <progress id="loader_progress_bar" max="100" value="0" style="z-index: 999999"></progress>
+</div>
+<div id="logo_holder_loader">
+    <div class="logo"></div>
+</div>

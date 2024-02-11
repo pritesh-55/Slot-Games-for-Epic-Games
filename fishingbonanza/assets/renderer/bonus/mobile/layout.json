@@ -1,0 +1,431 @@
+{
+  "name": "Bonus Game Layout",
+  "params": {
+    "audio": {
+      "music": {
+        "ambient": "pickem_music"
+      }
+    },
+    "totalPickOptions": 6
+  },
+  "components": [
+    {
+      "id": "bonus_bg",
+      "construct": "DO.Core.Renderer.UI.BackgroundDimmer(0,0.7)",
+      "position": {
+        "x": "50%",
+        "y": "50%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "visible": false,
+      "pivot": "CENTRE"
+    },
+    {
+      "id": "bonus_bg_portrait",
+      "construct": "DO.Core.Renderer.UI.BackgroundDimmer(0,0.7)",
+      "position": {
+        "x": "92%",
+        "y": "300.5%"
+      },
+      "scale": {
+        "x": 1.85,
+        "y": 1.85
+      },
+      "visible": false,
+      "pivot": "CENTRE"
+    },
+    {
+      "id": "bonus_holder",
+      "position": {
+        "x": "35%",
+        "y": "40%"
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "pivot": "CENTRE",
+      "components": [
+        {
+          "id": "pick_option_1",
+          "construct": "DO.Core.Renderer.UI.BonusOption(assets, 'bonus_icon','bonus_icon_win','bonus_icon_loss')",
+          "position": {
+            "x": "28.5%",
+            "y": "17%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "visible": true,
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "pick_option_text_1",
+          "construct": "DO.Core.Renderer.UI.StandardText('', {fontFamily : 'Arial-Rounded-MT-Bold', fontSize: 45, fill : ['#FFFFFF'], align : 'center', stroke: '#ff3300',strokeThickness : 3 ,dropShadow : true, dropShadowBlur : 20, fill : ['#FFFFFF','#FFFFFF']},false)",
+          "position": {
+            "x": "29%",
+            "y": "21.5%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "pick_option_2",
+          "construct": "DO.Core.Renderer.UI.BonusOption(assets, 'bonus_icon','bonus_icon_win','bonus_icon_loss')",
+          "position": {
+            "x": "47.5%",
+            "y": "17%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "visible": true,
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "pick_option_text_2",
+          "construct": "DO.Core.Renderer.UI.StandardText('', {fontFamily : 'Arial-Rounded-MT-Bold', fontSize: 45, fill : ['#FFFFFF'], align : 'center', stroke: '#ff3300',strokeThickness : 3 ,dropShadow : true, dropShadowBlur : 20, fill : ['#FFFFFF','#FFFFFF']},false)",
+          "position": {
+            "x": "48%",
+            "y": "21.5%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "pick_option_3",
+          "construct": "DO.Core.Renderer.UI.BonusOption(assets, 'bonus_icon','bonus_icon_win','bonus_icon_loss')",
+          "position": {
+            "x": "66.5%",
+            "y": "17%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "visible": true,
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "pick_option_text_3",
+          "construct": "DO.Core.Renderer.UI.StandardText('', {fontFamily : 'Arial-Rounded-MT-Bold', fontSize: 45, fill : ['#FFFFFF'], align : 'center', stroke: '#ff3300',strokeThickness : 3 ,dropShadow : true, dropShadowBlur : 20, fill : ['#FFFFFF','#FFFFFF']},false)",
+          "position": {
+            "x": "67%",
+            "y": "21.5%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "pick_option_4",
+          "construct": "DO.Core.Renderer.UI.BonusOption(assets, 'bonus_icon','bonus_icon_win','bonus_icon_loss')",
+          "position": {
+            "x": "28.5%",
+            "y": "48.5%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "visible": true,
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "pick_option_text_4",
+          "construct": "DO.Core.Renderer.UI.StandardText('', {fontFamily : 'Arial-Rounded-MT-Bold', fontSize: 45, fill : ['#FFFFFF'], align : 'center', stroke: '#ff3300',strokeThickness : 3 ,dropShadow : true, dropShadowBlur : 20, fill : ['#FFFFFF','#FFFFFF']},false)",
+          "position": {
+            "x": "29%",
+            "y": "53%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "pick_option_5",
+          "construct": "DO.Core.Renderer.UI.BonusOption(assets, 'bonus_icon','bonus_icon_win','bonus_icon_loss')",
+          "position": {
+            "x": "47.5%",
+            "y": "48.5%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "visible": true,
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "pick_option_text_5",
+          "construct": "DO.Core.Renderer.UI.StandardText('', {fontFamily : 'Arial-Rounded-MT-Bold', fontSize: 45, fill : ['#FFFFFF'], align : 'center', stroke: '#ff3300',strokeThickness : 3 ,dropShadow : true, dropShadowBlur : 20, fill : ['#FFFFFF','#FFFFFF']},false)",
+          "position": {
+            "x": "48%",
+            "y": "53%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "pick_option_6",
+          "construct": "DO.Core.Renderer.UI.BonusOption(assets, 'bonus_icon','bonus_icon_win','bonus_icon_loss')",
+          "position": {
+            "x": "66.5%",
+            "y": "48.5%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "visible": true,
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "pick_option_text_6",
+          "construct": "DO.Core.Renderer.UI.StandardText('', {fontFamily : 'Arial-Rounded-MT-Bold', fontSize: 45, fill : ['#FFFFFF'], align : 'center', stroke: '#ff3300',strokeThickness : 3 ,dropShadow : true, dropShadowBlur : 20, fill : ['#FFFFFF','#FFFFFF']},false)",
+          "position": {
+            "x": "67%",
+            "y": "53%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+
+        {
+          "id": "pick_option_text",
+          "construct": "DO.Core.Renderer.UI.StandardText('@pick_icon', {fontFamily : 'Arial-Rounded-MT-Bold', fontSize: 60, fill : ['#ffff00'], align : 'center', stroke: '#000000',strokeThickness : 6 ,dropShadow : true, dropShadowBlur : 20, fill : ['#4EFF33','#4EFF33']})",
+          "visible": true,
+          "position": {
+            "x": "48%",
+            "y": "75%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        }
+      ]
+    },
+    {
+      "id": "bonus_win_holder",
+      "position": {
+        "x": "12%",
+        "y": "5.3%"
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "pivot": "CENTRE",
+      "components": [
+        {
+          "id": "bonus_win_panel",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'BONUS_WIN_box')",
+          "position": {
+            "x": "9%",
+            "y": "84.3%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "bonus_win_text",
+          "construct": "DO.Core.Renderer.UI.StandardText('@bonus_win_caps', {fontFamily : 'Arial',fontWeight: 'bolder', fontSize: 35, fill : ['#4EFF33','#4EFF33'], align : 'center', stroke:'#000000',strokeThickness : 5, lineJoin: 'round',dropShadow : true,dropShadowDistance: 0,dropShadowBlur:30,dropShadowAngle :0,dropShadowColor :'' })",
+          "position": {
+            "x": "13.5%",
+            "y": "77%"
+          },
+          "scale": {
+            "x": 0.9,
+            "y": 0.9
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "bonus_win_amount",
+          "construct": "DO.Core.Renderer.UI.StandardText('50', {fontFamily : 'Arial-Rounded-MT-Bold', fontSize: 160, fill : ['#FFFFFF'], align : 'center', stroke: '#ff3300',strokeThickness : 3 ,dropShadow : true, dropShadowBlur : 20, fill : ['#FFFFFF','#FFFFFF']})",
+          "params": {
+            "max_chars": 15,
+            "kerning": 0,
+            "fixed_width": 100,
+            "mappings": {
+              "0": "bonus_win_amount:0",
+              "1": "bonus_win_amount:1",
+              "2": "bonus_win_amount:2",
+              "3": "bonus_win_amount:3",
+              "4": "bonus_win_amount:4",
+              "5": "bonus_win_amount:5",
+              "6": "bonus_win_amount:6",
+              "7": "bonus_win_amount:7",
+              "8": "bonus_win_amount:8",
+              "9": "bonus_win_amount:9",
+              ".": "bonus_win_amount:dot",
+              ",": "bonus_win_amount:comma",
+              "$": "bonus_win_amount:$",
+              "£": "bonus_win_amount:£",
+              "€": "bonus_win_amount:€"
+            }
+          },
+          "position": {
+            "x": "9.2%",
+            "y": "85.2%"
+          },
+          "scale": {
+            "x": 0.3,
+            "y": 0.3
+          },
+          "pivot": "CENTRE"
+        }
+      ]
+    },
+    {
+      "id":"meter_splash",
+      "construct":"DO.Core.Renderer.UI.MovieClipWrapper(assets,'meter_splash',false,false)",
+      "position": {
+        "x": "88%",
+        "y": "12%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "visible": false,
+      "pivot":"CENTRE"
+    },
+    {
+      "id": "game_panel_bg",
+      "construct": "DO.Core.Renderer.UI.Image(assets, 'game_panel_bg')",
+      "position": {
+        "x": "50%",
+        "y": "92.6%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "pivot": "CENTRE"
+    }
+  ],
+  "portrait": {
+    "stage": {
+      "factorX": 1.1,
+      "factorY": 0.32,
+      "x": 0,
+      "y": 0
+    },
+    "game_panel_bg":{
+      "position":{
+        "x":"63%",
+        "y":"288%"
+      },"scale": {
+        "x": 1.2,
+        "y": 1.2
+      }
+    },
+    "bonus_holder": {
+      "position": {
+        "x": "44%",
+        "y": "120%"
+      },
+      "scale": {
+        "x": 1.4,
+        "y": 1.4
+      }
+    },
+    "meter_splash": {
+      "position": {
+        "x": "55%",
+        "y": "78%"
+      },
+      "scale": {
+        "x": 1.5,
+        "y": 1.5
+      }
+    },
+    "bonus_win_holder": {
+      "position": {
+        "x": "59%",
+        "y": "-45%"
+      },
+      "pivot": "CENTRE",
+      "scale": {
+        "x": 1.6,
+        "y": 1.6
+      }
+    }
+  },
+  "landscape": {
+    "stage": {
+      "factorX": 1,
+      "factorY": 1,
+      "x": 0,
+      "y": 0
+    },
+    "game_panel_bg":{
+      "position":{
+        "x":"50%",
+        "y":"92.6%"
+      },"scale": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    "bonus_holder": {
+      "position": {
+        "x": "29%",
+        "y": "42.5%"
+      },
+      "pivot": "CENTRE",
+      "scale": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    "meter_splash": {
+      "position": {
+        "x": "89%",
+        "y": "12%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    "bonus_win_holder": {
+      "position": {
+        "x": "90%",
+        "y": "-63.5%"
+      },
+      "pivot": "CENTRE",
+      "scale": {
+        "x": 1,
+        "y": 1
+      }
+    }
+  }
+}
