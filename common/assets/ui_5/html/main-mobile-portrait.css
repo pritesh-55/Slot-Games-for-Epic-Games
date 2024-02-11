@@ -1,0 +1,17 @@
+html
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-position-x: 20%;
+}
+#renderer_canvas
+{
+    top : 0;
+    overflow: hidden;
+}
+#game_wrapper
+{
+    top : 0;
+    overflow: hidden;
+}

@@ -1,0 +1,643 @@
+/*
+ * Default styling for control panel
+ */
+
+/* main panel / UI */
+#control_panel
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    height: var(--app-height);
+    font-size: 0.9em;
+    text-shadow: 1px 1px 3px black;
+}
+
+/* value stepper styling */
+#control_panel .stepper
+{
+    width: 150px;
+}
+
+#control_panel .stepper .value /* stepper value */
+{
+    left: 50%;
+    top: 50%;
+    width: 70%;
+    height: 26px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+
+#control_panel .stepper .button_prev /* stepper down */
+{
+    position: absolute;
+    display: block;
+    top: 12%;
+    left: 7%;
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: inherit;
+    width: 17px ;
+    height: 18px ;
+    background: transparent;
+
+}
+
+#control_panel .stepper .dot /* stepper down */
+{
+    position: absolute;
+    display: block;
+    top: 12%;
+    left: 0%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: inherit;
+    width: 10vw;
+    height: 9vw;
+
+}
+
+
+
+#control_panel .stepper .button_next /* stepper up */
+{
+    position: absolute;
+    display: block;
+    top: 12%;
+    right: 65%;
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: inherit;
+    width: 17px ;
+    height: 18px ;
+    background: transparent;
+
+}
+
+
+#control_panel #cp_auto_settings_panel
+{
+    display: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 28%;
+    height: 100px;
+    position: absolute;
+    left: 62%;
+    bottom: 17.5%;
+    transform: translateX(-50%);
+}
+#control_panel .box_arrow_down
+{
+    position: absolute;
+    bottom: 0;
+    left : 50%;
+    width: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 10px solid #000000;
+    transform: translate(-50%, 100%);
+    z-index: 9000;
+}
+
+#control_panel .item_holder_tall
+{
+    height: 60px;
+    font-size: 12px;
+}
+#control_panel .stepper
+{
+    top: 0px;
+}
+
+#control_panel .expand_icon
+{
+    width: 3vh;
+    height: 3vh;
+    position: absolute;
+    right : 5px;
+    top:5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 9000;
+}
+
+#control_panel .desktop_item_frame
+{
+    background-color: #1c0e1d;
+    border: 0.1vw solid rgba(169, 95, 175, 1);
+    border-radius: 9px;
+    height : 100%;
+
+    -webkit-box-shadow: inset 0px 0px 58px 0px rgba(80,48,82,1);
+    -moz-box-shadow: inset 0px 0px 58px 0px rgba(80,48,82,1);
+    box-shadow: inset 0px 0px 58px 0px rgba(80,48,82,1);
+}
+#control_panel .autobtn_item_frame
+{
+    height : 100%;
+}
+
+
+#control_panel .desktop_item_frame_dark
+{
+    background-color: #000000;
+    border: 0.1vw solid rgba(169, 95, 175, 0.8);
+    border-radius: 9px;
+    height : 100%;
+
+    -webkit-box-shadow: inset 0px 0px 58px 0px rgba(80,48,82,1);
+    -moz-box-shadow: inset 0px 0px 58px 0px rgba(80,48,82,1);
+    box-shadow: inset 0px 0px 58px 0px rgba(80,48,82,1);
+}
+
+#control_panel .disabled
+{
+    pointer-events: none;
+    opacity: 0.75;
+}
+
+/* background filter */
+#control_panel #panel_background
+{
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    height: 15%;
+
+    -webkit-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
+}
+
+/* background filter (spin area in portrait) */
+#control_panel #spin_background
+{
+    background-color: rgba(0, 0, 0, 0.7);
+
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+/* feature panel */
+#control_panel #feature_panel
+{
+    position: absolute;
+    top:0;
+    height: 70%;
+    left :58%;
+    width: 26%;
+}
+#control_panel #feature_panel #feature_spins_wrapper
+{
+    position: absolute;
+    top:0;
+    left: 2%;
+    height: 100%;
+    width: 40%;
+}
+#control_panel #feature_panel #feature_win_wrapper
+{
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 100%;
+    width: 60%;
+}
+
+/* panel ui icon */
+.ui_icon
+{
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    width: 16vmin;
+    height: 16vmin;
+    max-width: 36px;
+    max-height: 36px;
+}
+
+
+
+/* footer */
+#control_panel #footer
+{
+    position: absolute;
+    width: 100%;
+    height: 9vh;
+    display:none;
+}
+
+#control_panel .main_button
+{
+    position: absolute;
+    top :0%;
+    left:0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+#control_panel .autobtn
+{
+    position: absolute;
+    top :0;
+    left:0;
+    background-image: url("../html/images/settings/autoplay.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+/* stop autospin button */
+#control_panel #button_stop_autospin
+{
+    display: none;
+}
+
+/* stop spin button */
+#control_panel #button_stop_spin {
+    display: none;
+}
+
+#control_panel #cp_autocount_label
+{
+    pointer-events: none;
+    display: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    top: 55%;
+    left: 50%;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: none;
+    color: rgb(253, 253, 253);
+
+}
+
+
+/* auto button */
+#control_panel #button_auto_cp
+{
+    height: 10.4%;
+    bottom: 4.3%;
+    left: 57.9%;
+    width: 8%;
+    background-size: 80%;
+}
+
+
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+  /*  #control_panel #button_audio, #control_panel #button_settings {
+        position: initial;
+        float: right;
+        margin-top: -10px;
+    }*/
+}
+@media only screen
+and (min-device-width : 1024px)
+and (max-device-width : 1366px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+    /*#control_panel #button_audio, #control_panel #button_settings {
+        position: initial;
+        float: right;
+        margin-top: -10px;
+    }*/
+}
+
+.audio_on
+{
+    background-image: url("../html/images/settings/icon_audio_on_desktop_b.png");
+}
+
+.audio_off
+{
+    background-image: url("../html/images/settings/icon_audio_off_desktop_b.png");
+}
+.audio_on_screen
+{
+    background-image: url("../html/images/settings/icon_audio_on_desktop_b.png");
+}
+
+.audio_off_screen
+{
+
+    background-image: url("../html/images/settings/icon_audio_off_desktop_b.png");
+}
+
+
+#control_panel #footer
+{
+    display : none;
+}
+#control_panel .expand_icon
+{
+    display: none;
+}
+#control_panel #cp_bet_settings_panel
+{
+    display: none;
+}
+
+
+#control_panel #info_bar
+{
+    position: absolute;
+    top:2px;
+    width: 100%;
+    height: 3vw;
+    /*color: rgba(45, 26, 47, 1);*/
+    text-shadow: none;
+    background-color: transparent;
+    font-size: 1.5vw !important;
+
+}
+
+#control_panel #info_bar .left_text
+{
+    position: absolute;
+    left: 10px;
+    text-align: left;
+    visibility: hidden;
+}
+
+#control_panel #info_bar .centre_text
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#control_panel #info_bar .right_text
+{
+   /* position: absolute;
+    right: 10px;
+    text-align: right;*/
+}
+
+#control_panel #feature_panel #feature_win_wrapper .meter_value
+{
+    font-size: 2.5vw;
+}
+#control_panel #feature_panel #feature_spins_wrapper .meter_value
+{
+    font-size: 2.5vw;
+}
+#control_panel #feature_panel #scatter_wrapper .meter_value
+{
+    font-size: 2.5vw;
+}
+#control_panel #feature_panel #extraSpin_wrapper .meter_value
+{
+    font-size: 2.5vw;
+}
+
+#control_panel .desktop_item_frame
+{
+    border-radius: 0;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+#control_panel .desktop_item_frame_dark
+{
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+
+
+
+
+
+/* feature panel */
+#control_panel #feature_panel
+{
+    left :10%;
+    width: 26%;
+    height: 100%;
+    top:-655%;
+}
+
+#control_panel #spin_background
+{
+    display: none;
+}
+
+#control_panel #button_stop_autospin
+{
+    /*background-image: url("../html/images/settings/buttonPanel/Autostop_Normal.png");*/
+}
+
+#control_panel #button_auto_cp
+{
+    display: none;
+}
+
+/* action button wrapper (spin, stop etc) */
+#control_panel #main_button_wrapper
+{
+    width: 28vw;
+    height: 28vw;
+    margin-left: -8vw;
+    margin-top: -7vw;
+    overflow: hidden;
+    position: absolute;
+    left: 66.5%;
+    bottom: 4.3%;
+}
+#control_panel #Autoplay_button_wrapper
+{
+
+    margin-left: -8vw;
+    margin-top: -8vw;
+    overflow: hidden;
+    position: absolute;
+    left: 66.5%;
+    bottom: 4.3%;
+}
+#control_panel #bet_button_wrapper
+{
+    margin-left: -8vw;
+    margin-top: -8vw;
+    overflow: hidden;
+    position: absolute;
+    left: 66.5%;
+    bottom: 4.3%;
+}
+/*#control_panel #button_settings
+{
+    right:3%;
+    bottom: 0;
+    !*height:77px !important;*!
+    background-size: 100%;
+    width:8% ;
+}*/
+
+#control_panel #button_audio
+{
+   /* right:8%;
+    bottom: 0;*/
+    height:100%;
+    background-size: 60%;
+}
+
+/* home */
+#control_panel #button_home
+{
+    left:0;
+    bottom: 0;
+    height:100%;
+    background-size: 100%;
+    background-image: url("../html/images/settings/icon_home.png");
+}
+
+#control_panel #button_logo
+{
+    display:none;
+}
+
+#control_panel .meter_title
+{
+    top: 28%;
+    font-size: 3vh;
+}
+#control_panel .meter_value
+{
+    top : 63%;
+    font-size: 4.2vh;
+}
+#control_panel .meter_win_value
+{
+    top : 63%;
+    font-size: 4.2vh;
+}
+
+/* logo */
+#control_panel #button_logo
+{
+    transform: translateX(-50%);
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../renderer/base/desktop/logo.png");
+}
+
+/* meters */
+#control_panel .meter_title
+{
+    color: #ffa755;
+    font-weight: bold;
+    text-align: center;
+    font-family: Bahnschrift;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 20px;
+    top: 18%;
+    left: 51%;
+    font-size: 1.0vw;
+    line-height: 20px;
+}
+#control_panel .meter_title1
+{
+    color: #ffa755;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 20px;
+    top: 18%;
+    left: 56%;
+    font-family: 'Roboto-Bold';
+    font-size: 1.0vw;
+    line-height: 20px;
+}
+
+#control_panel .meter_value
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.6vw;
+    line-height: 1.6vw;
+    bottom: 22%;
+    left: 50%;
+}
+
+#control_panel .meter_win_value
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1.6vw;
+    line-height: 1.6vw;
+    bottom: 22%;
+    left: 55%;
+}
+
+/* win updated animation */
+#control_panel .win_update_throb
+{
+    animation-name: win_update_keyframes;
+    animation-duration: 1.3s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+@keyframes win_update_keyframes
+{
+    0%
+    {
+        color: white;
+    }
+    30%
+    {
+        color: yellow;
+        text-shadow: 0 0 10px rgba(233, 255, 0, 0.98);
+    }
+    100%
+    {
+        color: white;
+    }
+}
+

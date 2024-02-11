@@ -1,0 +1,21 @@
+{"frames": {
+
+"big_win":
+{
+	"frame": {"x":1,"y":1,"w":1104,"h":824},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1104,"h":824},
+	"sourceSize": {"w":1104,"h":824},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "big_win.png",
+	"format": "RGBA8888",
+	"size": {"w":1106,"h":826},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:df1471564f09ef24206a198392f742b3:e224c1d4f4911e33a558c3fef3e0a495:3c43deed493adfac35c4a5832567c6a6$"
+}
+}

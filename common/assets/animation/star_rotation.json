@@ -1,0 +1,102 @@
+{"frames": {
+
+"star_rotation_00":
+{
+	"frame": {"x":1,"y":1,"w":210,"h":220},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":210,"h":220},
+	"sourceSize": {"w":210,"h":220},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"star_rotation_02":
+{
+	"frame": {"x":212,"y":1,"w":210,"h":220},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":210,"h":220},
+	"sourceSize": {"w":210,"h":220},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"star_rotation_04":
+{
+	"frame": {"x":1,"y":222,"w":210,"h":220},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":210,"h":220},
+	"sourceSize": {"w":210,"h":220},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"star_rotation_06":
+{
+	"frame": {"x":212,"y":222,"w":210,"h":220},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":210,"h":220},
+	"sourceSize": {"w":210,"h":220},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"star_rotation_08":
+{
+	"frame": {"x":1,"y":443,"w":210,"h":220},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":210,"h":220},
+	"sourceSize": {"w":210,"h":220},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"star_rotation_10":
+{
+	"frame": {"x":212,"y":443,"w":210,"h":220},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":210,"h":220},
+	"sourceSize": {"w":210,"h":220},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"star_rotation_12":
+{
+	"frame": {"x":1,"y":664,"w":210,"h":220},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":210,"h":220},
+	"sourceSize": {"w":210,"h":220},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"star_rotation_14":
+{
+	"frame": {"x":212,"y":664,"w":210,"h":220},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":210,"h":220},
+	"sourceSize": {"w":210,"h":220},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"star_rotation_16":
+{
+	"frame": {"x":1,"y":885,"w":210,"h":220},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":210,"h":220},
+	"sourceSize": {"w":210,"h":220},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"star_rotation_18":
+{
+	"frame": {"x":212,"y":885,"w":210,"h":220},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":210,"h":220},
+	"sourceSize": {"w":210,"h":220},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "star_rotation.png",
+	"format": "RGBA8888",
+	"size": {"w":423,"h":1106},
+	"scale": "2",
+	"smartupdate": "$TexturePacker:SmartUpdate:406cb6c77b4f63c56a603d4de4905454:820ed17936f924fb81f9dd59b8e2ba4d:0685ae327b1b88cfc5828eb1aae007bb$"
+}
+}

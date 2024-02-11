@@ -1,0 +1,84 @@
+{"frames": {
+
+"bronze_idle":
+{
+	"frame": {"x":0,"y":0,"w":435,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":435,"h":121},
+	"sourceSize": {"w":435,"h":121},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"bronze_win":
+{
+	"frame": {"x":435,"y":0,"w":435,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":435,"h":121},
+	"sourceSize": {"w":435,"h":121},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"diamond_idle":
+{
+	"frame": {"x":870,"y":0,"w":558,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":558,"h":121},
+	"sourceSize": {"w":558,"h":121},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"diamond_win":
+{
+	"frame": {"x":1428,"y":0,"w":558,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":558,"h":121},
+	"sourceSize": {"w":558,"h":121},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"gold_idle":
+{
+	"frame": {"x":948,"y":121,"w":520,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":520,"h":122},
+	"sourceSize": {"w":520,"h":122},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"gold_win":
+{
+	"frame": {"x":1468,"y":121,"w":520,"h":122},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":520,"h":122},
+	"sourceSize": {"w":520,"h":122},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"silver_idle":
+{
+	"frame": {"x":0,"y":121,"w":474,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":474,"h":121},
+	"sourceSize": {"w":474,"h":121},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"silver_win":
+{
+	"frame": {"x":474,"y":121,"w":474,"h":121},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":474,"h":121},
+	"sourceSize": {"w":474,"h":121},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "JP_Meter.png",
+	"format": "RGBA8888",
+	"size": {"w":1988,"h":243},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:a7fb3f4a485acf5fc84cddfeef98ff52:4cb7dbaa616597ce993125d0612229fc:f5ee355ee2feee92e4ad485bd3e31988$"
+}
+}

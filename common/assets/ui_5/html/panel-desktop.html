@@ -1,0 +1,199 @@
+<!-- control panel -->
+<div id="control_panel" style="display: none">
+
+    <!-- lower filter behind spin button in portrait -->
+    <div id="spin_background"></div>
+
+    <!-- footer -->
+    <div id="footer">
+        <!-- logo -->
+        <div id="button_logo" class="rg_branding"></div>
+    </div>
+    <!-- background filter-->
+    <div id="panel_background">
+
+        <!-- bet settings panel -->
+        <div id="cp_bet_settings_panel" class="cp_panel1" style="">
+            <span class="close-bet"></span>
+            <div class="bet-heading">
+                <span class="lang:bet_options"></span>
+            </div>
+            <div id="tb-total" class="lang:total_bet_caps commonText"></div>
+            <div class="bet-amt">
+                <span class="lang:bet_amount_text commonText"></span>
+                <span id="betPanelValue"></span>
+            </div>
+            <div class="button-base">
+                <button id="maxBet" class="btn-bet lang:max_bet"></button>
+            </div>
+
+        </div>
+
+        <!-- auto settings panel -->
+        <div id="cp_auto_settings_panel" class="cp_panel" style="display: none;">
+
+            <header class="head-auto-content">
+                <h2 class="lang:settings_autoplay_desk cp_auto_title"></h2>
+                <button id="autoplay_exit" class="button_arrow1"></button>
+                <label class="cp_auto_toggle_container">
+                    <button id="cp_auto_toggle_button" class="cp_auto_toggle button_arrow"></button>
+
+                </label>
+            </header>
+
+            <!-- Number of spins -->
+            <div class="main-auto-content" style="background-color: #080300";>
+                <div class="spin-chooser" >
+                    <div class="stepper_label lang:no_of_spins" style="margin-left: 32%"></div>
+                    <div id="spin_count_chooser" style="margin-left: 9%" class="multiselect">
+                        <button class="button_arrow left"></button>
+                        <div id="spin_count_chooser_items" class="multiselect-items">
+                            <label class="panel_icon text-center">
+                                <input type="radio" name="spin_count" value="25" class="spin_count_chooser_item"/><span>25</span>
+                            </label>
+                            <label class="panel_icon text-center">
+                                <input type="radio" name="spin_count" value="50" class="spin_count_chooser_item"/><span>50</span>
+                            </label>
+                            <label class="panel_icon text-center">
+                                <input type="radio" name="spin_count" value="75" class="spin_count_chooser_item"/><span>75</span>
+                            </label>
+                        </div>
+                        <button class="button_arrow right"></button>
+                    </div>
+                </div>
+
+            <div id="cp_auto_advanced">
+
+                <!-- Loss limit -->
+                <div class="cp_auto_input clearfix">
+                    <label class="stepper_label currencyData"></label>
+                    <label class="stepper_label lang:loss_limit"></label>
+                    <input id="cp_auto_loss_limit" type="text" placeholder="Enter value" class="input_desktop" required novalidate autocomplete="off"/>
+                </div>
+
+                <!-- Single win limit -->
+                <div class="cp_auto_input clearfix">
+                    <label class="stepper_label currencyData"></label>
+                    <label class="stepper_label lang:single_win_limit"></label>
+                    <input id="cp_auto_single_win_limit" type="text" placeholder="Enter value" class="input_desktop" required novalidate autocomplete="off"/>
+                </div>
+
+                <!-- Total win limit -->
+                <div class="cp_auto_input clearfix">
+                    <label class="stepper_label currencyData"></label>
+                    <label class="stepper_label lang:total_win_limit"></label>
+                    <input id="cp_auto_total_win_limit" type="text" placeholder="Enter value" class="input_desktop" required novalidate autocomplete="off"/>
+                </div>
+
+                    <!-- Stop on any win -->
+                    <div class="cp_auto_input clearfix">
+                        <label class="stepper_label lang:stop_on_any_win"></label>
+                        <input id="cp_auto_stop_on_any_win" type="checkbox" class="toggle_desktop input_desktop"/>
+                    </div>
+                </div>
+
+                <!-- Start button -->
+                <button id="cp_auto_start_button" class="ui_button lang:start_auto_play_desk" style="width:39%;height: 40px;padding-top: 4px;margin-left: 31%;background-color: #000000 ;border: 3px solid #FF83E8;color: #FF47FF;font-size: 19px"></button>
+
+
+            </div>
+
+        </div>
+
+        <div id="panel_bg_container">
+            <div id="panel_bg_shape"></div>
+        </div>
+
+        <div id="cp_button_wrapper">
+
+            <div id="button_settings"></div>
+            <div id="button_audio" class="ui_icon"></div>
+            <!-- feature panel -->
+            <div id="feature_panel">
+
+                 <!--running win total-->
+                <div id="feature_win_wrapper">
+
+                    <span id="cp_feature_win" style="font-size: 18px"></span>
+
+                </div>
+            </div>
+
+            <!-- win wrapper -->
+            <div id="win_wrapper" class="">
+                <!--<span class="cp_label lang:WIN"></span>-->
+                <span id="cp_win"></span>
+            </div>
+            <div id="_image"></div>
+
+            <div id="bet_wrapper">
+                <!-- total bet (desktop only) -->
+                <span class="cp_label"></span>
+                <div id="cp_stepper_total_bet" class="bet_stepper" >
+                    <div class="betbutton_icon button_minus button_prev"></div>
+
+                    <div id="cp_bet_settings" class=" value" ></div>
+                    <div class="betbutton_icon button_plus button_next"></div>
+                </div>
+            </div>
+
+            <!-- balance wrapper -->
+            <div id="balance_wrapper" class="">
+                <div class="cp_label lang:balance_caps" ></div>
+                <div id="cp_balance"></div>
+                <div id="cp_balance_image"></div>
+            </div>
+
+            <div id="accumulatedWin_wrapper" class="">
+                <div class="accumulated_label lang:accumulated_caps" ></div>
+                <div id="accumulated_amount"></div>
+            </div>
+
+            <div id="allbutton_wapper">
+                <div id="game_panel_side_bg"></div>
+                <div id="main_button_wrapper">
+                    <!-- stop button -->
+                    <div id="button_stop_spin" class="ui_button button_stop_spin"></div>
+
+                    <!-- spin button -->
+                    <div id="button_spin" class="ui_button button_spin"></div>
+                </div>
+                <div id="buy_credit_button_wrapper">
+                    <!-- buy credit button -->
+                    <div id="button_buy_credit" class="ui_button button_buy_credit"></div>
+                </div>
+
+                <!-- auto spin button -->
+                <div id="button_auto_cp" class="panel_icon button_auto_spin">
+                    <!--<span class="lang:auto1 auto_text"></span>-->
+                </div>
+                <!--<div id="button_bet_button" class="panel_icon button_bet_press"></div>-->
+                <!-- autocount label -->
+                <div id="cp_autocount_label" class=""></div>
+
+                <!-- stop auto button -->
+                <div id="button_stop_autospin" class="panel_icon button_auto_spin button_stop_auto_spin">
+                    <!--<span class="lang:stop stop_text"></span>-->
+                </div>
+
+            </div>
+
+        </div>
+        <div id="button_home" class="ui_icon"></div>
+    </div>
+
+    <!-- info bar -->
+    <div id="info_bar">
+
+        <!-- audio button -->
+        <div class="left-info">
+            <span class="right_text_title"></span>
+            <span class="right_text version"></span>
+        </div>
+        <div class="right-info">
+            <span class="right_text local_time"></span>
+        </div>
+
+    </div>
+
+</div>

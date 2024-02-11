@@ -1,0 +1,398 @@
+{
+  "name": "Jackpot Layout",
+  "params": {
+    "audio": {
+    }
+  },
+  "components": [
+    {
+      "id": "jackpot_static_meter",
+      "position": {
+        "x": "50%",
+        "y": "50%"
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      },
+      "pivot": "CENTRE",
+      "components": [
+        {
+          "id": "diamond_meters",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'diamond_meters')",
+          "position": {
+            "x": "15%",
+            "y": "4%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "diamond_meter_value",
+          "construct": "DO.Core.Renderer.UI.StandardText(' ', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 35, fill : ['#F5E001','#F5E001'], align : 'center', stroke:'#000000',strokeThickness : 5, lineJoin: 'round',dropShadow : false,dropShadowDistance: 0,dropShadowBlur:0,dropShadowAngle :0,dropShadowColor :'#000000' })",
+          "position": {
+            "x": "18%",
+            "y": "6%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "gold_meters",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'gold_meters')",
+          "position": {
+            "x": "90%",
+            "y": "4%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "gold_meter_value",
+          "construct": "DO.Core.Renderer.UI.StandardText(' ', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 35, fill : ['#F5E001','#F5E001'], align : 'center', stroke:'#000000',strokeThickness : 5, lineJoin: 'round',dropShadow : false,dropShadowDistance: 0,dropShadowBlur:0,dropShadowAngle :0,dropShadowColor :'#000000' })",
+          "position": {
+            "x": "93%",
+            "y": "6%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "silver_meters",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'silver_meters')",
+          "position": {
+            "x": "15%",
+            "y": "11%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "silver_meter_value",
+          "construct": "DO.Core.Renderer.UI.StandardText(' ', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 35, fill : ['#F5E001','#F5E001'], align : 'center', stroke:'#000000',strokeThickness : 5, lineJoin: 'round',dropShadow : false,dropShadowDistance: 0,dropShadowBlur:0,dropShadowAngle :0,dropShadowColor :'#000000' })",
+          "position": {
+            "x": "18%",
+            "y": "13%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "bronze_meters",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'bronze_meters')",
+          "position": {
+            "x": "90%",
+            "y": "12%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "bronze_meter_value",
+          "construct": "DO.Core.Renderer.UI.StandardText(' ', {fontFamily : 'Arial-Rounded-MT-Bold',fontWeight: 'bolder', fontSize: 35, fill : ['#F5E001','#F5E001'], align : 'center', stroke:'#000000',strokeThickness : 5, lineJoin: 'round',dropShadow : false,dropShadowDistance: 0,dropShadowBlur:0,dropShadowAngle :0,dropShadowColor :'#000000' })",
+          "position": {
+            "x": "93%",
+            "y": "14%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "JP_Meter",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'JP_Meter')",
+          "position": {
+            "x": "17%",
+            "y": "50%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "Diamond_meter",
+          "construct": "DO.Core.Renderer.UI.SpriteText(assets,'')",
+          "visible": true,
+          "params": {
+            "max_chars": 15,
+            "kerning": 0,
+            "fixed_width": 100,
+            "mappings": {
+              "0": "Diamond_meter_Bitmap:0",
+              "1": "Diamond_meter_Bitmap:1",
+              "2": "Diamond_meter_Bitmap:2",
+              "3": "Diamond_meter_Bitmap:3",
+              "4": "Diamond_meter_Bitmap:4",
+              "5": "Diamond_meter_Bitmap:5",
+              "6": "Diamond_meter_Bitmap:6",
+              "7": "Diamond_meter_Bitmap:7",
+              "8": "Diamond_meter_Bitmap:8",
+              "9": "Diamond_meter_Bitmap:9",
+              ".": "Diamond_meter_Bitmap:Dot",
+              ",": "Diamond_meter_Bitmap:Comma",
+              "$": "Diamond_meter_Bitmap:$"
+            }
+          },
+          "position": {
+            "x": "19.5%",
+            "y": "5.4%"
+          },
+          "scale": {
+            "x": 0.15,
+            "y": 0.15
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "Gold_meter",
+          "construct": "DO.Core.Renderer.UI.SpriteText(assets,'')",
+          "visible": true,
+          "params": {
+            "max_chars": 15,
+            "kerning": 0,
+            "fixed_width": 100,
+            "mappings": {
+              "0": "Gold_meter_Bitmap:0",
+              "1": "Gold_meter_Bitmap:1",
+              "2": "Gold_meter_Bitmap:2",
+              "3": "Gold_meter_Bitmap:3",
+              "4": "Gold_meter_Bitmap:4",
+              "5": "Gold_meter_Bitmap:5",
+              "6": "Gold_meter_Bitmap:6",
+              "7": "Gold_meter_Bitmap:7",
+              "8": "Gold_meter_Bitmap:8",
+              "9": "Gold_meter_Bitmap:9",
+              ".": "Gold_meter_Bitmap:Dot",
+              ",": "Gold_meter_Bitmap:Comma",
+              "$": "Gold_meter_Bitmap:$"
+            }
+          },
+          "position": {
+            "x": "89.4%",
+            "y": "5.4%"
+          },
+          "scale": {
+            "x": 0.15,
+            "y": 0.15
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "Silver_meter",
+          "construct": "DO.Core.Renderer.UI.SpriteText(assets,'')",
+          "visible": true,
+          "params": {
+            "max_chars": 15,
+            "kerning": 0,
+            "fixed_width": 100,
+            "mappings": {
+              "0": "Silver_meter_Bitmap:0",
+              "1": "Silver_meter_Bitmap:1",
+              "2": "Silver_meter_Bitmap:2",
+              "3": "Silver_meter_Bitmap:3",
+              "4": "Silver_meter_Bitmap:4",
+              "5": "Silver_meter_Bitmap:5",
+              "6": "Silver_meter_Bitmap:6",
+              "7": "Silver_meter_Bitmap:7",
+              "8": "Silver_meter_Bitmap:8",
+              "9": "Silver_meter_Bitmap:9",
+              ".": "Silver_meter_Bitmap:Dot",
+              ",": "Silver_meter_Bitmap:Comma",
+              "$": "Silver_meter_Bitmap:$"
+            }
+          },
+          "position": {
+            "x": "18.1%",
+            "y": "13.4%"
+          },
+          "scale": {
+            "x": 0.15,
+            "y": 0.15
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "Bronze_meter",
+          "construct": "DO.Core.Renderer.UI.SpriteText(assets,'')",
+          "visible": true,
+          "params": {
+            "max_chars": 15,
+            "kerning": 0,
+            "fixed_width": 100,
+            "mappings": {
+              "0": "Bronze_meter_Bitmap:0",
+              "1": "Bronze_meter_Bitmap:1",
+              "2": "Bronze_meter_Bitmap:2",
+              "3": "Bronze_meter_Bitmap:3",
+              "4": "Bronze_meter_Bitmap:4",
+              "5": "Bronze_meter_Bitmap:5",
+              "6": "Bronze_meter_Bitmap:6",
+              "7": "Bronze_meter_Bitmap:7",
+              "8": "Bronze_meter_Bitmap:8",
+              "9": "Bronze_meter_Bitmap:9",
+              ".": "Bronze_meter_Bitmap:Dot",
+              ",": "Bronze_meter_Bitmap:Comma",
+              "$": "Bronze_meter_Bitmap:$"
+            }
+          },
+          "position": {
+            "x": "90.8%",
+            "y": "13.4%"
+          },
+          "scale": {
+            "x": 0.15,
+            "y": 0.15
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "wheel_assets_normal",
+          "position": {
+            "x": "30%",
+            "y": "40%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "visible": true,
+          "pivot": "CENTRE",
+          "components": [
+            {
+              "id": "wheel_back_idle",
+              "construct": "DO.Core.Renderer.UI.Image(assets, 'wheel_back_idle')",
+              "position": {
+                "x": "50%",
+                "y": "50%"
+              },
+              "scale": {
+                "x": 1,
+                "y": 1
+              },
+              "visible": true
+            },
+            {
+              "id": "main_wheel_idle",
+              "construct": "DO.Core.Renderer.UI.Image(assets, 'main_wheel_idle')",
+              "position": {
+                "x": "50%",
+                "y": "50%"
+              },
+              "scale": {
+                "x": 1,
+                "y": 1
+              },
+              "visible": true
+            }
+          ]
+        },
+        {
+          "id": "wheel_assets_glow",
+          "position": {
+            "x": "30%",
+            "y": "40%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "visible": false,
+          "pivot": "CENTRE",
+          "components": [
+            {
+              "id": "wheel_back_spin",
+              "construct": "DO.Core.Renderer.UI.Image(assets, 'wheel_back_spin')",
+              "position": {
+                "x": "50%",
+                "y": "50%"
+              },
+              "scale": {
+                "x": 1,
+                "y": 1
+              },
+              "visible": true
+            },
+            {
+              "id": "main_wheel_spin",
+              "construct": "DO.Core.Renderer.UI.Image(assets, 'main_wheel_spin')",
+              "position": {
+                "x": "50%",
+                "y": "50%"
+              },
+              "scale": {
+                "x": 1,
+                "y": 1
+              },
+              "visible": true
+            }
+          ]
+        },
+        {
+          "id":"spin_button_anim",
+          "construct":"DO.Core.Renderer.UI.SpriteButton(assets, 'spin_button:Spin_btn_normal','spin_button:Spin_btn_hover', 'spin_button0:Spin_btn_disabled','',1)",
+          "position":{
+            "x":"57%",
+            "y":"48%"
+          },
+          "scale":{
+            "x":1,
+            "y":1
+          },
+          "visible": true,
+          "pivot":"CENTRE"
+        },
+        {
+          "id": "win_section",
+          "construct": "DO.Core.Renderer.UI.MovieClipWrapper(assets,'win_section',false,false)",
+          "position": {
+            "x": "57.2%",
+            "y": "47.2%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "visible": false
+        },
+        {
+          "id": "win_starting_glow",
+          "construct": "DO.Core.Renderer.UI.MovieClipWrapper(assets,'win_starting_glow',false,false)",
+          "position": {
+            "x": "57.2%",
+            "y": "35.2%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "visible": false
+        }
+      ]
+    }
+  ]
+}

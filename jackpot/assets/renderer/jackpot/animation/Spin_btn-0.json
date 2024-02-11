@@ -1,0 +1,48 @@
+{"frames": {
+
+"Spin_btn_disabled":
+{
+	"frame": {"x":0,"y":0,"w":159,"h":216},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":159,"h":216},
+	"sourceSize": {"w":159,"h":216},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"Spin_btn_down":
+{
+	"frame": {"x":159,"y":0,"w":159,"h":216},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":159,"h":216},
+	"sourceSize": {"w":159,"h":216},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"Spin_btn_hover":
+{
+	"frame": {"x":318,"y":0,"w":159,"h":216},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":159,"h":216},
+	"sourceSize": {"w":159,"h":216},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"Spin_btn_normal":
+{
+	"frame": {"x":477,"y":0,"w":159,"h":216},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":159,"h":216},
+	"sourceSize": {"w":159,"h":216},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "Spin_btn-0.png",
+	"format": "RGBA8888",
+	"size": {"w":636,"h":216},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:16a8363e2ebfab74955f905deed5f21c:824bf4d0684e7d65900f63ab9fd8cc49:655cff191abada802fa52c6f708156c9$"
+}
+}

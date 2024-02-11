@@ -1,0 +1,21 @@
+{"frames": {
+
+"mega_win":
+{
+	"frame": {"x":1,"y":1,"w":1144,"h":882},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1144,"h":882},
+	"sourceSize": {"w":1144,"h":882},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "mega_win.png",
+	"format": "RGBA8888",
+	"size": {"w":1146,"h":884},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:bf29f3309182a3739b543639816f15ef:a0c70e754be75f06a8a356ee6fbfc831:fffc039388700505a740a17aceb0b164$"
+}
+}

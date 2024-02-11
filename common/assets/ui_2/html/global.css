@@ -1,0 +1,249 @@
+:root {
+    --app-height: 100%;
+}
+
+html {
+    background-color: #000000;
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    width: 100vw;
+    height: 100vh;
+    height: var(--app-height);
+
+    /* Prevent text selection */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari*/
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    height: var(--app-height);
+    overflow: hidden;
+
+}
+
+#renderer_canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#game_wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.HTML_page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.multiselect {
+	margin-bottom: 1em;
+}
+
+.multiselect-items {
+	display: inline-block !important;
+}
+
+.multiselect-items label {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.1em;
+    line-height: 10px;
+    width: 65px !important;
+    margin-left: 3px;
+    margin-right: 3px;
+    height: 42px !important;
+    color: #F5E001 ;
+
+}
+
+.multiselect-items label.selected {
+	pointer-events: none;
+    background-image: -moz-linear-gradient(90deg,#d5b236 0,#d5b236 90%, #d5b236 100%) !important;
+    background-image: -webkit-linear-gradient(90deg,#d5b236 0,#d5b236 90%, #d5b236 100%) !important;
+    background-image: -ms-linear-gradient(90deg,#d5b236 0,#d5b236 90%, #d5b236 100%) !important;
+}
+
+.multiselect .button_arrow {
+	position: relative;
+	top: 14px;
+}
+
+.multiselect-items input[type="radio"] {
+    -ms-appearance: none;
+	margin: 0;
+    visibility: hidden;
+}
+
+.toggle_desktop {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #2b2c31;
+    cursor: pointer;
+    width: 50px;
+    height: 28px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.toggle_desktop:after {
+    content: '';
+    display: block;
+    width: 17px;
+    height: 17px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    left: 0%;
+    -webkit-transition: left 0.15s ease-out;
+    -o-transition: left 0.15s ease-out;
+    transition: left 0.15s ease-out;
+}
+
+.toggle_desktop:checked:after {
+    left: calc(100% - 17px);
+}
+
+.toggle_desktop:checked {
+    background-image: -moz-linear-gradient( 0deg, #148042 0%, #148042 100%);
+    background-image: -webkit-linear-gradient( 0deg, #148042 0%, #148042 100%);
+    background-image: -ms-linear-gradient( 0deg, #148042 0%, #148042 100%);
+}
+
+.hidden {
+    display: none;
+}
+
+
+@font-face
+{
+    font-family: 'Roboto-Bold';
+    src: url('./fonts/Roboto-Bold.woff2') format('woff2'),
+    url('./fonts/Roboto-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'immortal';
+    src: url('./fonts/texgyreschola-bold-webfont.woff') format('woff2'),
+    url('./fonts/texgyreschola-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Berlin-Sans-FB-Demi-Bold';
+    src: url('./fonts/Berlin-Sans-FB-Demi-Bold.woff2') format('woff2'),
+    url('./fonts/Berlin-Sans-FB-Demi-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Saddlebag';
+    src: url('./fonts/SADDLEBAG.woff') format('woff'),
+    url('./fonts/SADDLEBAG.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: 'Arial-Rounded-MT-Bold';
+    src: url('./fonts/Arial-Rounded-MT-Bold.woff') format('woff'),
+    url('./fonts/Arial-Rounded-MT-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: 'Arial-Rounded-MT-Regular';
+    src: url('./fonts/Arial Rounded MT Regular.woff') format('woff'),
+    url('./fonts/Arial Rounded MT Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Loading Spinner */
+.start_spinner
+{
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    animation: rotate 1.2s infinite linear;
+    border: 5px solid #fff;
+    border-right-color: transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    margin-left: -12px;
+    margin-top: -12px;
+}
+
+@keyframes rotate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+::-webkit-scrollbar
+{
+    width: 4px;
+    background-color: #8C6E00;
+}
+
+::-webkit-scrollbar-track
+{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: #F5E001;
+}
+/* spin button */
+

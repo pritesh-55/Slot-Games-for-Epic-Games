@@ -1,0 +1,35 @@
+{
+  "name": "EpicGame",
+  "version": "1.0.0",
+  "description": "Epic Games",
+  "dependencies": {
+    "grunt-npm-install": "^0.3.1",
+    "https-localhost": "^4.6.5",
+    "npm": "^6.4.1",
+    "typescript": "2.5.3",
+    "update": "^0.7.4"
+  },
+  "devDependencies": {
+    "chalk": "^2.4.1",
+    "fs-walk": "^0.0.2",
+    "gcc-rest": "^0.2.5",
+    "grunt": "^1.6.1",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-gcc-rest": "^0.1.5",
+    "grunt-json-minify": "^1.1.0",
+    "grunt-minify-html": "^2.0.0",
+    "grunt-string-replace": "^1.3.1",
+    "http-server": "^0.11.1",
+    "watch-http-server": "^0.7.6"
+  },
+  "scripts": {
+    "build": "tsc && grunt --gruntfile ./common/Gruntfile.js build",
+    "start": "tsc && http-server -c-1 -p 3000"
+  },
+  "author": "Wozo Gaming Pvt Ltd",
+  "license": ""
+}

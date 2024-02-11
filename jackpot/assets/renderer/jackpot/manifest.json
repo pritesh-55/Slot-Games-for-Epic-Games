@@ -1,0 +1,153 @@
+{
+  "name": "Jackpot Manifest",
+  "items": [
+    {
+      "id": "layout_jackpot",
+      "type": "json",
+      "path": "./assets/renderer/jackpot/layout.json"
+    },
+    {
+      "id":"jackpot_meters",
+      "type":"atlas",
+      "path":"../common/assets/animation/jackpot_meters.json"
+    },
+    {
+      "id": "diamond_meters",
+      "type": "image",
+      "path": "./assets/renderer/jackpot/static/diamond_meter.png"
+    },
+    {
+      "id": "gold_meters",
+      "type": "image",
+      "path": "./assets/renderer/jackpot/static/gold_meters.png"
+    },
+    {
+      "id": "silver_meters",
+      "type": "image",
+      "path": "./assets/renderer/jackpot/static/silver_meters.png"
+    },
+    {
+      "id": "bronze_meters",
+      "type": "image",
+      "path": "./assets/renderer/jackpot/static/bronze_meters.png"
+    },
+    {
+      "id": "Bronze_meter_Bitmap",
+      "type": "atlas",
+      "path": "./assets/renderer/jackpot/animation/Bronze_meter_Bitmap_Amount.json",
+      "movieclips": null
+    },
+    {
+      "id": "Diamond_meter_Bitmap",
+      "type": "atlas",
+      "path": "./assets/renderer/jackpot/animation/Diamond_meter_Bitmap_Amount.json",
+      "movieclips": null
+    },
+    {
+      "id": "Gold_meter_Bitmap",
+      "type": "atlas",
+      "path": "./assets/renderer/jackpot/animation/Gold_meter_Bitmap_Amount.json",
+      "movieclips": null
+    },
+    {
+      "id": "Silver_meter_Bitmap",
+      "type": "atlas",
+      "path": "./assets/renderer/jackpot/animation/Silver_meter_Bitmap_Amount.json",
+      "movieclips": null
+    },
+    {
+      "id": "main_wheel_idle",
+      "type": "image",
+      "path": "./assets/renderer/jackpot/static/main_wheel_idle.png"
+    },
+    {
+      "id": "main_wheel_spin",
+      "type": "image",
+      "path": "./assets/renderer/jackpot/static/main_wheel_spin.png"
+    },
+    {
+      "id": "wheel_back_idle",
+      "type": "image",
+      "path": "./assets/renderer/jackpot/static/wheel_back_idle.png"
+    },
+    {
+      "id": "wheel_back_spin",
+      "type": "image",
+      "path": "./assets/renderer/jackpot/static/wheel_back_spin.png"
+    },
+    {
+      "id": "spin_text",
+      "type": "image",
+      "path": "./assets/renderer/jackpot/static/spin_text.png"
+    },
+    {
+      "id": "JP_Meter",
+      "type": "image",
+      "path": "./assets/renderer/jackpot/static/JP_Meter.png"
+    },
+    {
+      "id": "spin_button",
+      "type": "atlas",
+      "path": "./assets/renderer/jackpot/animation/Spin_btn-0.json"
+    },
+    {
+      "id": "win_section",
+      "type": "atlas",
+      "path": "./assets/renderer/jackpot/animation/win_section.json",
+      "movieclips": {
+        "win_section": {
+          "speed": 0.1,
+          "textures": [
+            "win_section_00",
+            "win_section_01",
+            "win_section_02",
+            "win_section_03",
+            "win_section_04",
+            "win_section_05"
+          ]
+        }
+      }
+    },
+    {
+      "id": "win_starting_glow",
+      "type": "atlas",
+      "path": "./assets/renderer/jackpot/animation/win_starting_glow.json",
+      "movieclips": {
+        "win_starting_glow": {
+          "speed": 0.1,
+          "textures": [
+            "win_starting_glow_00",
+            "win_starting_glow_01",
+            "win_starting_glow_02",
+            "win_starting_glow_03",
+            "win_starting_glow_04",
+            "win_starting_glow_05",
+            "win_starting_glow_06",
+            "win_starting_glow_07",
+            "win_starting_glow_08",
+            "win_starting_glow_09",
+            "win_starting_glow_10",
+            "win_starting_glow_11",
+            "win_starting_glow_12",
+            "win_starting_glow_13"
+          ]
+        }
+      }
+    },
+    {
+      "id": "global_sounds",
+      "type": "sound",
+      "path":"./assets/audio/sfx_sprite",
+      "global": true,
+      "volume": 1,
+      "properties": {
+        "sprite": {
+          "tickup": [
+            32000,
+            3240.000000000002
+          ]
+        }
+      }
+    }
+  ]
+}

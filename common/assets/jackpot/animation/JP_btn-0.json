@@ -1,0 +1,48 @@
+{"frames": {
+
+"BRONZE_btn":
+{
+	"frame": {"x":0,"y":0,"w":322,"h":83},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":322,"h":83},
+	"sourceSize": {"w":322,"h":83},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"DIAMOND_btn":
+{
+	"frame": {"x":322,"y":0,"w":322,"h":83},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":322,"h":83},
+	"sourceSize": {"w":322,"h":83},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"GOLD_btn":
+{
+	"frame": {"x":644,"y":0,"w":322,"h":83},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":322,"h":83},
+	"sourceSize": {"w":322,"h":83},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"SILVER_btn":
+{
+	"frame": {"x":966,"y":0,"w":322,"h":83},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":322,"h":83},
+	"sourceSize": {"w":322,"h":83},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "JP_btn-0.png",
+	"format": "RGBA8888",
+	"size": {"w":1288,"h":83},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:a05167a9cfa4c6cdc85422a6bcda8495:30c7eb8be80d93b081f0cc61144d8eb2:d7afa3778381154c6b40f69b21702061$"
+}
+}
