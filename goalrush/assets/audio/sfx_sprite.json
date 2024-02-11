@@ -1,0 +1,22 @@
+{
+  "src": "res\\audio\\dt\\sfx_sprite.ogg",
+  "data": {
+    "audioSprite": [
+      {
+        "id": "AAsfx_sprite",
+        "startTime": 0,
+        "duration": 57004.988662131516
+      },
+      {
+        "id": "Scatter",
+        "startTime": 58000,
+        "duration": 2020.1360544217691
+      },
+      {
+        "id": "Wild",
+        "startTime": 61000,
+        "duration": 2020.1360544217691
+      }
+    ]
+  }
+}

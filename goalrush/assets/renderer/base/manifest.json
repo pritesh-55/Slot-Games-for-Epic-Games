@@ -1,0 +1,1025 @@
+{
+  "name": "Base Game Manifest",
+  "items": [
+    {
+      "id": "layout_base",
+      "type": "json",
+      "path": {
+        "desktop": "./assets/renderer/base/desktop/layout.json",
+        "mobile": "./assets/renderer/base/mobile/layout.json"
+      }
+    },
+    {
+      "id": "layout_free_spins_intro",
+      "type": "json",
+      "path": {
+        "desktop": "./assets/renderer/base/desktop/layout_free_spins_intro.json",
+        "mobile": "./assets/renderer/base/mobile/layout_free_spins_intro.json"
+      }
+    },
+    {
+      "id": "layout_feature_transition",
+      "type": "json",
+      "path": {
+        "desktop": "./assets/renderer/base/desktop/layout_feature_transition.json"
+      }
+    },
+    {
+      "id": "base_bg",
+      "type": "image",
+      "path": "./assets/renderer/base/desktop/static/base_bg.jpg"
+    },
+    {
+      "id": "base_bg_glow",
+      "type": "image",
+      "path": "./assets/renderer/base/desktop/static/base_bg_glow.jpg"
+    },
+    {
+      "id": "game_panel_bg",
+      "type": "image",
+      "path": "../common/assets/ui_2/generic/ui_panel/game_panel_bg.png"
+    },
+    {
+      "id": "base_portrait_bg",
+      "type": "image",
+      "path": {
+        "desktop": null,
+        "mobile": "./assets/renderer/base/mobile/static/basegame_mobile_portrait.jpg"
+      }
+    },
+    {
+      "id": "logo_anim",
+      "type": "atlas",
+      "path": "./assets/renderer/base/desktop/animation/game_mode_type/logo_anim.json",
+      "movieclips": {
+        "logo_anim": {
+          "speed": 0.15,
+          "textures": [
+            "logo_00",
+            "logo_01",
+            "logo_02",
+            "logo_03",
+            "logo_04",
+            "logo_05",
+            "logo_06",
+            "logo_07",
+            "logo_08",
+            "logo_09",
+            "logo_10",
+            "logo_11",
+            "logo_12",
+            "logo_13",
+            "logo_14",
+            "logo_15",
+            "logo_16",
+            "logo_17",
+            "logo_18",
+            "logo_19",
+            "logo_20",
+            "logo_21",
+            "logo_22",
+            "logo_23",
+            "logo_24"
+          ]
+        }
+      }
+    },
+    {
+      "id": "base_reel_frame",
+      "type": "image",
+      "path": "./assets/renderer/base/desktop/static/base_reel_frame.png"
+    },
+    {
+      "id": "win_frame",
+      "type": "atlas",
+      "path": "../common/assets/animation/win_frame.json",
+      "movieclips": {
+        "WIN:SYMBOL:FRAME": {
+          "speed": 1,
+          "textures": [
+            "win_frame_00",
+            "win_frame_01",
+            "win_frame_02",
+            "win_frame_03",
+            "win_frame_04",
+            "win_frame_05",
+            "win_frame_06",
+            "win_frame_07"
+          ]
+        }
+      }
+    },
+    {
+      "id": "anticipation_frame",
+      "type": "atlas",
+      "path": "../common/assets/animation/anticipation.json",
+      "movieclips": {
+        "TEASE_FRAME:FRAME_ANIM": {
+          "pre_cache": 1,
+          "speed": 0.15,
+          "textures": [
+            "anticipation_00",
+            "anticipation_01",
+            "anticipation_02",
+            "anticipation_03",
+            "anticipation_04",
+            "anticipation_05",
+            "anticipation_06",
+            "anticipation_07"
+          ]
+        }
+      }
+    },
+    {
+      "id": "STATIC_SYMBOLS",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/symbols.json",
+      "movieclips": {
+        "SYMBOL:Anim": {
+          "speed": 0.1,
+          "textures": [
+            "AA",
+            "BB",
+            "CC",
+            "DD",
+            "EE",
+            "FF",
+            "GG",
+            "HH",
+            "II",
+            "JJ",
+            "SC",
+            "WW"
+          ]
+        }
+      }
+    },
+    {
+      "id": "MESSAGE_SYMBOLS",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/player-symbol.json",
+      "movieclips": {
+        "SYMBOL:Anim": {
+          "speed": 0.1,
+          "textures": [
+            "AA",
+            "BB",
+            "CC",
+            "DD",
+            "EE",
+            "FF",
+            "GG",
+            "HH",
+            "II",
+            "JJ",
+            "SC",
+            "WW"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:AA",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/hv_1.json",
+      "movieclips": {
+        "SYMBOL:AA:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "hv_1_00",
+            "hv_1_01",
+            "hv_1_02",
+            "hv_1_03",
+            "hv_1_04",
+            "hv_1_05",
+            "hv_1_06",
+            "hv_1_07",
+            "hv_1_08",
+            "hv_1_09",
+            "hv_1_10",
+            "hv_1_11",
+            "hv_1_12",
+            "hv_1_13",
+            "hv_1_14",
+            "hv_1_15",
+            "hv_1_16",
+            "hv_1_17",
+            "hv_1_18",
+            "hv_1_19",
+            "hv_1_20",
+            "hv_1_21",
+            "hv_1_22",
+            "hv_1_23",
+            "hv_1_24",
+            "hv_1_25",
+            "hv_1_26",
+            "hv_1_27",
+            "hv_1_28",
+            "hv_1_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:BB",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/hv_2.json",
+      "movieclips": {
+        "SYMBOL:BB:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "hv_2_00",
+            "hv_2_01",
+            "hv_2_02",
+            "hv_2_03",
+            "hv_2_04",
+            "hv_2_05",
+            "hv_2_06",
+            "hv_2_07",
+            "hv_2_08",
+            "hv_2_09",
+            "hv_2_10",
+            "hv_2_11",
+            "hv_2_12",
+            "hv_2_13",
+            "hv_2_14",
+            "hv_2_15",
+            "hv_2_16",
+            "hv_2_17",
+            "hv_2_18",
+            "hv_2_19",
+            "hv_2_20",
+            "hv_2_21",
+            "hv_2_22",
+            "hv_2_23",
+            "hv_2_24",
+            "hv_2_25",
+            "hv_2_26",
+            "hv_2_27",
+            "hv_2_28",
+            "hv_2_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:CC",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/hv_3.json",
+      "movieclips": {
+        "SYMBOL:CC:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "hv_3_00",
+            "hv_3_01",
+            "hv_3_02",
+            "hv_3_03",
+            "hv_3_04",
+            "hv_3_05",
+            "hv_3_06",
+            "hv_3_07",
+            "hv_3_08",
+            "hv_3_09",
+            "hv_3_10",
+            "hv_3_11",
+            "hv_3_12",
+            "hv_3_13",
+            "hv_3_14",
+            "hv_3_15",
+            "hv_3_16",
+            "hv_3_17",
+            "hv_3_18",
+            "hv_3_19",
+            "hv_3_20",
+            "hv_3_21",
+            "hv_3_22",
+            "hv_3_23",
+            "hv_3_24",
+            "hv_3_25",
+            "hv_3_26",
+            "hv_3_27",
+            "hv_3_28",
+            "hv_3_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:DD",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/mv_1.json",
+      "movieclips": {
+        "SYMBOL:DD:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "mv_1_00",
+            "mv_1_01",
+            "mv_1_02",
+            "mv_1_03",
+            "mv_1_04",
+            "mv_1_05",
+            "mv_1_06",
+            "mv_1_07",
+            "mv_1_08",
+            "mv_1_09",
+            "mv_1_10",
+            "mv_1_11",
+            "mv_1_12",
+            "mv_1_13",
+            "mv_1_14",
+            "mv_1_15",
+            "mv_1_16",
+            "mv_1_17",
+            "mv_1_18",
+            "mv_1_19",
+            "mv_1_20",
+            "mv_1_21",
+            "mv_1_22",
+            "mv_1_23",
+            "mv_1_24",
+            "mv_1_25",
+            "mv_1_26",
+            "mv_1_27",
+            "mv_1_28",
+            "mv_1_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:EE",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/mv_2.json",
+      "movieclips": {
+        "SYMBOL:EE:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "mv_2_00",
+            "mv_2_01",
+            "mv_2_02",
+            "mv_2_03",
+            "mv_2_04",
+            "mv_2_05",
+            "mv_2_06",
+            "mv_2_07",
+            "mv_2_08",
+            "mv_2_09",
+            "mv_2_10",
+            "mv_2_11",
+            "mv_2_12",
+            "mv_2_13",
+            "mv_2_14",
+            "mv_2_15",
+            "mv_2_16",
+            "mv_2_17",
+            "mv_2_18",
+            "mv_2_19",
+            "mv_2_20",
+            "mv_2_21",
+            "mv_2_22",
+            "mv_2_23",
+            "mv_2_24",
+            "mv_2_25",
+            "mv_2_26",
+            "mv_2_27",
+            "mv_2_28",
+            "mv_2_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:FF",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/mv_3.json",
+      "movieclips": {
+        "SYMBOL:FF:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "mv_3_00",
+            "mv_3_01",
+            "mv_3_02",
+            "mv_3_03",
+            "mv_3_04",
+            "mv_3_05",
+            "mv_3_06",
+            "mv_3_07",
+            "mv_3_08",
+            "mv_3_09",
+            "mv_3_10",
+            "mv_3_11",
+            "mv_3_12",
+            "mv_3_13",
+            "mv_3_14",
+            "mv_3_15",
+            "mv_3_16",
+            "mv_3_17",
+            "mv_3_18",
+            "mv_3_19",
+            "mv_3_20",
+            "mv_3_21",
+            "mv_3_22",
+            "mv_3_23",
+            "mv_3_24",
+            "mv_3_25",
+            "mv_3_26",
+            "mv_3_27",
+            "mv_3_28",
+            "mv_3_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:GG",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/a.json",
+      "movieclips": {
+        "SYMBOL:GG:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "a_00",
+            "a_01",
+            "a_02",
+            "a_03",
+            "a_04",
+            "a_05",
+            "a_06",
+            "a_07",
+            "a_08",
+            "a_09",
+            "a_10",
+            "a_11",
+            "a_12",
+            "a_13",
+            "a_14"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:HH",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/k.json",
+      "movieclips": {
+        "SYMBOL:HH:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "k_00",
+            "k_01",
+            "k_02",
+            "k_03",
+            "k_04",
+            "k_05",
+            "k_06",
+            "k_07",
+            "k_08",
+            "k_09",
+            "k_10",
+            "k_11",
+            "k_12",
+            "k_13",
+            "k_14"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:II",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/q.json",
+      "movieclips": {
+        "SYMBOL:II:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "q_00",
+            "q_01",
+            "q_02",
+            "q_03",
+            "q_04",
+            "q_05",
+            "q_06",
+            "q_07",
+            "q_08",
+            "q_09",
+            "q_10",
+            "q_11",
+            "q_12",
+            "q_13",
+            "q_14"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:JJ",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/j.json",
+      "movieclips": {
+        "SYMBOL:JJ:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "j_00",
+            "j_01",
+            "j_02",
+            "j_03",
+            "j_04",
+            "j_05",
+            "j_06",
+            "j_07",
+            "j_08",
+            "j_09",
+            "j_10",
+            "j_11",
+            "j_12",
+            "j_13",
+            "j_14"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:SC",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/scatter.json",
+      "movieclips": {
+        "SYMBOL:SC:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "scatter_00",
+            "scatter_01",
+            "scatter_02",
+            "scatter_03",
+            "scatter_04",
+            "scatter_05",
+            "scatter_06",
+            "scatter_07",
+            "scatter_08",
+            "scatter_09",
+            "scatter_10",
+            "scatter_11",
+            "scatter_12",
+            "scatter_13",
+            "scatter_14",
+            "scatter_15",
+            "scatter_16",
+            "scatter_17",
+            "scatter_18",
+            "scatter_19",
+            "scatter_20",
+            "scatter_21",
+            "scatter_22",
+            "scatter_23",
+            "scatter_24",
+            "scatter_25",
+            "scatter_26",
+            "scatter_27",
+            "scatter_28",
+            "scatter_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:WW_DROP",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/wild_landing.json",
+      "movieclips": {
+        "WW_DROP:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "wild_landing_00",
+            "wild_landing_01",
+            "wild_landing_02",
+            "wild_landing_03",
+            "wild_landing_04",
+            "wild_landing_05",
+            "wild_landing_06",
+            "wild_landing_07",
+            "wild_landing_08",
+            "wild_landing_09",
+            "wild_landing_10",
+            "wild_landing_11",
+            "wild_landing_12",
+            "wild_landing_13",
+            "wild_landing_14"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:SC_DROP",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/scatter_landing.json",
+      "movieclips": {
+        "SC_DROP:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "scatter_landing_00",
+            "scatter_landing_01",
+            "scatter_landing_02",
+            "scatter_landing_03",
+            "scatter_landing_04",
+            "scatter_landing_05",
+            "scatter_landing_06",
+            "scatter_landing_07",
+            "scatter_landing_08",
+            "scatter_landing_09",
+            "scatter_landing_10",
+            "scatter_landing_11",
+            "scatter_landing_12",
+            "scatter_landing_13",
+            "scatter_landing_14"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:WW",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/wild.json",
+      "movieclips": {
+        "SYMBOL:WW:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "wild_00",
+            "wild_01",
+            "wild_02",
+            "wild_03",
+            "wild_04",
+            "wild_05",
+            "wild_06",
+            "wild_07",
+            "wild_08",
+            "wild_09",
+            "wild_10",
+            "wild_11",
+            "wild_12",
+            "wild_13",
+            "wild_14",
+            "wild_15",
+            "wild_16",
+            "wild_17",
+            "wild_18",
+            "wild_19",
+            "wild_20",
+            "wild_21",
+            "wild_22",
+            "wild_23",
+            "wild_24",
+            "wild_25",
+            "wild_26",
+            "wild_27",
+            "wild_28",
+            "wild_29"
+          ]
+        }
+      }
+    },
+
+    {
+      "id": "number_counter",
+      "type": "atlas",
+      "path": "./assets/renderer/common/number_counter.json",
+      "movieclips": null
+    },
+    {
+      "id": "all_meter",
+      "type": "image",
+      "path": "./assets/renderer/free_spins/all_meter.png"
+    },
+    {
+      "id":"continue_btn",
+      "type":"atlas",
+      "path":"../common/assets/ui_2/generic/static/continue_btn.json"
+    },
+    {
+      "id":"intro_panel",
+      "type":"image",
+      "path": "../common/assets/ui_2/generic/static/intro_panel.png"
+    },
+    {
+      "id": "ui_base",
+      "type": "image",
+      "path": "../common/assets/ui_2/generic/static/ui_base.png"
+    },
+    {
+      "id": "transition",
+      "type": "multi_atlas",
+      "path": {
+        "desktop": "./assets/renderer/base/desktop/animation/transition_2x_speed0.json|./assets/renderer/base/desktop/animation/transition_2x_speed1.json|./assets/renderer/base/desktop/animation/transition_2x_speed2.json",
+        "mobile": null
+      },
+      "movieclips": {
+        "transition": {
+          "speed": 0.15,
+          "textures": [
+            "transition_2x_speed_00",
+            "transition_2x_speed_01",
+            "transition_2x_speed_02",
+            "transition_2x_speed_03",
+            "transition_2x_speed_04",
+            "transition_2x_speed_05",
+            "transition_2x_speed_06",
+            "transition_2x_speed_07",
+            "transition_2x_speed_08",
+            "transition_2x_speed_09",
+            "transition_2x_speed_10",
+            "transition_2x_speed_11",
+            "transition_2x_speed_12",
+            "transition_2x_speed_13",
+            "transition_2x_speed_14"
+          ]
+        }
+      }
+    },
+    {
+      "id": "layout_jackpot",
+      "type": "json",
+      "path": {
+        "desktop": "./assets/renderer/base/desktop/layout_jackpot.json",
+        "mobile": "./assets/renderer/base/mobile/layout_jackpot.json"
+      }
+    },
+    {
+      "id": "JP_btn-0",
+      "type": "atlas",
+      "path": "../common/assets/jackpot/animation/JP_btn-0.json"
+    },
+    {
+      "id": "JP_Meter_image",
+      "type": "atlas",
+      "path": "../common/assets/jackpot/animation/JP_Meter.json"
+    },
+    {
+      "id": "main_wheel_idle",
+      "type": "image",
+      "path": "../common/assets/jackpot/static/main_wheel_idle.png"
+    },
+    {
+      "id": "main_wheel_spin",
+      "type": "image",
+      "path": "../common/assets/jackpot/static/main_wheel_spin.png"
+    },
+    {
+      "id": "wheel_back_idle",
+      "type": "image",
+      "path": "../common/assets/jackpot/static/wheel_back_idle.png"
+    },
+    {
+      "id": "wheel_back_spin",
+      "type": "image",
+      "path": "../common/assets/jackpot/static/wheel_back_spin.png"
+    },
+    {
+      "id": "JP_Meter",
+      "type": "image",
+      "path": "../common/assets/jackpot/static/JP_Meter.png"
+    },
+    {
+      "id": "spin_button",
+      "type": "atlas",
+      "path": "../common/assets/jackpot/animation/Spin_btn-0.json"
+    },
+    {
+      "id": "win_section",
+      "type": "atlas",
+      "path": "../common/assets/jackpot/animation/win_section.json",
+      "movieclips": {
+        "win_section": {
+          "speed": 0.1,
+          "textures": [
+            "win_section_00",
+            "win_section_01",
+            "win_section_02",
+            "win_section_03",
+            "win_section_04",
+            "win_section_05"
+          ]
+        }
+      }
+    },
+    {
+      "id": "win_starting_glow",
+      "type": "atlas",
+      "path": "../common/assets/jackpot/animation/win_starting_glow.json",
+      "movieclips": {
+        "win_starting_glow": {
+          "speed": 0.1,
+          "textures": [
+            "win_starting_glow_00",
+            "win_starting_glow_01",
+            "win_starting_glow_02",
+            "win_starting_glow_03",
+            "win_starting_glow_04",
+            "win_starting_glow_05",
+            "win_starting_glow_06",
+            "win_starting_glow_07",
+            "win_starting_glow_08",
+            "win_starting_glow_09",
+            "win_starting_glow_10",
+            "win_starting_glow_11",
+            "win_starting_glow_12",
+            "win_starting_glow_13"
+          ]
+        }
+      }
+    },
+    {
+      "id": "global_sounds",
+      "type": "sound",
+      "path":"./assets/audio/sfx_sprite",
+      "global": true,
+      "volume": 1,
+      "properties": {
+        "sprite": {
+          "TickUp_Sound": [
+            32000,
+            3240.000000000002
+          ],
+          "line_win": [
+            16000,
+            927.8911564625857
+          ],
+          "REEL_DROP": [
+            25000,
+            500
+          ],
+          "REEL_DROP1": [
+            25000,
+            500
+          ],
+          "REEL_DROP2": [
+            25000,
+            500
+          ],
+          "REEL_DROP3": [
+            25000,
+            500
+          ],
+          "REEL_DROP4": [
+            25000,
+            500
+          ],
+          "TEASE": [
+            0,
+            6363.628117913832
+          ],
+          "WIN_SUMMARY": [
+            0,
+            0
+          ],
+          "BN:Landing": [
+            7000,
+            1500
+          ],
+          "WW:Landing": [
+            36000,
+            1500
+          ],
+          "SC:Landing": [
+            28000,
+            1500
+          ],
+
+          "L1:WIN": [
+            26000,
+            1071.020408163264
+          ],
+          "INTRO": [
+            51000,
+            2401.428571428568
+          ],
+          "SUMMARY": [
+            51000,
+            2401.428571428568
+          ],
+          "RESPIN_TRIGGER": [
+            54000,
+            2500
+          ],
+          "Common_PopUp": [
+            48000,
+            2736.0997732426285
+          ],
+          "GENERIC_CLICK": [
+            15000,
+            39.07029478458135
+          ],
+          "ReeL_spin": [
+            17000,
+            7927.959183673469
+          ],
+          "plus_minus": [
+            15000,
+            39.07029478458135
+          ],
+          "SPIN_BUTTON": [
+            30000,
+            149.99999999999858
+          ],
+          "RESPIN_SPIN": [
+            0,
+            0
+          ],
+          "RESPIN_STOP": [
+            0,
+            0
+          ],
+          "Wild_Walking": [
+            59000,
+            1700.0000000000027
+          ],
+          "pickem_reveal": [
+            42000,
+            1531.4739229024922
+          ],
+          "Click_Toggle_Button": [
+            9000,
+            500
+          ],
+          "counting_up_FreeGame": [
+            10000,
+            1737.7551020408166
+          ],
+          "Error_Appearance": [
+            12000,
+            948.4807256235825
+          ],
+          "TickUp_End": [
+            31000,
+            521.7687074829946
+          ],
+          "Scatter": [
+            58000,
+            2020.1360544217691
+          ],
+          "Wild_1x1": [
+            61000,
+            2020.1360544217691
+          ],
+          "Wild_Expanding": [
+            44000,
+            2964.285714285715
+          ]
+        }
+      }
+    },
+    {
+      "id": "transition_sound",
+      "type": "sound",
+      "path": "./assets/audio/transition",
+      "global": true,
+      "properties": {
+      }
+    },
+    {
+      "id": "music_base",
+      "type": "sound",
+      "path": "./assets/audio/base_music",
+      "global": true,
+      "properties": {
+      }
+    },
+    {
+      "id": "music_freegame",
+      "type": "sound",
+      "path": "./assets/audio/fg_music",
+      "global": true,
+      "properties": {
+      }
+    },
+    {
+      "id": "music_base_outro",
+      "type": "sound",
+      "path": "./assets/audio/base_music",
+      "global": true,
+      "properties": {
+      }
+    },
+    {
+      "id": "music_big_win",
+      "type": "sound",
+      "path": "../common/assets/audio/big_win",
+      "global": true,
+      "properties": {
+      }
+    },
+    {
+      "id": "music_mega_win",
+      "type": "sound",
+      "path": "../common/assets/audio/mega_win",
+      "global": true,
+      "properties": {
+      }
+    },
+    {
+      "id": "music_super_win",
+      "type": "sound",
+      "path": "../common/assets/audio/super_win",
+      "global": true,
+      "properties": {
+      }
+    }
+  ]
+}

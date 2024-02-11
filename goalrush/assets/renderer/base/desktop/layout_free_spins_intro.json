@@ -1,0 +1,133 @@
+{
+  "name": "Free Spins Game Intro Layout",
+  "params": {
+    "audio": {
+      "music": {
+        "ambient": "music_base"
+      },
+      "fx": {
+        "reel_drops": [
+          "REEL_DROP",
+          "REEL_DROP",
+          "REEL_DROP",
+          "REEL_DROP",
+          "REEL_DROP"
+        ]
+      }
+    },
+    "nextSceneDelay":100,
+    "scatters": [
+      "SC"
+    ]
+  },
+  "components": [
+    {
+      "id": "bgDimmer",
+      "construct": "DO.Core.Renderer.UI.BackgroundDimmer(0,0.7)",
+      "position": {
+        "x": "50%",
+        "y": "50%"
+      },
+      "visible": true,
+      "pivot": "CENTRE"
+    },
+    {
+      "id": "intro_holder",
+      "position": {
+        "x": "25%",
+        "y": "30%"
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "pivot": "CENTRE",
+      "components": [
+        {
+          "id": "intro_panel",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'intro_panel')",
+          "position": {
+            "x": "50%",
+            "y": "48%"
+          },
+          "visible": true,
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "congrats_text",
+          "construct": "DO.Core.Renderer.UI.StandardText('@congratulations_caps', {fontFamily : 'Arial-Rounded-MT-Regular',fontWeight: 'bolder', fontSize: 80, fill : ['#8C6E00','#8C6E00'], align : 'center', stroke:'#F5E001',strokeThickness : 7, lineJoin: 'round',dropShadow : true,dropShadowDistance: 0,dropShadowBlur:30,dropShadowAngle :0,dropShadowColor :'' })",
+          "fit": "aperture_frame",
+          "visible": true,
+          "position": {
+            "x": "50%",
+            "y": "35%"
+          },
+          "pivot": "LEFT"
+        },
+        {
+          "id": "you_won_text",
+          "construct": "DO.Core.Renderer.UI.StandardText('@spot_bonus_every_spin', {fontFamily : 'Arial-Rounded-MT-Regular',fontWeight: 'bolder', fontSize: 80, fill : ['#8C6E00','#8C6E00'], align : 'center', stroke:'#F5E001',strokeThickness : 7, lineJoin: 'round',dropShadow : true,dropShadowDistance: 0,dropShadowBlur:30,dropShadowAngle :0,dropShadowColor :'' })",
+          "fit": "aperture_frame",
+          "position": {
+            "x": "50%",
+            "y": "43%"
+          },
+          "visible": true,
+          "pivot": "LEFT"
+        },
+        {
+          "id": "awarded_spin_count",
+          "construct": "DO.Core.Renderer.UI.StandardText('', {fontFamily : 'Arial-Rounded-MT-Regular', fontSize: 160, fill : ['#FC05BE'], align : 'center', stroke: '#FC05BE',strokeThickness : 3 ,dropShadow : true, dropShadowBlur : 20, fill : ['#FC05BE','#FC05BE']})",
+          "visible": true,
+          "position": {
+            "x": "50%",
+            "y": "59%"
+          },
+          "fx": {
+            "create": "DO.Core.Renderer.UI.FX.popOut(300)"
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "free_spins_text",
+          "construct": "DO.Core.Renderer.UI.StandardText('@free_game', {fontFamily : 'Arial-Rounded-MT-Regular',fontWeight: 'bolder', fontSize: 80, fill : ['#8C6E00','#8C6E00'], align : 'center', stroke:'#F5E001',strokeThickness : 7, lineJoin: 'round',dropShadow : true,dropShadowDistance: 0,dropShadowBlur:30,dropShadowAngle :0,dropShadowColor :'' })",
+          "position": {
+            "x": "50%",
+            "y": "67%"
+          },
+          "fit": "aperture_frame",
+          "visible": true,
+          "pivot": "LEFT"
+        },
+        {
+          "id": "awarded_multiplier",
+          "construct": "DO.Core.Renderer.UI.StandardText('', {fontFamily : 'Arial-Rounded-MT-Regular',fontWeight: 'bolder', fontSize: 60, fill : ['#8C6E00','#8C6E00'], align : 'center', stroke:'#F5E001',strokeThickness : 7, lineJoin: 'round',dropShadow : true,dropShadowDistance: 0,dropShadowBlur:30,dropShadowAngle :0,dropShadowColor :'' })",
+          "position": {
+            "x": "50%",
+            "y": "72%"
+          },
+          "fit": "aperture_frame",
+          "visible": false,
+          "pivot": "LEFT"
+        },
+        {
+          "id": "start_button",
+          "construct": "DO.Core.Renderer.UI.SpriteButton(assets, 'continue_btn:continue_normal','continue_btn:continue_over', 'continue_btn:continue_disable', '@start_caps', 1, {fontFamily : 'Arial-Rounded-MT-Regular', fontSize: 40 ,  fill : ['#F5E001'], align : 'center', stroke: '#F5E001',strokeThickness : 3 ,dropShadow : true, dropShadowBlur : 10, fill : ['#F5E001','#F5E001']})",
+          "position": {
+            "x": "51.5%",
+            "y": "73.5%"
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2
+          },
+          "pivot": "CENTRE"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "name": "Free Spins Game Manifest",
+  "items": [
+    {
+      "id": "layout_free_spins",
+      "type": "json",
+      "path": {
+        "desktop": "./assets/renderer/free_spins/desktop/layout.json",
+        "mobile": "./assets/renderer/free_spins/mobile/layout.json"
+      }
+    },
+    {
+      "id": "layout_free_spins_summary",
+      "type": "json",
+      "path": {
+        "desktop": "./assets/renderer/free_spins/desktop/layout_summary.json",
+        "mobile": "./assets/renderer/free_spins/mobile/layout_summary.json"
+      }
+    },
+    {
+      "id": "free_spins_bg",
+      "type": "image",
+      "path": "./assets/renderer/free_spins/desktop/static/fs_bg.jpg"
+    },
+    {
+      "id": "free_reel_frame",
+      "type": "image",
+      "path": "./assets/renderer/free_spins/desktop/static/free_reel_frame.png"
+    },
+    {
+      "id": "fireworks",
+      "type": "atlas",
+      "path": {
+        "desktop": "./assets/renderer/free_spins/desktop/animation/fireworks.json",
+        "mobile": null
+      },
+      "movieclips": {
+        "fireworks": {
+          "speed": 0.18,
+          "textures": [
+            "fireworks_00",
+            "fireworks_01",
+            "fireworks_02",
+            "fireworks_03",
+            "fireworks_04",
+            "fireworks_05",
+            "fireworks_06",
+            "fireworks_07",
+            "fireworks_08",
+            "fireworks_09",
+            "fireworks_10",
+            "fireworks_11",
+            "fireworks_12",
+            "fireworks_13",
+            "fireworks_14",
+            "fireworks_15",
+            "fireworks_16",
+            "fireworks_17",
+            "fireworks_18",
+            "fireworks_19",
+            "fireworks_20",
+            "fireworks_21",
+            "fireworks_22",
+            "fireworks_23",
+            "fireworks_24",
+            "fireworks_25",
+            "fireworks_26",
+            "fireworks_27",
+            "fireworks_28",
+            "fireworks_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "fireworks2",
+      "type": "atlas",
+      "path": {
+        "desktop": "./assets/renderer/free_spins/desktop/animation/fireworks.json",
+        "mobile": null
+      },
+      "movieclips": {
+        "fireworks2": {
+          "speed": 0.18,
+          "textures": [
+            "fireworks_00",
+            "fireworks_01",
+            "fireworks_02",
+            "fireworks_03",
+            "fireworks_04",
+            "fireworks_05",
+            "fireworks_06",
+            "fireworks_07",
+            "fireworks_08",
+            "fireworks_09",
+            "fireworks_10",
+            "fireworks_11",
+            "fireworks_12",
+            "fireworks_13",
+            "fireworks_14",
+            "fireworks_15",
+            "fireworks_16",
+            "fireworks_17",
+            "fireworks_18",
+            "fireworks_19",
+            "fireworks_20",
+            "fireworks_21",
+            "fireworks_22",
+            "fireworks_23",
+            "fireworks_24",
+            "fireworks_25",
+            "fireworks_26",
+            "fireworks_27",
+            "fireworks_28",
+            "fireworks_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "free_spins_bg_glow",
+      "type": "atlas",
+      "path": {
+        "desktop": "./assets/renderer/free_spins/desktop/animation/freespins_bg_add_mode.json",
+        "mobile": null
+      },
+      "movieclips": {
+        "free_spins_bg_glow": {
+          "speed": 0.15,
+          "textures": [
+            "freespins_bg_add_mode"
+          ]
+        }
+      }
+    },
+    {
+      "id": "Freegame_Mobile_Portrait",
+      "type": "image",
+      "path": "./assets/renderer/free_spins/mobile/static/freegame_mobile_portrait.jpg"
+    },
+    {
+      "id": "free_game_logo_anim",
+      "type": "atlas",
+      "path": "./assets/renderer/free_spins/desktop/animation/goal_rush_freespins_logo.json",
+      "movieclips": {
+        "free_game_logo_anim": {
+          "speed": 0.10,
+          "textures": [
+            "freespins_logo_00",
+            "freespins_logo_01",
+            "freespins_logo_02",
+            "freespins_logo_03",
+            "freespins_logo_04",
+            "freespins_logo_05",
+            "freespins_logo_06",
+            "freespins_logo_07",
+            "freespins_logo_08",
+            "freespins_logo_09",
+            "freespins_logo_10",
+            "freespins_logo_11",
+            "freespins_logo_12",
+            "freespins_logo_13",
+            "freespins_logo_14"
+          ]
+        }
+      }
+    }
+  ]
+}
