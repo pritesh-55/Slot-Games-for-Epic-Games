@@ -1,0 +1,66 @@
+{
+  "name": "Splash Manifest",
+  "items": [
+    {
+      "id": "layout_splash",
+      "type": "json",
+      "path": {
+        "desktop": "./assets/renderer/splash/desktop/layout.json",
+        "mobile": "./assets/renderer/splash/mobile/layout.json"
+      }
+    },
+    {
+      "id": "Splash_base",
+      "type": "image",
+      "path": "./assets/renderer/splash/desktop/static/splash_base.png"
+    },
+    {
+      "id": "Screen3",
+      "type": "image",
+      "path": "./assets/renderer/splash/desktop/static/screen3.png"
+    },
+    {
+      "id": "Screen1",
+      "type": "image",
+      "path": "./assets/renderer/splash/desktop/static/screen1.png"
+    },
+    {
+      "id": "BG",
+      "type": "image",
+      "path": "./assets/renderer/splash/desktop/static/splash_bg.jpg"
+    },
+    {
+      "id": "portrait_loading",
+      "type": "image",
+      "path": "./assets/renderer/splash/mobile/static/portrait_loading.jpg"
+    },
+    {
+      "id": "splash_bg_frame",
+      "type": "image",
+      "path": "./assets/renderer/splash/desktop/static/pagination_select.png"
+    },
+    {
+      "id": "game_logo",
+      "type": "image",
+      "path": "./assets/renderer/splash/desktop/static/game_mode_type/logo.png"
+    },
+    {
+      "id": "on_off",
+      "type": "atlas",
+      "path": {
+        "desktop": "./assets/renderer/splash/desktop/animation/on_off.json",
+        "mobile": "./assets/renderer/splash/desktop/animation/on_off.json"
+      }
+    },
+    {
+      "id": "pagination_select",
+      "type": "image",
+      "path": "./assets/renderer/splash/desktop/static/pagination_select.png"
+    },
+    {
+      "id": "pagination_unselect",
+      "type": "image",
+      "path": "./assets/renderer/splash/desktop/static/pagination_unselect.png"
+    }
+  ]
+}

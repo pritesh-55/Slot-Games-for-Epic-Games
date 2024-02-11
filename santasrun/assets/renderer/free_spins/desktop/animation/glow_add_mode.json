@@ -1,0 +1,21 @@
+{"frames": {
+
+"glow_add_mode":
+{
+	"frame": {"x":1,"y":1,"w":1920,"h":1080},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1920,"h":1080},
+	"sourceSize": {"w":1920,"h":1080},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "glow_add_mode.png",
+	"format": "RGBA8888",
+	"size": {"w":1922,"h":1082},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:cd6a233105d7a19a1723a9307542cb0b:bf01f67dc81e2601ed9d5dd2967952b5:9648f4d1ed559994918c2bfcfc0285a0$"
+}
+}

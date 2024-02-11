@@ -1,0 +1,392 @@
+<!-- settings divs -->
+<div class="left-info1">
+    <span class="right_text lang:game_title"></span>
+    <span class="right_text version"></span>
+</div>
+
+<div id="settings_header">
+    <span id="settings_page_title" class="page_title"></span>
+</div>
+<div id="settings_menu">
+    <div id="settings_icon_holder">
+        <div id="settings_general" class="icon"></div>
+        <div id="settings_bets" class="icon"></div>
+        <!--<div id="settings_autospins" class="icon"></div>-->
+        <div id="settings_pays" class="icon"></div>
+        <div id="settings_rules" class="icon"></div>
+        <div id="settings_history" class="icon"></div>
+    </div>
+</div>
+<div id="settings_iframe_history">
+
+    <!-- autospin settings -->
+</div>
+<div id="settings_pages">
+
+    <!-- autospin settings -->
+    <div id="settings_page_autospins" class="scrollable">
+
+        <!-- autospin count -->
+        <div class="item_holder_tall">
+            <span class="item_title_slider lang:settings_autospin_count"></span>
+            <div id="slider_autospin_count"></div>
+        </div>
+
+        <div id="settings_autospin_inputs">
+            <!-- loss limit -->
+            <div class="item_holder_short">
+                <span class="item_title lang:loss_limit"></span>
+                <div class="item_text_field" id="input_loss_limit">0</div>
+            </div>
+
+            <!-- single win limit -->
+            <div class="item_holder_short">
+                <span class="item_title lang:single_win_limit"></span>
+                <div class="item_text_field" id="input_single_win_limit">0</div>
+            </div>
+
+            <!-- total win limit -->
+            <div class="item_holder_short">
+                <span class="item_title lang:total_win_limit"></span>
+                <div class="item_text_field" id="input_total_win_limit">0</div>
+            </div>
+
+            <!-- stop on feature win -->
+            <!--<div class="item_holder_short">
+                <span class="item_title lang:stop_on_feature_win"></span>
+                <div id="checkbox_stop_on_feature"></div>
+            </div>-->
+
+            <!-- stop on any win -->
+            <div class="item_holder_short">
+                <span class="item_title lang:stop_on_any_win"></span>
+                <div id="checkbox_stop_on_any"></div>
+            </div>
+        </div>
+
+
+        <div class="autoStartButtonDiv">
+            <div id="autoplayStartButton" >
+                <div class="autoplay_button_txt lang:ok"></div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- general settings -->
+    <div id="settings_page_general" class="scrollable">
+
+        <!-- session limit -->
+        <div class="item_holder_tall" id="session_time_limit">
+            <span class="item_title_slider lang:reality_check"></span>
+            <div id="slider_session_limit"></div>
+        </div>
+
+        <!-- quick spin -->
+        <div class="item_holder_short" id="quick_spin">
+            <span class="item_title lang:settings_quick_spin"></span>
+            <div id="checkbox_quickspin"></div>
+        </div>
+
+        <!-- quick spin -->
+        <!-- splash -->
+        <!--<div class="item_holder_short">
+            <span class="item_title lang:show_splash_screen"></span>
+            <div id="checkbox_splash"></div>
+        </div>-->
+
+        <!-- space bar to spin -->
+       <!-- <div class="item_holder_short desktop_only" id="space_to_spin">
+            <span class="item_title lang:spacebar_to_spin"></span>
+            <div id="checkbox_spacebar"></div>
+        </div>-->
+
+        <!-- values in coins -->
+        <!-- <div class="item_holder_short">
+            <span class="item_title lang:values_in_coins_mob"></span>
+            <div id="checkbox_coin_values"></div>
+        </div> -->
+
+        <!-- left handed mode -->
+        <div class="item_holder_short">
+            <span class="item_title lang:left_handed_mode"></span>
+            <div id="checkbox_left_handed"></div>
+        </div>
+
+
+    </div>
+
+    <!-- bet settings -->
+    <div id="settings_page_bets" class="scrollable">
+
+        <!-- total bet -->
+        <div class="item_holder_tall item_strong">
+            <span class="item_title_slider lang:total_bet" style="text-align: center"></span>
+            <div id="stepper_total_bet" class="stepper">
+                <div class="button_prev"></div>
+                <div class="value"></div>
+                <div class="button_next"></div>
+            </div>
+        </div>
+
+
+        <!-- coin value -->
+        <div id="settings_coin_value" class="item_holder_tall">
+            <span class="item_title_slider lang:coin_value"></span>
+            <div id="stepper_coin_value" class="stepper">
+                <div class="button_prev"></div>
+                <div class="value"></div>
+                <div class="button_next"></div>
+            </div>
+        </div>
+
+        <!-- bet level -->
+        <div id="settings_bet_level" class="item_holder_tall">
+            <span class="item_title_slider lang:bet_level"></span>
+            <div id="stepper_bet_level" class="stepper">
+                <div class="button_prev"></div>
+                <div class="value"></div>
+                <div class="button_next"></div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- rules -->
+    <div id="settings_page_rules" class="scrollable">
+
+    </div>
+
+    <!-- pays -->
+    <div id="settings_page_pays" class="scrollable">
+        <div class="payout_heading lang:payouts"></div>
+        <div class= "text_block1 lang:pays_based_on_bet_level" style="text-align: center"></div>
+        <div id="pay1">
+            <div class="section_title6 lang:scatter"></div>
+            <div class="symbol-B1"></div>
+                <div class="symbol_pays" style="text-align: left">
+                    <ul style="list-style-type: none; padding-left: 5px;margin-left: 103%;">
+                        <li><span class="oak">5</span><span id="symbol-pays_SCx5" class="oak_pays">100</span></li>
+                        <li><span class="oak">4</span><span id="symbol-pays_SCx4" class="oak_pays">30</span></li>
+                        <li><span class="oak">3</span><span id="symbol-pays_SCx3" class="oak_pays">20</span></li>
+                    </ul>
+                </div>
+            <span class="text_block2 lang:scatter_defintion"></span>
+        </div>
+        <div class="section_title8 lang:wild"></div>
+        <div class="symbol-WW"></div>
+<!--                <div class="symbol_pays" style="text-align: left">-->
+<!--                    <ul style="list-style-type: none; padding-left: 5px;margin-left: 100%;">-->
+<!--                        <li><span class="oak">5</span><span id="symbol-pays_WWx5" class="oak_pays">100</span></li>-->
+<!--                        <li><span class="oak">4</span><span id="symbol-pays_WWx4" class="oak_pays">30</span></li>-->
+<!--                        <li><span class="oak">3</span><span id="symbol-pays_WWx3" class="oak_pays">20</span></li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+        <div class="text_block2 lang:pays_wildM"></div>
+        <div class="section_title lang:payouts"></div>
+        <table class="paytable">
+            <tr>
+                <td class="symbol_holder symbol-H1"></td>
+                <td class="symbol_pays" style="text-align: left">
+                    <ul style="list-style-type: none; padding-left: 5px">
+                        <li><span class="oak">5</span><span id="symbol-pays_AAx5" class="oak_pays">1000</span></li>
+                        <li><span class="oak">4</span><span id="symbol-pays_AAx4" class="oak_pays">200</span></li>
+                        <li><span class="oak">3</span><span id="symbol-pays_AAx3" class="oak_pays">60</span></li>
+                        <!--<li><span class="oak">2</span><span id="symbol-pays_H1x2" class="oak_pays">10</span></li>-->
+                    </ul>
+                </td>
+
+                <td class="symbol_holder symbol-H2"></td>
+                <td class="symbol_pays" style="text-align: left">
+                    <ul style="list-style-type: none; padding-left: 5px">
+                        <li><span class="oak">5</span><span id="symbol-pays_BBx5" class="oak_pays">500</span></li>
+                        <li><span class="oak">4</span><span id="symbol-pays_BBx4" class="oak_pays">150</span></li>
+                        <li><span class="oak">3</span><span id="symbol-pays_BBx3" class="oak_pays">50</span></li>
+                        <!--<li><span class="oak">2</span><span id="symbol-pays_BBx2" class="oak_pays">5</span></li>-->
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+
+                <td class="symbol_holder symbol-M1"></td>
+                <td class="symbol_pays" style="text-align: left">
+                    <ul style="list-style-type: none; padding-left:5px">
+                        <li><span class="oak">5</span><span id="symbol-pays_CCx5" class="oak_pays">xx</span></li>
+                        <li><span class="oak">4</span><span id="symbol-pays_CCx4" class="oak_pays">xx</span></li>
+                        <li><span class="oak">3</span><span id="symbol-pays_CCx3" class="oak_pays">xx</span></li>
+                    </ul>
+                </td>
+
+                <td class="symbol_holder symbol-M2"></td>
+                <td class="symbol_pays" style="text-align: left">
+                    <ul style="list-style-type: none; padding-left: 5px">
+                        <li><span class="oak">5</span><span id="symbol-pays_DDx5" class="oak_pays">250</span></li>
+                        <li><span class="oak">4</span><span id="symbol-pays_DDx4" class="oak_pays">80</span></li>
+                        <li><span class="oak">3</span><span id="symbol-pays_DDx3" class="oak_pays">35</span></li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="symbol_holder symbol-L1"></td>
+                <td class="symbol_pays" style="text-align: left">
+                    <ul style="list-style-type: none; padding-left: 5px">
+                        <li><span class="oak">5</span><span id="symbol-pays_EEx5" class="oak_pays">175</span></li>
+                        <li><span class="oak">4</span><span id="symbol-pays_EEx4" class="oak_pays">50</span></li>
+                        <li><span class="oak">3</span><span id="symbol-pays_EEx3" class="oak_pays">25</span></li>
+                    </ul>
+                </td>
+
+                <td class="symbol_holder symbol-L2"></td>
+                <td class="symbol_pays" style="text-align: left">
+                    <ul style="list-style-type: none; padding-left: 5px">
+                        <li><span class="oak">5</span><span id="symbol-pays_FFx5" class="oak_pays">200</span></li>
+                        <li><span class="oak">4</span><span id="symbol-pays_FFx4" class="oak_pays">70</span></li>
+                        <li><span class="oak">3</span><span id="symbol-pays_FFx3" class="oak_pays">30</span></li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="symbol_holder symbol-L3"></td>
+                <td class="symbol_pays" style="text-align: left">
+                    <ul style="list-style-type: none; padding-left: 5px">
+                        <li><span class="oak">5</span><span id="symbol-pays_GGx5" class="oak_pays">150</span></li>
+                        <li><span class="oak">4</span><span id="symbol-pays_GGx4" class="oak_pays">40</span></li>
+                        <li><span class="oak">3</span><span id="symbol-pays_GGx3" class="oak_pays">20</span></li>
+                    </ul>
+                </td>
+
+                <td class="symbol_holder symbol-L4"></td>
+                <td class="symbol_pays" style="text-align: left">
+                    <ul style="list-style-type: none; padding-left: 5px">
+                        <li><span class="oak">5</span><span id="symbol-pays_HHx5" class="oak_pays">100</span></li>
+                        <li><span class="oak">4</span><span id="symbol-pays_HHx4" class="oak_pays">30</span></li>
+                        <li><span class="oak">3</span><span id="symbol-pays_HHx3" class="oak_pays">20</span></li>
+                    </ul>
+                </td>
+                </tr>
+
+                <tr>
+                <td class="symbol_holder symbol-L5"></td>
+                <td class="symbol_pays" style="text-align: left">
+                    <ul style="list-style-type: none; padding-left: 5px">
+                        <li><span class="oak">5</span><span id="symbol-pays_IIx5" class="oak_pays">100</span></li>
+                        <li><span class="oak">4</span><span id="symbol-pays_IIx4" class="oak_pays">30</span></li>
+                        <li><span class="oak">3</span><span id="symbol-pays_IIx3" class="oak_pays">20</span></li>
+                    </ul>
+                </td>
+
+                <td class="symbol_holder symbol-L6"></td>
+                <td class="symbol_pays" style="text-align: left">
+                    <ul style="list-style-type: none; padding-left: 5px">
+                        <li><span class="oak">5</span><span id="symbol-pays_JJx5" class="oak_pays">100</span></li>
+                        <li><span class="oak">4</span><span id="symbol-pays_JJx4" class="oak_pays">30</span></li>
+                        <li><span class="oak">3</span><span id="symbol-pays_JJx3" class="oak_pays">20</span></li>
+                    </ul>
+                </td>
+
+
+
+            </tr>
+
+        </table>
+
+
+
+        <div class="section_title8 lang:free_game" style="margin-left: 0%;"></div>
+        <div class="freeSpins_paytable_mobile" ></div>
+        <div class="lang:Free_game_text" style="margin-left: -3%" ></div>
+
+
+
+        <div class="section_title11 lang:General_Rules"></div>
+        <span class="text_block lang:general_rule" style="position: static;"></span>
+
+
+
+
+    </div>
+
+    <!-- history -->
+    <div id="settings_page_history" class="scrollable">
+        <div id="history_table_wrapper">
+           
+            <div id="historyData"></div>
+
+            <div id="history_info">
+
+            </div>
+            <div id="coinTableData"></div>
+            <div id="coinInfoPageContainer">
+
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- history more button -->
+<div id="settings_page_history_more" class="ui_button lang:more" style="display: none;" target="_blank"></div>
+
+<!-- numeric keypad -->
+<div id="keypad">
+    <div class="keypad_holder">
+        <div class="keypad_currency">$</div>
+        <div class="keypad_display">
+        </div>
+        <div class="keypad_0 keypad_button">0</div>
+        <div class="keypad_1 keypad_button">1</div>
+        <div class="keypad_2 keypad_button">2</div>
+        <div class="keypad_3 keypad_button">3</div>
+        <div class="keypad_4 keypad_button">4</div>
+        <div class="keypad_5 keypad_button">5</div>
+        <div class="keypad_6 keypad_button">6</div>
+        <div class="keypad_7 keypad_button">7</div>
+        <div class="keypad_8 keypad_button">8</div>
+        <div class="keypad_9 keypad_button">9</div>
+        <div class="keypad_dout keypad_button">.</div>
+        <div class="keypad_ok keypad_button_ok lang:ok"></div>
+        <div class="keypad_cancel keypad_button_cancel lang:cancel"></div>
+    </div>
+</div>
+
+<!-- footer area -->
+<!--<div id="settings_footer">
+    <div id="settings_footer_button_holder">
+
+    </div>
+    &lt;!&ndash;<div id="info_bar">
+
+        <span class="title lang:game_title"></span>
+        <span class="version"></span>
+        <span class="right_text local_time">
+            <span id="local-time-land"></span>
+        </span>
+
+    </div>&ndash;&gt;
+
+</div>-->
+
+<div class="settings_buttons">
+    <!-- home -->
+    <!--<div id="button_settings_home" class="ui_icon"></div>
+
+    &lt;!&ndash; audio &ndash;&gt;
+    <div id="button_settings_audio" class="ui_icon"></div>-->
+    <!--<div id="settings_title_name" class="ui_icon lang:game_title"></div>-->
+
+    <!-- exit -->
+    <div id="button_exit_settings" class="ui_icon"></div>
+</div>
+
+<!-- version -->
+<!--div class="app_version">##version##</div-->
+

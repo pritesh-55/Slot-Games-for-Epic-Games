@@ -1,0 +1,39 @@
+{"frames": {
+
+"snow_fall_freespins_12":
+{
+	"frame": {"x":1,"y":1,"w":1920,"h":1080},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1920,"h":1080},
+	"sourceSize": {"w":1920,"h":1080},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"snow_fall_freespins_13":
+{
+	"frame": {"x":1,"y":1083,"w":1920,"h":1080},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1920,"h":1080},
+	"sourceSize": {"w":1920,"h":1080},
+	"pivot": {"x":0.5,"y":0.5}
+},
+"snow_fall_freespins_14":
+{
+	"frame": {"x":1,"y":2165,"w":1920,"h":1080},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1920,"h":1080},
+	"sourceSize": {"w":1920,"h":1080},
+	"pivot": {"x":0.5,"y":0.5}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "snow_fall_freespins2.png",
+	"format": "RGBA8888",
+	"size": {"w":1922,"h":3246},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:db18ac62291f987e0c951ab886b105db:382f7e98a55e0d2310569e9157cdefb6:4324e14e77eefe796c370dfd4d46ddec$"
+}
+}

@@ -1,0 +1,1089 @@
+{
+  "name": "Base Game Manifest",
+  "items": [
+    {
+      "id": "layout_base",
+      "type": "json",
+      "path": {
+        "desktop": "./assets/renderer/base/desktop/layout.json",
+        "mobile": "./assets/renderer/base/mobile/layout.json"
+      }
+    },
+    {
+      "id": "layout_free_spins_intro",
+      "type": "json",
+      "path": {
+        "desktop": "./assets/renderer/base/desktop/layout_free_spins_intro.json",
+        "mobile": "./assets/renderer/base/mobile/layout_free_spins_intro.json"
+      }
+    },
+    {
+      "id": "layout_feature_transition",
+      "type": "json",
+      "path": {
+        "desktop": "./assets/renderer/base/desktop/layout_feature_transition.json"
+      }
+    },
+    {
+      "id": "base_bg",
+      "type": "image",
+      "path": "./assets/renderer/base/desktop/static/base_bg.jpg"
+    },
+    {
+      "id": "bg_normal1",
+      "type": "atlas",
+      "path": "./assets/renderer/base/desktop/animation/bg_normal.json",
+      "movieclips": {
+        "bg_normal": {
+          "speed": 0.15,
+          "textures": [
+            "bg_normal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "bg_add_mode1",
+      "type": "atlas",
+      "path": "./assets/renderer/base/desktop/animation/bg_add_mode.json",
+      "movieclips": {
+        "bg_add_mode": {
+          "speed": 0.15,
+          "textures": [
+            "bg_add_mode"
+          ]
+        }
+      }
+    },
+    {
+      "id": "game_panel_bg",
+      "type": "image",
+      "path": "../common/assets/ui_6/generic/ui_panel/game_panel_bg.png"
+    },
+    {
+      "id": "base_portrait_bg",
+      "type": "image",
+      "path": {
+        "desktop": null,
+        "mobile": "./assets/renderer/base/mobile/static/base_game_portrait.jpg"
+      }
+    },
+    {
+      "id": "logo_anim",
+      "type": "atlas",
+      "path": "./assets/renderer/base/desktop/animation/game_mode_type/logo_anim.json",
+      "movieclips": {
+        "logo_anim": {
+          "speed": 0.15,
+          "textures": [
+            "logo_00",
+            "logo_01",
+            "logo_02",
+            "logo_03",
+            "logo_04",
+            "logo_05",
+            "logo_06",
+            "logo_07",
+            "logo_08",
+            "logo_09",
+            "logo_10",
+            "logo_11",
+            "logo_12",
+            "logo_13",
+            "logo_14",
+            "logo_15",
+            "logo_16",
+            "logo_17",
+            "logo_18",
+            "logo_19",
+            "logo_20",
+            "logo_21",
+            "logo_22",
+            "logo_23",
+            "logo_24",
+            "logo_25",
+            "logo_26",
+            "logo_27",
+            "logo_28",
+            "logo_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "base_reel_frame",
+      "type": "image",
+      "path": "./assets/renderer/base/desktop/static/base_reel_frame.png"
+    },
+    {
+      "id": "frame",
+      "type": "image",
+      "path": "./assets/renderer/base/desktop/static/frame.png"
+    },
+    {
+      "id": "win_frame",
+      "type": "atlas",
+      "path": "../common/assets/animation/win_frame.json",
+      "movieclips": {
+        "WIN:SYMBOL:FRAME": {
+          "speed": 1,
+          "textures": [
+            "win_frame_00",
+            "win_frame_01",
+            "win_frame_02",
+            "win_frame_03",
+            "win_frame_04",
+            "win_frame_05",
+            "win_frame_06",
+            "win_frame_07"
+          ]
+        }
+      }
+    },
+    {
+      "id": "anticipation_frame",
+      "type": "atlas",
+      "path": "../common/assets/animation/anticipation.json",
+      "movieclips": {
+        "TEASE_FRAME:FRAME_ANIM": {
+          "pre_cache": 1,
+          "speed": 0.15,
+          "textures": [
+            "anticipation_00",
+            "anticipation_01",
+            "anticipation_02",
+            "anticipation_03",
+            "anticipation_04",
+            "anticipation_05",
+            "anticipation_06",
+            "anticipation_07"
+          ]
+        }
+      }
+    },
+    {
+      "id": "banner",
+      "type": "image",
+      "path": {
+        "desktop": null,
+        "mobile": "./assets/renderer/base/mobile/static/logo.png"
+      }
+    },
+
+    {
+      "id": "STATIC_SYMBOLS",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/symbols.json",
+      "movieclips": {
+        "SYMBOL:Anim": {
+          "speed": 0.1,
+          "textures": [
+            "AA",
+            "BB",
+            "CC",
+            "DD",
+            "EE",
+            "FF",
+            "GG",
+            "HH",
+            "II",
+            "JJ",
+            "SC",
+            "WW"
+          ]
+        }
+      }
+    },
+    {
+      "id": "MESSAGE_SYMBOLS",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/player-symbol.json",
+      "movieclips": {
+        "SYMBOL:Anim": {
+          "speed": 0.1,
+          "textures": [
+            "AA",
+            "BB",
+            "CC",
+            "DD",
+            "EE",
+            "FF",
+            "GG",
+            "HH",
+            "II",
+            "JJ",
+            "SC",
+            "WW"
+          ]
+        }
+      }
+    },
+
+    {
+      "id": "SYMBOL:AA",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/AA.json",
+      "movieclips": {
+        "SYMBOL:AA:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "AA_00",
+            "AA_01",
+            "AA_02",
+            "AA_03",
+            "AA_04",
+            "AA_05",
+            "AA_06",
+            "AA_07",
+            "AA_08",
+            "AA_09",
+            "AA_10",
+            "AA_11",
+            "AA_12",
+            "AA_13",
+            "AA_14",
+            "AA_15",
+            "AA_16",
+            "AA_17",
+            "AA_18",
+            "AA_19",
+            "AA_20",
+            "AA_21",
+            "AA_22",
+            "AA_23",
+            "AA_24",
+            "AA_25",
+            "AA_26",
+            "AA_27",
+            "AA_28",
+            "AA_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:BB",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/BB.json",
+      "movieclips": {
+        "SYMBOL:BB:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "BB_00",
+            "BB_01",
+            "BB_02",
+            "BB_03",
+            "BB_04",
+            "BB_05",
+            "BB_06",
+            "BB_07",
+            "BB_08",
+            "BB_09",
+            "BB_10",
+            "BB_11",
+            "BB_12",
+            "BB_13",
+            "BB_14",
+            "BB_15",
+            "BB_16",
+            "BB_17",
+            "BB_18",
+            "BB_19",
+            "BB_20",
+            "BB_21",
+            "BB_22",
+            "BB_23",
+            "BB_24",
+            "BB_25",
+            "BB_26",
+            "BB_27",
+            "BB_28",
+            "BB_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:CC",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/CC.json",
+      "movieclips": {
+        "SYMBOL:CC:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "CC_00",
+            "CC_01",
+            "CC_02",
+            "CC_03",
+            "CC_04",
+            "CC_05",
+            "CC_06",
+            "CC_07",
+            "CC_08",
+            "CC_09",
+            "CC_10",
+            "CC_11",
+            "CC_12",
+            "CC_13",
+            "CC_14",
+            "CC_15",
+            "CC_16",
+            "CC_17",
+            "CC_18",
+            "CC_19",
+            "CC_20",
+            "CC_21",
+            "CC_22",
+            "CC_23",
+            "CC_24",
+            "CC_25",
+            "CC_26",
+            "CC_27",
+            "CC_28",
+            "CC_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:DD",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/DD.json",
+      "movieclips": {
+        "SYMBOL:DD:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "DD_00",
+            "DD_01",
+            "DD_02",
+            "DD_03",
+            "DD_04",
+            "DD_05",
+            "DD_06",
+            "DD_07",
+            "DD_08",
+            "DD_09",
+            "DD_10",
+            "DD_11",
+            "DD_12",
+            "DD_13",
+            "DD_14",
+            "DD_15",
+            "DD_16",
+            "DD_17",
+            "DD_18",
+            "DD_19",
+            "DD_20",
+            "DD_21",
+            "DD_22",
+            "DD_23",
+            "DD_24",
+            "DD_25",
+            "DD_26",
+            "DD_27",
+            "DD_28",
+            "DD_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:EE",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/EE.json",
+      "movieclips": {
+        "SYMBOL:EE:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "EE_00",
+            "EE_01",
+            "EE_02",
+            "EE_03",
+            "EE_04",
+            "EE_05",
+            "EE_06",
+            "EE_07",
+            "EE_08",
+            "EE_09",
+            "EE_10",
+            "EE_11",
+            "EE_12",
+            "EE_13",
+            "EE_14",
+            "EE_15",
+            "EE_16",
+            "EE_17",
+            "EE_18",
+            "EE_19",
+            "EE_20",
+            "EE_21",
+            "EE_22",
+            "EE_23",
+            "EE_24",
+            "EE_25",
+            "EE_26",
+            "EE_27",
+            "EE_28",
+            "EE_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:FF",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/FF.json",
+      "movieclips": {
+        "SYMBOL:FF:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "FF_00",
+            "FF_01",
+            "FF_02",
+            "FF_03",
+            "FF_04",
+            "FF_05",
+            "FF_06",
+            "FF_07",
+            "FF_08",
+            "FF_09",
+            "FF_10",
+            "FF_11",
+            "FF_12",
+            "FF_13",
+            "FF_14"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:GG",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/GG.json",
+      "movieclips": {
+        "SYMBOL:GG:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "GG_00",
+            "GG_01",
+            "GG_02",
+            "GG_03",
+            "GG_04",
+            "GG_05",
+            "GG_06",
+            "GG_07",
+            "GG_08",
+            "GG_09",
+            "GG_10",
+            "GG_11",
+            "GG_12",
+            "GG_13",
+            "GG_14"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:HH",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/HH.json",
+      "movieclips": {
+        "SYMBOL:HH:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "HH_00",
+            "HH_01",
+            "HH_02",
+            "HH_03",
+            "HH_04",
+            "HH_05",
+            "HH_06",
+            "HH_07",
+            "HH_08",
+            "HH_09",
+            "HH_10",
+            "HH_11",
+            "HH_12",
+            "HH_13",
+            "HH_14"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:II",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/II.json",
+      "movieclips": {
+        "SYMBOL:II:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "II_00",
+            "II_01",
+            "II_02",
+            "II_03",
+            "II_04",
+            "II_05",
+            "II_06",
+            "II_07",
+            "II_08",
+            "II_09",
+            "II_10",
+            "II_11",
+            "II_12",
+            "II_13",
+            "II_14"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:JJ",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/JJ.json",
+      "movieclips": {
+        "SYMBOL:JJ:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "JJ_00",
+            "JJ_01",
+            "JJ_02",
+            "JJ_03",
+            "JJ_04",
+            "JJ_05",
+            "JJ_06",
+            "JJ_07",
+            "JJ_08",
+            "JJ_09",
+            "JJ_10",
+            "JJ_11",
+            "JJ_12",
+            "JJ_13",
+            "JJ_14"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:SC",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/SC.json",
+      "movieclips": {
+        "SYMBOL:SC:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "SC_00",
+            "SC_01",
+            "SC_02",
+            "SC_03",
+            "SC_04",
+            "SC_05",
+            "SC_06",
+            "SC_07",
+            "SC_08",
+            "SC_09",
+            "SC_10",
+            "SC_11",
+            "SC_12",
+            "SC_13",
+            "SC_14",
+            "SC_15",
+            "SC_16",
+            "SC_17",
+            "SC_18",
+            "SC_19",
+            "SC_20",
+            "SC_21",
+            "SC_22",
+            "SC_23",
+            "SC_24",
+            "SC_25",
+            "SC_26",
+            "SC_27",
+            "SC_28",
+            "SC_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:WW",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/WW.json",
+      "movieclips": {
+        "SYMBOL:WW:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "WW_00",
+            "WW_01",
+            "WW_02",
+            "WW_03",
+            "WW_04",
+            "WW_05",
+            "WW_06",
+            "WW_07",
+            "WW_08",
+            "WW_09",
+            "WW_10",
+            "WW_11",
+            "WW_12",
+            "WW_13",
+            "WW_14",
+            "WW_15",
+            "WW_16",
+            "WW_17",
+            "WW_18",
+            "WW_19",
+            "WW_20",
+            "WW_21",
+            "WW_22",
+            "WW_23",
+            "WW_24",
+            "WW_25",
+            "WW_26",
+            "WW_27",
+            "WW_28",
+            "WW_29"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:WW:LANDING",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/wild_landing.json",
+      "movieclips": {
+        "WW_DROP:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "wild_landing_00",
+            "wild_landing_01",
+            "wild_landing_02",
+            "wild_landing_03",
+            "wild_landing_04",
+            "wild_landing_05",
+            "wild_landing_06",
+            "wild_landing_07",
+            "wild_landing_08",
+            "wild_landing_09",
+            "wild_landing_10",
+            "wild_landing_11",
+            "wild_landing_12",
+            "wild_landing_13",
+            "wild_landing_14"
+          ]
+        }
+      }
+    },
+    {
+      "id": "SYMBOL:SC:LANDING",
+      "type": "atlas",
+      "path": "./assets/renderer/common/symbols/scatter_landing.json",
+      "movieclips": {
+        "SC_DROP:WIN": {
+          "speed": 0.25,
+          "textures": [
+            "scatter_landing_00",
+            "scatter_landing_01",
+            "scatter_landing_02",
+            "scatter_landing_03",
+            "scatter_landing_04",
+            "scatter_landing_05",
+            "scatter_landing_06",
+            "scatter_landing_07",
+            "scatter_landing_08",
+            "scatter_landing_09",
+            "scatter_landing_10",
+            "scatter_landing_11",
+            "scatter_landing_12",
+            "scatter_landing_13",
+            "scatter_landing_14"
+          ]
+        }
+      }
+    },
+    {
+      "id": "number_counter",
+      "type": "atlas",
+      "path": "./assets/renderer/common/number_counter.json",
+      "movieclips": null
+    },
+    {
+      "id": "all_meter",
+      "type": "image",
+      "path": "./assets/renderer/free_spins/all_meter.png"
+    },
+    {
+      "id": "meter_multiplier",
+      "type": "image",
+      "path": "./assets/renderer/free_spins/meter_multiplier.png"
+    },
+    {
+      "id":"continue_btn",
+      "type":"atlas",
+      "path":"../common/assets/ui_6/generic/static/continue_btn.json"
+    },
+    {
+      "id":"intro_panel",
+      "type":"image",
+      "path": "../common/assets/ui_6/generic/static/intro_panel.png"
+    },
+    {
+      "id": "ui_base",
+      "type": "image",
+      "path": "../common/assets/ui_6/generic/static/ui_base.png"
+    },
+    {
+      "id": "transition",
+      "type": "multi_atlas",
+      "path": {
+        "desktop": "./assets/renderer/base/desktop/animation/transition_4x_speed0.json|./assets/renderer/base/desktop/animation/transition_4x_speed1.json|./assets/renderer/base/desktop/animation/transition_4x_speed2.json",
+        "mobile": null
+      },
+      "movieclips": {
+        "transition": {
+          "speed": 0.25,
+          "textures": [
+            "transition_4x_speed_00",
+            "transition_4x_speed_01",
+            "transition_4x_speed_02",
+            "transition_4x_speed_03",
+            "transition_4x_speed_04",
+            "transition_4x_speed_05",
+            "transition_4x_speed_06",
+            "transition_4x_speed_07",
+            "transition_4x_speed_08",
+            "transition_4x_speed_09",
+            "transition_4x_speed_10",
+            "transition_4x_speed_11",
+            "transition_4x_speed_12",
+            "transition_4x_speed_13",
+            "transition_4x_speed_14"
+          ]
+        }
+      }
+    },
+    {
+      "id": "base_snow",
+      "type": "multi_atlas",
+      "path": {
+        "desktop": "./assets/renderer/base/desktop/animation/snow_fall_basegame_and_freespins_front0.json|./assets/renderer/base/desktop/animation/snow_fall_basegame_and_freespins_front1.json|./assets/renderer/base/desktop/animation/snow_fall_basegame_and_freespins_front2.json",
+        "mobile": null
+      },
+      "movieclips": {
+        "base_snow": {
+          "speed": 0.2,
+          "textures": [
+            "snow_fall_basegame_and_freespins_front_00",
+            "snow_fall_basegame_and_freespins_front_01",
+            "snow_fall_basegame_and_freespins_front_02",
+            "snow_fall_basegame_and_freespins_front_03",
+            "snow_fall_basegame_and_freespins_front_04",
+            "snow_fall_basegame_and_freespins_front_05",
+            "snow_fall_basegame_and_freespins_front_06",
+            "snow_fall_basegame_and_freespins_front_07",
+            "snow_fall_basegame_and_freespins_front_08",
+            "snow_fall_basegame_and_freespins_front_09",
+            "snow_fall_basegame_and_freespins_front_10",
+            "snow_fall_basegame_and_freespins_front_11",
+            "snow_fall_basegame_and_freespins_front_12",
+            "snow_fall_basegame_and_freespins_front_13",
+            "snow_fall_basegame_and_freespins_front_14"
+          ]
+        }
+      }
+    },
+    {
+      "id": "layout_jackpot",
+      "type": "json",
+      "path": {
+        "desktop": "./assets/renderer/base/desktop/layout_jackpot.json",
+        "mobile": "./assets/renderer/base/mobile/layout_jackpot.json"
+      }
+    },
+    {
+      "id": "JP_btn-0",
+      "type": "atlas",
+      "path": "../common/assets/jackpot/animation/JP_btn-0.json"
+    },
+    {
+      "id": "JP_Meter_image",
+      "type": "atlas",
+      "path": "../common/assets/jackpot/animation/JP_Meter.json"
+    },
+    {
+      "id": "main_wheel_idle",
+      "type": "image",
+      "path": "../common/assets/jackpot/static/main_wheel_idle.png"
+    },
+    {
+      "id": "main_wheel_spin",
+      "type": "image",
+      "path": "../common/assets/jackpot/static/main_wheel_spin.png"
+    },
+    {
+      "id": "wheel_back_idle",
+      "type": "image",
+      "path": "../common/assets/jackpot/static/wheel_back_idle.png"
+    },
+    {
+      "id": "wheel_back_spin",
+      "type": "image",
+      "path": "../common/assets/jackpot/static/wheel_back_spin.png"
+    },
+    {
+      "id": "JP_Meter",
+      "type": "image",
+      "path": "../common/assets/jackpot/static/JP_Meter.png"
+    },
+    {
+      "id": "spin_button",
+      "type": "atlas",
+      "path": "../common/assets/jackpot/animation/Spin_btn-0.json"
+    },
+    {
+      "id": "win_section",
+      "type": "atlas",
+      "path": "../common/assets/jackpot/animation/win_section.json",
+      "movieclips": {
+        "win_section": {
+          "speed": 0.1,
+          "textures": [
+            "win_section_00",
+            "win_section_01",
+            "win_section_02",
+            "win_section_03",
+            "win_section_04",
+            "win_section_05"
+          ]
+        }
+      }
+    },
+    {
+      "id": "win_starting_glow",
+      "type": "atlas",
+      "path": "../common/assets/jackpot/animation/win_starting_glow.json",
+      "movieclips": {
+        "win_starting_glow": {
+          "speed": 0.1,
+          "textures": [
+            "win_starting_glow_00",
+            "win_starting_glow_01",
+            "win_starting_glow_02",
+            "win_starting_glow_03",
+            "win_starting_glow_04",
+            "win_starting_glow_05",
+            "win_starting_glow_06",
+            "win_starting_glow_07",
+            "win_starting_glow_08",
+            "win_starting_glow_09",
+            "win_starting_glow_10",
+            "win_starting_glow_11",
+            "win_starting_glow_12",
+            "win_starting_glow_13"
+          ]
+        }
+      }
+    },
+    {
+      "id": "global_sounds",
+      "type": "sound",
+      "path":"./assets/audio/sfx_sprite",
+      "global": true,
+      "volume": 1,
+      "properties": {
+        "sprite": {
+          "TickUp_Sound": [
+            32000,
+            3240.000000000002
+          ],
+          "line_win": [
+            16000,
+            927.8911564625857
+          ],
+          "REEL_DROP": [
+            25000,
+            500
+          ],
+          "REEL_DROP1": [
+            25000,
+            500
+          ],
+          "REEL_DROP2": [
+            25000,
+            500
+          ],
+          "REEL_DROP3": [
+            25000,
+            500
+          ],
+          "REEL_DROP4": [
+            25000,
+            500
+          ],
+          "TEASE": [
+            0,
+            6363.628117913832
+          ],
+          "WIN_SUMMARY": [
+            0,
+            0
+          ],
+          "BN:Landing": [
+            7000,
+            1500
+          ],
+          "WW:Landing": [
+            36000,
+            1500
+          ],
+          "SC:Landing": [
+            28000,
+            1500
+          ],
+
+          "L1:WIN": [
+            26000,
+            1071.020408163264
+          ],
+          "scatter:win": [
+            39000,
+            1883.6281179138296
+          ],
+          "wild:win": [
+            41000,
+            2125.0113378684787
+          ],
+          "INTRO": [
+            76000,
+            2401.428571428568
+          ],
+          "SUMMARY": [
+            76000,
+            2401.428571428568
+          ],
+          "RESPIN_TRIGGER": [
+            79000,
+            2500
+          ],
+          "Common_PopUp": [
+            73000,
+            2736.0997732426285
+          ],
+          "GENERIC_CLICK": [
+            15000,
+            39.07029478458135
+          ],
+          "ReeL_spin": [
+            17000,
+            7927.959183673469
+          ],
+          "plus_minus": [
+            15000,
+            39.07029478458135
+          ],
+          "SPIN_BUTTON": [
+            30000,
+            149.99999999999858
+          ],
+          "RESPIN_SPIN": [
+            0,
+            0
+          ],
+          "RESPIN_STOP": [
+            0,
+            0
+          ],
+          "Wild_Walking": [
+            59000,
+            1700.0000000000027
+          ],
+          "pickem_reveal": [
+            42000,
+            1531.4739229024922
+          ],
+          "Click_Toggle_Button": [
+            9000,
+            500
+          ],
+          "counting_up_FreeGame": [
+            10000,
+            1737.7551020408166
+          ],
+          "Error_Appearance": [
+            12000,
+            948.4807256235825
+          ],
+          "Scatter": [
+            83000,
+            2000
+          ],
+          "Wild_1x1": [
+            85000,
+            2000
+          ],
+          "TickUp_End": [
+            31000,
+            521.7687074829946
+          ]
+        }
+      }
+    },
+    {
+      "id": "transition_sound",
+      "type": "sound",
+      "path": "./assets/audio/transition",
+      "global": true,
+      "properties": {
+      }
+    },
+    {
+      "id": "music_base",
+      "type": "sound",
+      "path": "./assets/audio/base_music",
+      "global": true,
+      "properties": {
+      }
+    },
+    {
+      "id": "music_freegame",
+      "type": "sound",
+      "path": "./assets/audio/fg_music",
+      "global": true,
+      "properties": {
+      }
+    },
+    {
+      "id": "music_base_outro",
+      "type": "sound",
+      "path": "./assets/audio/base_music",
+      "global": true,
+      "properties": {
+      }
+    },
+    {
+      "id": "music_big_win",
+      "type": "sound",
+      "path": "../common/assets/audio/big_win",
+      "global": true,
+      "properties": {
+      }
+    },
+    {
+      "id": "music_mega_win",
+      "type": "sound",
+      "path": "../common/assets/audio/mega_win",
+      "global": true,
+      "properties": {
+      }
+    },
+    {
+      "id": "music_super_win",
+      "type": "sound",
+      "path": "../common/assets/audio/super_win",
+      "global": true,
+      "properties": {
+      }
+    }
+  ]
+}

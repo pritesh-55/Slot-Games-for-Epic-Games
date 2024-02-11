@@ -1,0 +1,190 @@
+{
+  "name": "Free Spins Game Manifest",
+  "items": [
+    {
+      "id": "layout_free_spins",
+      "type": "json",
+      "path": {
+        "desktop": "./assets/renderer/free_spins/desktop/layout.json",
+        "mobile": "./assets/renderer/free_spins/mobile/layout.json"
+      }
+    },
+    {
+      "id": "layout_free_spins_summary",
+      "type": "json",
+      "path": {
+        "desktop": "./assets/renderer/free_spins/desktop/layout_summary.json",
+        "mobile": "./assets/renderer/free_spins/mobile/layout_summary.json"
+      }
+    },
+    {
+      "id": "Freegame_Mobile_Portrait",
+      "type": "image",
+      "path": "./assets/renderer/free_spins/mobile/static/free_spin_portrait.jpg"
+    },
+    {
+      "id": "free_game_logo_mobile",
+      "type": "image",
+      "path": {
+        "mobile": "./assets/renderer/free_spins/mobile/static/mobile_free_game.png"
+      }
+    },
+    {
+      "id": "free_logo",
+      "type": "image",
+      "path": "./assets/renderer/free_spins/desktop/static/free_logo.png"
+    },
+    {
+      "id": "freespins_logo",
+      "type": "atlas",
+      "path": "./assets/renderer/free_spins/desktop/animation/freespins_logo.json",
+      "movieclips": {
+        "freespins_logo": {
+          "speed": 0.15,
+          "textures": [
+            "freespins_logo_00",
+            "freespins_logo_01",
+            "freespins_logo_02",
+            "freespins_logo_03",
+            "freespins_logo_04",
+            "freespins_logo_05",
+            "freespins_logo_06",
+            "freespins_logo_07",
+            "freespins_logo_08",
+            "freespins_logo_09",
+            "freespins_logo_10",
+            "freespins_logo_11",
+            "freespins_logo_12",
+            "freespins_logo_13",
+            "freespins_logo_14"
+          ]
+        }
+      }
+    },
+    {
+      "id": "free_reel_frame",
+      "type": "image",
+      "path": "./assets/renderer/free_spins/desktop/static/FreeSpins_Reel_Frame.png"
+    },
+    {
+      "id": "frame",
+      "type": "image",
+      "path": "./assets/renderer/free_spins/desktop/static/frame.png"
+    },
+    {
+      "id": "free_spins_bg",
+      "type": "image",
+      "path": {
+        "desktop": "./assets/renderer/free_spins/desktop/static/free_spins_bg.jpg",
+        "mobile" : "./assets/renderer/free_spins/desktop/static/free_spins_bg.jpg"
+      },
+      "movieclips": {
+        "free_spins_bg": {
+          "speed": 0.15,
+          "textures": [
+            "fs_bg"
+          ]
+        }
+      }
+    },
+    {
+      "id": "bg_normal_free",
+      "type": "atlas",
+      "path": {
+        "desktop": "./assets/renderer/free_spins/desktop/animation/bg_normal_free.json",
+        "mobile": null
+      },
+      "movieclips": {
+        "bg_normal_free": {
+          "speed": 0.15,
+          "textures": [
+            "bg_normal_free"
+          ]
+        }
+      }
+    },
+    {
+      "id": "glow_normal",
+      "type": "atlas",
+      "path": {
+        "desktop": "./assets/renderer/free_spins/desktop/animation/glow_normal.json",
+        "mobile": null
+      },
+      "movieclips": {
+        "glow_normal": {
+          "speed": 0.15,
+          "textures": [
+            "glow_normal"
+          ]
+        }
+      }
+    },
+    {
+      "id": "glow_add_mode",
+      "type": "atlas",
+      "path": {
+        "desktop": "./assets/renderer/free_spins/desktop/animation/glow_add_mode.json",
+        "mobile": null
+      },
+      "movieclips": {
+        "glow_add_mode": {
+          "speed": 0.12,
+          "textures": [
+            "glow_add_mode"
+          ]
+        }
+      }
+    },
+    {
+      "id": "tree_light",
+      "type": "atlas",
+      "path": {
+        "desktop": "./assets/renderer/free_spins/desktop/animation/tree_light.json",
+        "mobile": null
+      },
+      "movieclips": {
+        "tree_light": {
+          "speed": 0.15,
+          "textures": [
+            "tree_light_00",
+            "tree_light_01",
+            "tree_light_02",
+            "tree_light_03",
+            "tree_light_04",
+            "tree_light_05"
+          ]
+        }
+      }
+    },
+    {
+      "id": "free_snow",
+      "type": "multi_atlas",
+      "path": {
+        "desktop": "./assets/renderer/free_spins/desktop/animation/snow_fall_freespins0.json|./assets/renderer/free_spins/desktop/animation/snow_fall_freespins1.json|./assets/renderer/free_spins/desktop/animation/snow_fall_freespins2.json",
+        "mobile": null
+      },
+      "movieclips": {
+        "free_snow": {
+          "speed": 0.2,
+          "textures": [
+            "snow_fall_freespins_00",
+            "snow_fall_freespins_01",
+            "snow_fall_freespins_02",
+            "snow_fall_freespins_03",
+            "snow_fall_freespins_04",
+            "snow_fall_freespins_05",
+            "snow_fall_freespins_06",
+            "snow_fall_freespins_07",
+            "snow_fall_freespins_08",
+            "snow_fall_freespins_09",
+            "snow_fall_freespins_10",
+            "snow_fall_freespins_11",
+            "snow_fall_freespins_12",
+            "snow_fall_freespins_13",
+            "snow_fall_freespins_14"
+          ]
+        }
+      }
+    }
+  ]
+}
