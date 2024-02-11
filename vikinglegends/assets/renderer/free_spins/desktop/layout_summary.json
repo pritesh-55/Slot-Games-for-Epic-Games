@@ -1,0 +1,120 @@
+{
+  "name": "Free Spins Game Summary Layout",
+  "params": {
+    "audio": {
+      "music": {
+        "ambient": "music_freeSpin",
+        "ambient1": "music_base_outro"
+      }
+    },
+    "nextSceneDelay":0
+  },
+  "components": [
+    {
+      "id": "bgDimmer",
+      "construct": "DO.Core.Renderer.UI.BackgroundDimmer(0,0.7)",
+      "position": {
+        "x": "50%",
+        "y": "50%"
+      },
+      "visible": true,
+      "pivot": "CENTRE"
+    },
+    {
+      "id": "outro_holder",
+      "position": {
+        "x": "24.5%",
+        "y": "24%"
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "pivot": "CENTRE",
+      "components": [
+        {
+          "id": "outro_frame",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'intro_panel')",
+          "position": {
+            "x": "50%",
+            "y": "50%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "outro_text_1",
+          "construct": "DO.Core.Renderer.UI.StandardText('@congratulations_caps', {fontFamily : 'Arial-Rounded-MT-Regular',fontWeight: 'bolder', fontSize: 80, fill : ['#00728E','#00728E'], align : 'center', stroke:'#00FFF5',strokeThickness : 7, lineJoin: 'round',dropShadow : true,dropShadowDistance: 0,dropShadowBlur:30,dropShadowAngle :0,dropShadowColor :'' })",
+          "fit": "aperture_frame",
+          "visible": true,
+          "position": {
+            "x": "50%",
+            "y": "39%"
+          },
+          "pivot": "LEFT"
+        },
+        {
+          "id": "outro_text_2",
+          "construct": "DO.Core.Renderer.UI.StandardText('@spot_bonus_every_spin', {fontFamily : 'Arial-Rounded-MT-Regular',fontWeight: 'bolder', fontSize: 80, fill : ['#00728E','#00728E'], align : 'center', stroke:'#00FFF5',strokeThickness : 7, lineJoin: 'round',dropShadow : true,dropShadowDistance: 0,dropShadowBlur:30,dropShadowAngle :0,dropShadowColor :'' })",
+          "fit": "aperture_frame",
+          "position": {
+            "x": "50%",
+            "y": "51%"
+          },
+          "visible": true,
+          "pivot": "LEFT"
+        },
+        {
+          "id": "win_amount",
+          "construct": "DO.Core.Renderer.UI.StandardText('', {fontFamily : 'Arial-Rounded-MT-Regular', fontSize: 120, fill: ['#90FC08'], align : 'center', stroke: '#ff3300',strokeThickness : 3 ,dropShadow : true, dropShadowBlur : 20, fill : ['#90FC08','#90FC08']})",
+          "visible": false,
+          "fx": {
+            "create": "DO.Core.Renderer.UI.FX.popOut(500)"
+          },
+          "position": {
+            "x": "50%",
+            "y": "68%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 1
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "continue_button",
+          "construct": "DO.Core.Renderer.UI.SpriteButton(assets, 'continue_btn:continue_normal', 'continue_btn:continue_over', 'continue_btn:continue_disable', '@collect_caps', 1, {fontFamily : 'Arial-Rounded-MT-Regular', fontSize: 40 ,  fill : ['#0FA2FF'], align : 'center', stroke: '#0FA2FF',strokeThickness : 3 ,dropShadow : true, dropShadowBlur : 10, fill : ['#0FA2FF','#0FA2FF']})",
+          "position": {
+            "x": "51%",
+            "y": "75.5%"
+          },
+          "fx": {
+            "create": "DO.Core.Renderer.UI.FX.popOut(800)"
+          },
+          "scale": {
+            "x": 1.2,
+            "y": 1.2
+          },
+          "pivot": "CENTRE"
+        },
+        {
+          "id": "ui_panel_base",
+          "construct": "DO.Core.Renderer.UI.Image(assets, 'ui_base')",
+          "position": {
+            "x": "53%",
+            "y": "95%"
+          },
+          "scale": {
+            "x": 1,
+            "y": 0.85
+          },
+          "visible": false,
+          "pivot": "CENTRE"
+        }
+      ]
+    }
+  ]
+}

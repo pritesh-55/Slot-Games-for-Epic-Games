@@ -1,0 +1,156 @@
+{
+  "name": "Free Spins Game Manifest",
+  "items": [
+    {
+      "id": "layout_free_spins",
+      "type": "json",
+      "path": {
+        "desktop": "./assets/renderer/free_spins/desktop/layout.json",
+        "mobile": "./assets/renderer/free_spins/mobile/layout.json"
+      }
+    },
+    {
+      "id": "layout_free_spins_summary",
+      "type": "json",
+      "path": {
+        "desktop": "./assets/renderer/free_spins/desktop/layout_summary.json",
+        "mobile": "./assets/renderer/free_spins/mobile/layout_summary.json"
+      }
+    },
+    {
+      "id": "free_spins_bg",
+      "type": "image",
+      "path": "./assets/renderer/free_spins/desktop/static/fs_bg.jpg"
+    },
+    {
+      "id": "free_reel_frame",
+      "type": "image",
+      "path": "./assets/renderer/free_spins/desktop/static/free_reel_frame.png"
+    },
+    {
+      "id": "free_spins_bg_glow",
+      "type": "image",
+      "path": {
+        "desktop": "./assets/renderer/free_spins/desktop/static/fs_bg_glow.jpg",
+        "mobile": "./assets/renderer/free_spins/mobile/static/freegame_mobile_portrait.jpg"
+      }
+    },
+    {
+      "id": "Freegame_Mobile_Portrait",
+      "type": "image",
+      "path": "./assets/renderer/free_spins/mobile/static/freegame_mobile_portrait.jpg"
+    },
+    {
+      "id": "all_meter1",
+      "type": "image",
+      "path": "./assets/renderer/free_spins/all_meter1.png"
+    },
+    {
+      "id": "all_meter2",
+      "type": "image",
+      "path": "./assets/renderer/free_spins/all_meter2.png"
+    },
+    {
+      "id": "freespins_bg",
+      "type": "multi_atlas",
+      "path": {
+        "desktop": "./assets/renderer/free_spins/desktop/animation/freespins_bg0.json|./assets/renderer/free_spins/desktop/animation/freespins_bg1.json|./assets/renderer/free_spins/desktop/animation/freespins_bg2.json|./assets/renderer/free_spins/desktop/animation/freespins_bg3.json|./assets/renderer/free_spins/desktop/animation/freespins_bg4.json|./assets/renderer/free_spins/desktop/animation/freespins_bg5.json|./assets/renderer/free_spins/desktop/animation/freespins_bg6.json|./assets/renderer/free_spins/desktop/animation/freespins_bg7.json",
+        "mobile": null
+      },
+      "movieclips": {
+        "freespins_bg": {
+          "speed": 0.16,
+          "textures": [
+            "freespins_bg_00",
+            "freespins_bg_01",
+            "freespins_bg_02",
+            "freespins_bg_03",
+            "freespins_bg_04",
+            "freespins_bg_05",
+            "freespins_bg_06",
+            "freespins_bg_07",
+            "freespins_bg_08",
+            "freespins_bg_09",
+            "freespins_bg_10",
+            "freespins_bg_11",
+            "freespins_bg_12",
+            "freespins_bg_13",
+            "freespins_bg_14",
+            "freespins_bg_15",
+            "freespins_bg_16",
+            "freespins_bg_17",
+            "freespins_bg_18",
+            "freespins_bg_19",
+            "freespins_bg_20",
+            "freespins_bg_21",
+            "freespins_bg_22",
+            "freespins_bg_23",
+            "freespins_bg_24",
+            "freespins_bg_25",
+            "freespins_bg_26",
+            "freespins_bg_27",
+            "freespins_bg_28",
+            "freespins_bg_29",
+            "freespins_bg_30",
+            "freespins_bg_31",
+            "freespins_bg_32",
+            "freespins_bg_33",
+            "freespins_bg_34",
+            "freespins_bg_35",
+            "freespins_bg_36",
+            "freespins_bg_37",
+            "freespins_bg_38",
+            "freespins_bg_39",
+            "freespins_bg_40",
+            "freespins_bg_41",
+            "freespins_bg_42",
+            "freespins_bg_43",
+            "freespins_bg_44"
+          ]
+        }
+      }
+    },
+    {
+      "id": "free_logo_anim",
+      "type": "atlas",
+      "path": "./assets/renderer/free_spins/desktop/animation/viking_freegame_logo.json",
+      "movieclips": {
+        "free_logo_anim": {
+          "speed": 0.10,
+          "textures": [
+            "freespins_logo_00",
+            "freespins_logo_01",
+            "freespins_logo_02",
+            "freespins_logo_03",
+            "freespins_logo_04",
+            "freespins_logo_05",
+            "freespins_logo_06",
+            "freespins_logo_07",
+            "freespins_logo_08",
+            "freespins_logo_09",
+            "freespins_logo_10",
+            "freespins_logo_11",
+            "freespins_logo_12",
+            "freespins_logo_13",
+            "freespins_logo_14",
+            "freespins_logo_15",
+            "freespins_logo_16",
+            "freespins_logo_17",
+            "freespins_logo_18",
+            "freespins_logo_19",
+            "freespins_logo_20",
+            "freespins_logo_21",
+            "freespins_logo_22",
+            "freespins_logo_23",
+            "freespins_logo_24",
+            "freespins_logo_25",
+            "freespins_logo_26",
+            "freespins_logo_27",
+            "freespins_logo_28",
+            "freespins_logo_29"
+          ]
+        }
+      }
+    }
+  ]
+}
